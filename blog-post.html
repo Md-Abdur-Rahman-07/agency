@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article | OrbitWick Blog</title>
+  <meta name="description" content="Read this article on the OrbitWick blog.">
+  <link rel="canonical" href="https://www.orbitwick.com/blog.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Article | OrbitWick Blog">
+  <meta property="og:description" content="Read this article on the OrbitWick blog.">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="theme-color" content="#111113">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg ow-nav sticky-top" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="img/logo-white.png" alt="OrbitWick" width="140" height="34"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="rd.html">R&amp;D</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn btn-burgundy btn-sm px-3" href="index.html#contact">Get in touch</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="page-hero post-hero">
+  <div class="container">
+    <nav aria-label="Breadcrumb" class="post-crumbs mb-4">
+      <a href="index.html">Home</a><span>/</span><a href="blog.html">Blog</a><span>/</span><span id="crumb">Article</span>
+    </nav>
+    <div class="eyebrow mb-3" id="postCat">&nbsp;</div>
+    <h1 class="fw-bold mb-3 post-title" id="postTitle">Loading&hellip;</h1>
+    <div class="post-meta" id="postMeta"></div>
+  </div>
+</header>
+
+<!-- HERO IMAGE -->
+<div class="container post-figure-wrap">
+  <div class="row">
+ <figure class="col-lg-8 post-figure" id="postFigure" hidden>
+    <img id="postImg" alt="" width="1600" height="840" fetchpriority="high">
+  </figure>
+  </div>
+ 
+</div>
+
+<!-- ARTICLE BODY -->
+<section class="post-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <article id="postBody" class="post-content"></article>
+        <p class="post-service" id="postService" hidden></p>
+        <div id="postTags" class="svc-tags mt-4"></div>
+        <div class="post-share mt-4" id="postShare" hidden>
+          <strong>Share</strong>
+          <a id="shWa" target="_blank" rel="noopener" aria-label="Share on WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a id="shFb" target="_blank" rel="noopener" aria-label="Share on Facebook"><i class="bi bi-facebook"></i></a>
+          <a id="shLi" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <button type="button" id="shCopy" aria-label="Copy link"><i class="bi bi-link-45deg"></i> <span>Copy link</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED ARTICLES -->
+<section class="bg-grey-ow" id="relatedSection" hidden>
+  <div class="container">
+    <div class="mb-4">
+      <div class="eyebrow">Keep reading</div>
+      <h2 class="section-title mt-2">Related articles</h2>
+      <div class="section-bar"></div>
+    </div>
+    <div class="row g-4" id="related"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <a href="index.html" class="brand d-inline-block"><img src="img/logo-white.png" alt="OrbitWick" width="156" height="38"></a>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6 class="mb-3">Company</h6>
+        <ul class="list-unstyled mb-0">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="rd.html">R&amp;D</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-4">
+        <h6 class="mb-3">Services</h6>
+        <ul class="list-unstyled mb-0">
+          <li><a href="services.html#design">UI/UX &amp; Graphic Design</a></li>
+          <li><a href="services.html#development">Full-Stack Development</a></li>
+          <li><a href="services.html#cms">CMS &amp; E-commerce</a></li>
+          <li><a href="services.html#security">Cybersecurity</a></li>
+          <li><a href="services.html#maintenance">Management &amp; Maintenance</a></li>
+          <li><a href="services.html#mobile">Mobile App Development</a></li>
+          <li><a href="services.html#revamp">Website Revamp &amp; Rebranding</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="small">&copy; 2026 OrbitWick. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 700, easing: "ease-out-cubic", once: true, offset: 60 });</script>
+<script>
+(function () {
+  var SITE = 'https://www.orbitwick.com';
+  var slug = new URLSearchParams(location.search).get('slug');
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function words(post) {
+    var n = 0;
+    (post.content || []).forEach(function (b) {
+      if (b.text) n += b.text.split(/\s+/).length;
+      if (b.items) b.items.forEach(function (i) { n += i.split(/\s+/).length; });
+    });
+    return n;
+  }
+  function readTime(post) { return Math.max(1, Math.round(words(post) / 200)) + ' min read'; }
+  function fmt(d) {
+    return new Date(d + 'T00:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  }
+  function setMeta(sel, attr, val) {
+    var el = document.querySelector(sel);
+    if (el) el.setAttribute(attr, val);
+  }
+
+  function notFound() {
+    document.title = 'Article not found | OrbitWick Blog';
+    document.getElementById('postTitle').textContent = 'Article not found';
+    document.getElementById('postCat').textContent = 'Blog';
+    document.getElementById('crumb').textContent = 'Not found';
+    document.getElementById('postBody').innerHTML = '<p>We could not find that article. <a href="blog.html">Browse all articles</a>.</p>';
+  }
+
+  function renderBlock(b) {
+    if (b.type === 'h2') return '<h2>' + esc(b.text) + '</h2>';
+    if (b.type === 'h3') return '<h3>' + esc(b.text) + '</h3>';
+    if (b.type === 'ul') return '<ul>' + b.items.map(function (i) { return '<li>' + esc(i) + '</li>'; }).join('') + '</ul>';
+    if (b.type === 'ol') return '<ol>' + b.items.map(function (i) { return '<li>' + esc(i) + '</li>'; }).join('') + '</ol>';
+    if (b.type === 'quote') return '<blockquote>' + esc(b.text) + '</blockquote>';
+    return '<p>' + esc(b.text) + '</p>';
+  }
+
+  function card(p) {
+    var thumb = p.image
+      ? '<img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy" width="1600" height="840">'
+      : '<i class="bi bi-journal-text"></i>';
+    return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="blog-post.html?slug=' + encodeURIComponent(p.slug) + '">' +
+      '<div class="blog-thumb">' + thumb + '<span class="blog-cat">' + esc(p.category) + '</span></div>' +
+      '<div class="blog-body"><div class="blog-meta">' + fmt(p.date) + ' &middot; ' + readTime(p) + '</div>' +
+      '<h3>' + esc(p.title) + '</h3><p>' + esc(p.excerpt) + '</p>' +
+      '<span class="service-more">Read article <i class="bi bi-arrow-right"></i></span></div></a></div>';
+  }
+
+  function render(post, all) {
+    var url = SITE + '/blog-post.html?slug=' + encodeURIComponent(post.slug);
+    var title = post.title + ' | OrbitWick Blog';
+    var imgUrl = post.image ? SITE + '/' + post.image : '';
+
+    document.title = title;
+    setMeta('meta[name="description"]', 'content', post.excerpt);
+    setMeta('link[rel="canonical"]', 'href', url);
+    setMeta('meta[property="og:title"]', 'content', title);
+    setMeta('meta[property="og:description"]', 'content', post.excerpt);
+    setMeta('meta[property="og:image"]', 'content', imgUrl);
+
+    var ld = document.createElement('script');
+    ld.type = 'application/ld+json';
+    var data = {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.excerpt,
+      datePublished: post.date,
+      dateModified: post.updated || post.date,
+      author: { '@type': 'Organization', name: post.author || 'OrbitWick' },
+      publisher: { '@type': 'Organization', name: 'OrbitWick', logo: { '@type': 'ImageObject', url: SITE + '/img/logo-white.png' } },
+      mainEntityOfPage: url,
+      keywords: (post.tags || []).join(', ')
+    };
+    if (imgUrl) data.image = imgUrl;
+    ld.textContent = JSON.stringify(data);
+    document.head.appendChild(ld);
+
+    document.getElementById('crumb').textContent = post.title;
+    document.getElementById('postCat').textContent = post.category;
+    document.getElementById('postTitle').textContent = post.title;
+    document.getElementById('postMeta').innerHTML =
+      '<span><i class="bi bi-person"></i> ' + esc(post.author || 'OrbitWick Team') + '</span>' +
+      '<span><i class="bi bi-calendar3"></i> ' + fmt(post.date) + '</span>' +
+      '<span><i class="bi bi-clock"></i> ' + readTime(post) + '</span>';
+
+    if (post.image) {
+      var img = document.getElementById('postImg');
+      img.src = post.image;
+      img.alt = post.title;
+      document.getElementById('postFigure').hidden = false;
+    } else {
+      document.querySelector('.post-figure-wrap').hidden = true;
+    }
+
+    document.getElementById('postBody').innerHTML =
+      '<p class="post-lead">' + esc(post.excerpt) + '</p>' + (post.content || []).map(renderBlock).join('');
+    document.getElementById('postTags').innerHTML = (post.tags || []).map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('');
+
+    if (post.service) {
+      var sv = document.getElementById('postService');
+      sv.innerHTML = '<i class="bi bi-compass"></i> This article is part of our <a href="' + esc(post.service.href) + '">' + esc(post.service.name) + '</a> service.';
+      sv.hidden = false;
+    }
+
+    var enc = encodeURIComponent(location.href), t = encodeURIComponent(post.title);
+    document.getElementById('shWa').href = 'https://wa.me/?text=' + t + '%20' + enc;
+    document.getElementById('shFb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + enc;
+    document.getElementById('shLi').href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + enc;
+    document.getElementById('postShare').hidden = false;
+    document.getElementById('shCopy').addEventListener('click', function () {
+      var label = this.querySelector('span');
+      var done = function () { label.textContent = 'Copied'; setTimeout(function () { label.textContent = 'Copy link'; }, 1800); };
+      if (navigator.clipboard) navigator.clipboard.writeText(location.href).then(done);
+    });
+
+    var related = all.filter(function (p) { return p.slug !== post.slug; })
+      .sort(function (a, b) { return (b.category === post.category) - (a.category === post.category) || b.date.localeCompare(a.date); })
+      .slice(0, 3);
+    if (related.length) {
+      document.getElementById('related').innerHTML = related.map(card).join('');
+      document.getElementById('relatedSection').hidden = false;
+    }
+  }
+
+  fetch('data/posts.json')
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (data) {
+      var all = data.posts || [];
+      var post = all.filter(function (p) { return p.slug === slug; })[0];
+      if (!post) { document.querySelector('.post-figure-wrap').hidden = true; return notFound(); }
+      render(post, all);
+    })
+    .catch(function () {
+      document.querySelector('.post-figure-wrap').hidden = true;
+      document.getElementById('postTitle').textContent = 'Article could not be loaded';
+      document.getElementById('postBody').innerHTML = '<p>If you are previewing locally, serve the site over HTTP (for example, run <code>python3 -m http.server</code> in this folder). <a href="blog.html">Back to the blog</a>.</p>';
+    });
+})();
+</script>
+</body>
+</html>

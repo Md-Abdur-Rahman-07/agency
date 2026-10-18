@@ -139,7 +139,7 @@ a:hover {
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
   line-height: 1.1;
 }
 
@@ -393,7 +393,25 @@ section {
   background: var(--ow-black);
   color: #fff;
 }
+.contact-group {
+  margin-bottom: 1.75rem;
+}
 
+.contact-group h5 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--ow-grey);
+  margin-bottom: .75rem;
+}
+
+.contact-line {
+  display: inline-block;
+  margin-top: .75rem;
+  font-weight: 600;
+  font-size: .95rem;
+  overflow-wrap: anywhere;
+}
 /* Footer */
 footer {
   background: var(--ow-black);
@@ -435,7 +453,7 @@ footer hr {
 .page-hero {
   background: linear-gradient(135deg, #0b0b0d, #1b1b1f);
   color: #fff;
-  padding: 6rem 0 4.5rem;
+  padding: 3rem 0 4.5rem;
   position: relative;
   overflow: hidden;
   border-bottom: 4px solid var(--ow-burgundy);
@@ -634,7 +652,7 @@ footer .brand img {
   position: relative;
   z-index: 1;
   width: auto;
-  max-width: 100%;
+  /* max-width: 100%; */
   max-height: 560px;
   animation: ow-float 7s ease-in-out infinite;
   filter: drop-shadow(0 24px 40px rgba(0, 0, 0, .45));
@@ -919,4 +937,431 @@ a.service-card {
   background: var(--ow-burgundy);
   color: #fff;
   transform: translateY(-3px);
+}
+
+/* ==========================================================
+   v3 additions: video section + mobile overflow fix
+   ========================================================== */
+html {
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+.hero .hero-visual img {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-frame {
+  background: #000;
+  border-top: 4px solid var(--ow-burgundy);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, .45);
+}
+
+.video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overview .hero-stat strong {
+  color: #fff;
+}
+
+/* AOS side-slide animations can push content past the viewport on phones */
+@media (max-width: 991px) {
+
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translate3d(0, 24px, 0);
+  }
+
+  [data-aos="fade-left"].aos-animate,
+  [data-aos="fade-right"].aos-animate {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .hero::after {
+    display: none;
+  }
+}
+
+/* ==========================================================
+   v4 additions: numbered services nav + blog
+   ========================================================== */
+.svc-nav a b {
+  color: var(--ow-burgundy);
+  margin-right: .35rem;
+  font-weight: 800;
+}
+
+.svc-nav a:hover b {
+  color: #fff;
+}
+
+/* Blog listing */
+.blog-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.blog-filters button {
+  background: #fff;
+  border: 1px solid var(--ow-border);
+  font-weight: 600;
+  font-size: .85rem;
+  padding: .45rem .95rem;
+  color: var(--ow-black);
+  transition: all .2s;
+}
+
+.blog-filters button:hover,
+.blog-filters button.active {
+  background: var(--ow-burgundy);
+  border-color: var(--ow-burgundy);
+  color: #fff;
+}
+
+.blog-search {
+  max-width: 280px;
+  border-radius: 0;
+  border: 1px solid var(--ow-border);
+  padding: .6rem 1rem;
+}
+
+.blog-search:focus {
+  border-color: var(--ow-burgundy);
+  box-shadow: 0 0 0 .2rem rgba(109, 26, 46, .15);
+}
+
+.blog-card {
+  display: block;
+  height: 100%;
+  background: #fff;
+  border: 1px solid var(--ow-border);
+  color: inherit;
+  text-decoration: none;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .09);
+  border-color: transparent;
+  color: inherit;
+}
+
+.blog-thumb {
+  position: relative;
+  aspect-ratio: 16/9;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--ow-burgundy-dark), var(--ow-black));
+  border-bottom: 4px solid var(--ow-burgundy);
+}
+
+.blog-thumb i {
+  font-size: 3.2rem;
+  color: rgba(255, 255, 255, .85);
+}
+
+.blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-cat {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  background: #fff;
+  color: var(--ow-burgundy);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .3rem .7rem;
+}
+
+.blog-body {
+  padding: 1.5rem;
+}
+
+.blog-meta {
+  font-size: .8rem;
+  color: var(--ow-grey);
+  font-weight: 600;
+}
+
+.blog-body h3 {
+  font-size: 1.15rem;
+  margin: .6rem 0 .6rem;
+}
+
+.blog-body p {
+  color: var(--ow-grey);
+  font-size: .93rem;
+  margin: 0;
+}
+
+/* Blog article */
+.post-title {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  line-height: 1.1;
+  max-width: 880px;
+}
+
+.post-crumbs {
+  font-size: .85rem;
+  color: #a1a1a8;
+}
+
+.post-crumbs a {
+  color: #d4d4d8;
+  text-decoration: none;
+}
+
+.post-crumbs a:hover {
+  color: #fff;
+}
+
+.post-crumbs span {
+  margin: 0 .5rem;
+}
+
+.post-crumbs span:last-child {
+  margin: 0;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+  color: #bdbdc4;
+  font-size: .9rem;
+}
+
+.post-meta i {
+  color: #d9758a;
+  margin-right: .3rem;
+}
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #2b2b30;
+  overflow-wrap: anywhere;
+}
+
+.post-content .post-lead {
+  font-size: 1.2rem;
+  color: var(--ow-grey);
+  font-weight: 500;
+  border-left: 4px solid var(--ow-burgundy);
+  padding-left: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.post-content h2 {
+  font-size: 1.5rem;
+  margin: 2.25rem 0 .75rem;
+}
+
+.post-content h3 {
+  font-size: 1.2rem;
+  margin: 1.75rem 0 .5rem;
+}
+
+.post-content ul,
+.post-content ol {
+  padding-left: 1.25rem;
+}
+
+.post-content li {
+  margin-bottom: .4rem;
+}
+
+.post-content blockquote {
+  border-left: 4px solid var(--ow-burgundy);
+  padding: .25rem 0 .25rem 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+.post-share {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ow-border);
+}
+
+.post-share a,
+.post-share button {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  min-width: 42px;
+  height: 42px;
+  justify-content: center;
+  padding: 0 .8rem;
+  background: var(--ow-black);
+  color: #fff;
+  border: 0;
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 600;
+  transition: background .2s;
+}
+
+.post-share a:hover,
+.post-share button:hover {
+  background: var(--ow-burgundy);
+  color: #fff;
+}
+
+.post-side {
+  position: sticky;
+  top: calc(var(--ow-nav-h) + 20px);
+}
+
+.side-title {
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .8rem;
+  color: var(--ow-grey);
+  margin-bottom: .75rem;
+}
+
+.related-item {
+  display: block;
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--ow-border);
+  text-decoration: none;
+  color: var(--ow-black);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.related-item small {
+  display: block;
+  color: var(--ow-burgundy);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: .15rem;
+}
+
+.related-item:hover span {
+  color: var(--ow-burgundy);
+}
+
+@media (max-width: 991px) {
+  .post-side {
+    position: static;
+  }
+}
+
+/* ==========================================================
+   v5 additions: article hero image, related, contact form labels
+   ========================================================== */
+.post-hero {
+  padding-bottom: 6.5rem;
+}
+
+.post-figure-wrap {
+  position: relative;
+  z-index: 2;
+  margin-top: -4rem;
+}
+
+.post-figure {
+  margin: 0;
+  background: var(--ow-black);
+  border-top: 4px solid var(--ow-burgundy);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, .25);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.post-section {
+  padding-top: 3rem;
+}
+
+.post-service {
+  margin: 2rem 0 0;
+  padding: 1rem 1.25rem;
+  background: var(--ow-grey-light);
+  border-left: 4px solid var(--ow-burgundy);
+  font-size: .95rem;
+  color: var(--ow-grey);
+}
+
+.post-service i {
+  color: var(--ow-burgundy);
+  margin-right: .35rem;
+}
+
+.post-service a {
+  font-weight: 700;
+}
+
+.contact-form .form-label {
+  font-weight: 600;
+  font-size: .85rem;
+  margin-bottom: .35rem;
+}
+
+.contact-form .req {
+  color: var(--ow-burgundy);
+}
+
+.contact-form .opt {
+  color: var(--ow-grey);
+  font-weight: 400;
+}
+
+.form-note {
+  color: var(--ow-grey);
+  font-size: .85rem;
+}
+
+.form-note i {
+  color: var(--ow-burgundy);
+  margin-right: .25rem;
+}
+
+@media (max-width: 575px) {
+  .post-hero {
+    padding-bottom: 5rem;
+  }
+
+  .post-figure-wrap {
+    margin-top: -3rem;
+  }
 }

@@ -1,0 +1,302 @@
+{
+  "posts": [
+    {
+      "slug": "wireframes-vs-prototypes",
+      "title": "Wireframes vs Prototypes: What They Are and When You Need Each",
+      "excerpt": "Wireframes and prototypes are often mixed up, yet they solve different problems. Learn what each one does and how they work together in UI/UX design.",
+      "category": "UI/UX & Graphic Design",
+      "image": "blog/wireframes-vs-prototypes.jpg",
+      "date": "2026-10-14",
+      "author": "OrbitWick Team",
+      "tags": ["wireframes", "prototypes", "UI/UX design", "Figma"],
+      "service": { "name": "UI/UX & Graphic Design", "href": "services.html#design" },
+      "content": [
+        { "type": "p", "text": "Before a single line of code is written, good products are planned visually. Two of the most useful planning tools are wireframes and prototypes. They are related, but they answer different questions, and knowing the difference helps you review design work with confidence." },
+        { "type": "h2", "text": "What is a wireframe?" },
+        { "type": "p", "text": "A wireframe is a simple, low-detail layout of a page or screen. It shows where content and features sit, such as the navigation, headings, images, forms and buttons, without colours, final fonts or imagery. Think of it as the floor plan of a building." },
+        { "type": "p", "text": "Wireframes answer structural questions. Is the most important content easy to find? Does the page flow in a logical order? Are there too many options competing for attention? Because they are quick to change, they are the cheapest place to fix problems." },
+        { "type": "h2", "text": "What is a prototype?" },
+        { "type": "p", "text": "A prototype is an interactive model of the product. Tapping a button opens the next screen, a menu expands, a form moves to its next step. Prototypes are usually built from polished designs in a tool such as Figma, so they look and feel close to the finished product without needing a developer." },
+        { "type": "p", "text": "Prototypes answer experience questions. Can a new visitor complete the task without help? Does the journey feel natural? Where do people hesitate? Testing a prototype with real users reveals issues that static pages hide." },
+        { "type": "h2", "text": "How they work together" },
+        { "type": "ul", "items": [
+          "Start with wireframes to agree on structure and priorities.",
+          "Move to visual design to apply brand colours, type and imagery.",
+          "Build a clickable prototype to test the journey.",
+          "Refine, then hand the Figma files to developers with clear specifications."
+        ] },
+        { "type": "h2", "text": "Why this saves money" },
+        { "type": "p", "text": "Changing a layout in a wireframe takes minutes. Changing it after development can take days. Investing in wireframes and prototypes up front reduces rework, keeps stakeholders aligned and gives developers a clear target." },
+        { "type": "p", "text": "This is why our design process always includes wireframes, a clickable prototype and organised Figma files ready for developer handoff." }
+      ]
+    },
+    {
+      "slug": "brand-identity-basics",
+      "title": "What a Basic Brand Identity Includes (and Why a Logo Is Only the Start)",
+      "excerpt": "A logo is one piece of a brand. Here are the core elements of a basic brand identity and how they keep your business looking consistent everywhere.",
+      "category": "UI/UX & Graphic Design",
+      "image": "blog/brand-identity-basics.jpg",
+      "date": "2026-10-07",
+      "author": "OrbitWick Team",
+      "tags": ["logo design", "brand identity", "branding", "graphic design"],
+      "service": { "name": "UI/UX & Graphic Design", "href": "services.html#design" },
+      "content": [
+        { "type": "p", "text": "Many businesses start with a logo and stop there. A logo matters, but customers recognise a brand through many small, repeated signals: colour, typography, spacing, tone and the way everything fits together. A basic brand identity pulls these into one simple system." },
+        { "type": "h2", "text": "The logo" },
+        { "type": "p", "text": "A strong logo is simple, memorable and works at any size, from a browser tab to a printed banner. A good logo package includes versions for light and dark backgrounds, a compact icon version for small spaces and files in the formats you will need for web and print." },
+        { "type": "h2", "text": "Colour palette" },
+        { "type": "p", "text": "A small, deliberate palette is easier to apply consistently than a long list of colours. A typical set has a primary brand colour, one or two supporting colours and neutrals for text and backgrounds. Defining exact values for each avoids slightly different shades creeping in over time." },
+        { "type": "h2", "text": "Typography" },
+        { "type": "p", "text": "Choosing one font family for headings and one for body text, with clear sizes and weights, gives every page a recognisable voice. Typography is also one of the biggest factors in readability." },
+        { "type": "h2", "text": "Usage guidelines" },
+        { "type": "p", "text": "A short guide explains how to use the logo, how much space to leave around it, which colour combinations to avoid and what the brand should never look like. Guidelines are what keep your identity consistent when different people, such as designers, printers and agencies, work with it." },
+        { "type": "h2", "text": "Where it shows up" },
+        { "type": "ul", "items": [
+          "Your website and mobile app interfaces",
+          "Social media profiles and posts",
+          "Business cards, letterheads and invoices",
+          "Presentations, proposals and marketing material"
+        ] },
+        { "type": "p", "text": "A basic identity does not need to be complicated. It needs to be clear, documented and easy to apply, so your business looks the same wherever customers meet it." }
+      ]
+    },
+    {
+      "slug": "rest-api-basics",
+      "title": "REST APIs Explained: How Your Website and Apps Talk to Your Data",
+      "excerpt": "REST APIs connect front-ends, mobile apps and databases. This plain-language guide covers how they work and what makes one well designed.",
+      "category": "Full-Stack Development",
+      "image": "blog/rest-api-basics.jpg",
+      "date": "2026-09-30",
+      "author": "OrbitWick Team",
+      "tags": ["REST API", "backend development", "integration", "web development"],
+      "service": { "name": "Full-Stack Web Development", "href": "services.html#development" },
+      "content": [
+        { "type": "p", "text": "Behind most modern websites and apps sits an API, short for application programming interface. It is the messenger that lets the part users see, the front end, request and update information stored on the server. REST is the most common style for building these interfaces." },
+        { "type": "h2", "text": "How a REST API works" },
+        { "type": "p", "text": "A REST API exposes resources, such as products, customers or orders, at clear addresses called endpoints. The client uses standard HTTP methods to work with them." },
+        { "type": "ul", "items": [
+          "GET retrieves data, for example a list of orders.",
+          "POST creates something new, such as a new customer.",
+          "PUT or PATCH updates an existing record.",
+          "DELETE removes a record."
+        ] },
+        { "type": "p", "text": "The server replies with data, usually in JSON, along with a status code that says whether the request succeeded or failed." },
+        { "type": "h2", "text": "Why businesses rely on APIs" },
+        { "type": "p", "text": "One API can serve a website, an Android app, an iOS app and an internal dashboard at the same time. It also allows your system to connect to payment providers, shipping services, accounting tools and other third parties without rebuilding anything." },
+        { "type": "h2", "text": "What good API design looks like" },
+        { "type": "ul", "items": [
+          "Consistent, predictable endpoint names",
+          "Proper authentication and permission checks on every request",
+          "Clear error messages and correct status codes",
+          "Input validation to protect your database",
+          "Versioning, so updates do not break existing apps",
+          "Documentation that other developers can follow"
+        ] },
+        { "type": "h2", "text": "Security and performance" },
+        { "type": "p", "text": "APIs are a common target, so they should limit request rates, validate every input and expose only the data a user is allowed to see. Efficient database queries and sensible caching keep responses fast as your data grows." },
+        { "type": "p", "text": "Whether you need a new API for a custom application or integration with existing services, a clean REST design makes everything built on top of it easier to maintain." }
+      ]
+    },
+    {
+      "slug": "authentication-and-user-roles",
+      "title": "Authentication and User Roles: Controlling Who Can Do What in Your App",
+      "excerpt": "Logins and permissions protect your data and shape the user experience. Learn the difference between authentication and authorisation and how roles work.",
+      "category": "Full-Stack Development",
+      "image": "blog/authentication-and-user-roles.jpg",
+      "date": "2026-09-22",
+      "author": "OrbitWick Team",
+      "tags": ["authentication", "user roles", "access control", "web applications"],
+      "service": { "name": "Full-Stack Web Development", "href": "services.html#development" },
+      "content": [
+        { "type": "p", "text": "Any web application with user accounts needs to answer two questions: who is this person, and what are they allowed to do? These are two separate problems, called authentication and authorisation, and getting both right is central to a safe, usable product." },
+        { "type": "h2", "text": "Authentication: proving who you are" },
+        { "type": "p", "text": "Authentication verifies identity. The familiar method is an email and password, but strong systems add layers: multi-factor authentication, login attempt limits, secure password storage using modern hashing, and session handling that expires and can be revoked. Some applications also offer sign-in with an existing account from a trusted provider." },
+        { "type": "h2", "text": "Authorisation: deciding what you can do" },
+        { "type": "p", "text": "Once a user is signed in, authorisation decides what they can see and change. A common approach is role-based access control, where permissions are grouped into roles." },
+        { "type": "ul", "items": [
+          "Customer: view their own orders and profile.",
+          "Staff: manage orders and respond to enquiries.",
+          "Manager: view reports and manage staff accounts.",
+          "Administrator: configure the whole system."
+        ] },
+        { "type": "h2", "text": "Principle of least privilege" },
+        { "type": "p", "text": "Each role should have only the access it needs. If a mistake or a compromised account occurs, limited permissions limit the damage. Checks must also happen on the server for every request, not only by hiding buttons in the interface." },
+        { "type": "h2", "text": "Dashboards and admin panels" },
+        { "type": "p", "text": "Roles are what make dashboards useful. A sales team sees sales figures, finance sees invoices and administrators see settings, all from the same application. Planning roles early keeps the system flexible as your team and features grow." },
+        { "type": "p", "text": "When we build custom applications, authentication and user roles are designed in from the start, because adding them later is slower and riskier." }
+      ]
+    },
+    {
+      "slug": "shopify-vs-woocommerce",
+      "title": "Shopify vs WooCommerce: Choosing the Right Platform for Your Online Store",
+      "excerpt": "Both platforms can power a successful store. Compare cost, control, maintenance and growth to find the one that matches your business.",
+      "category": "CMS & E-commerce",
+      "image": "blog/shopify-vs-woocommerce.jpg",
+      "date": "2026-09-15",
+      "author": "OrbitWick Team",
+      "tags": ["Shopify", "WooCommerce", "e-commerce", "online store"],
+      "service": { "name": "CMS & E-commerce Development", "href": "services.html#cms" },
+      "content": [
+        { "type": "p", "text": "Shopify and WooCommerce are two of the most popular ways to run an online store. They can both sell products, accept payments and manage orders, but they take different approaches. Understanding the trade-offs avoids an expensive platform switch later." },
+        { "type": "h2", "text": "Shopify: managed and straightforward" },
+        { "type": "p", "text": "Shopify is a hosted platform. Hosting, security updates, checkout and core features are handled for you, so you can launch quickly and focus on products and marketing. Themes and apps extend it. The trade-offs are monthly fees, transaction costs on some payment setups and less freedom to change deep behaviour." },
+        { "type": "h2", "text": "WooCommerce: flexible and customisable" },
+        { "type": "p", "text": "WooCommerce is a plugin for WordPress. You host it yourself, which gives you more control over design, data and functionality, and it pairs naturally with content marketing and blogging. In return, you or your developer are responsible for hosting, updates, backups and security." },
+        { "type": "h2", "text": "Key differences at a glance" },
+        { "type": "ul", "items": [
+          "Setup speed: Shopify is usually faster to launch.",
+          "Customisation: WooCommerce offers more freedom.",
+          "Maintenance: Shopify handles most of it; WooCommerce needs a plan.",
+          "Content and SEO: WordPress gives WooCommerce strong publishing tools.",
+          "Costs: Shopify is predictable; WooCommerce varies with hosting and extensions."
+        ] },
+        { "type": "h2", "text": "How to choose" },
+        { "type": "p", "text": "If you want a reliable store with minimal technical upkeep, Shopify is often the better fit. If you need custom features, deep control or already run a WordPress site, WooCommerce may suit you better. Either way, a well-built store needs clean product structure, fast pages, a simple checkout and careful plugin or app choices." },
+        { "type": "p", "text": "We build and set up both, and can recommend the right one after learning how you sell." }
+      ]
+    },
+    {
+      "slug": "security-audit-vs-vulnerability-assessment",
+      "title": "Security Audit vs Vulnerability Assessment: What Is the Difference?",
+      "excerpt": "The two terms are often used interchangeably. Here is what each one covers, what you receive at the end and how they lead to remediation.",
+      "category": "Cybersecurity",
+      "image": "data/blog/security-audit-vs-vulnerability-assessment.jpg",
+      "date": "2026-09-08",
+      "author": "OrbitWick Team",
+      "tags": ["security audit", "vulnerability assessment", "website security", "remediation"],
+      "service": { "name": "Cybersecurity Services", "href": "services.html#security" },
+      "content": [
+        { "type": "p", "text": "If you are planning to improve your website's security, you will quickly meet two terms: security audit and vulnerability assessment. They overlap, yet they are not the same, and knowing the difference helps you ask for the right service." },
+        { "type": "h2", "text": "What a vulnerability assessment does" },
+        { "type": "p", "text": "A vulnerability assessment looks for known weaknesses in your website or application. It combines automated scanning with manual checks to find issues such as outdated components, insecure forms, exposed files and missing protections. The result is a prioritised list of findings, ranked by how serious each one is." },
+        { "type": "h2", "text": "What a security audit does" },
+        { "type": "p", "text": "A security audit is broader. It reviews how your site is configured and managed against good-practice standards. Beyond technical flaws, it considers access controls, server and hosting settings, backup arrangements, how updates are handled and whether sensible policies exist." },
+        { "type": "h2", "text": "Side by side" },
+        { "type": "ul", "items": [
+          "Assessment: focuses on finding technical weaknesses.",
+          "Audit: reviews configuration, processes and overall posture.",
+          "Assessment output: ranked list of vulnerabilities.",
+          "Audit output: findings plus recommendations on controls and practices."
+        ] },
+        { "type": "h2", "text": "From findings to fixes" },
+        { "type": "p", "text": "A report is only useful if something happens afterwards. The next steps are security hardening, which tightens settings and removes unnecessary exposure, secure configuration of servers and applications, and remediation, which fixes the specific vulnerabilities found. Re-testing confirms the fixes worked." },
+        { "type": "h2", "text": "When to schedule one" },
+        { "type": "p", "text": "Before launching a new site or app, after major changes, and at least once a year for any site that handles customer data or payments. If you are unsure which you need, we can scope it with you and explain every finding in plain language." }
+      ]
+    },
+    {
+      "slug": "website-backups-explained",
+      "title": "Website Backups Explained: What to Back Up, How Often and Where to Store It",
+      "excerpt": "A reliable backup is the difference between a quick recovery and a lost site. Learn the basics of frequency, storage and restore testing.",
+      "category": "Management & Maintenance",
+      "image": "blog/website-backups-explained.jpg",
+      "date": "2026-08-31",
+      "author": "OrbitWick Team",
+      "tags": ["website backups", "disaster recovery", "website maintenance"],
+      "service": { "name": "Website Management & Maintenance", "href": "services.html#maintenance" },
+      "content": [
+        { "type": "p", "text": "Websites fail for many reasons: a faulty update, a hacked account, a server problem or a simple human mistake. Whatever the cause, a recent backup lets you get back online quickly. Here is how to think about backups properly." },
+        { "type": "h2", "text": "What needs to be backed up" },
+        { "type": "ul", "items": [
+          "Website files, including themes, plugins and uploads",
+          "The database, which holds pages, products, orders and users",
+          "Configuration files and environment settings",
+          "Email and DNS settings, where they are managed with the site"
+        ] },
+        { "type": "h2", "text": "How often?" },
+        { "type": "p", "text": "The right schedule depends on how often your content changes. A brochure site that rarely changes may be fine with weekly backups. A store or a site with user activity should back up the database daily or even more often, because losing a day of orders is costly." },
+        { "type": "h2", "text": "Where to store backups" },
+        { "type": "p", "text": "Keep at least one copy away from your main server. If backups sit on the same server and that server fails or is compromised, you lose both. A common approach is to keep several recent versions in separate cloud storage, so you can roll back to a point before a problem began." },
+        { "type": "h2", "text": "Test your restores" },
+        { "type": "p", "text": "A backup that has never been restored is an assumption, not a safeguard. Regular restore tests confirm the files are complete, show how long recovery takes and reveal gaps before an emergency does." },
+        { "type": "h2", "text": "Part of ongoing care" },
+        { "type": "p", "text": "Backups work best alongside software updates, security monitoring and technical support. Our maintenance plans include regular backups so recovery is routine rather than a crisis." }
+      ]
+    },
+    {
+      "slug": "core-web-vitals-explained",
+      "title": "Core Web Vitals Explained: Measuring Website Speed and Experience",
+      "excerpt": "Core Web Vitals are Google's measures of loading, interactivity and visual stability. Learn what they mean and how performance monitoring improves them.",
+      "category": "Management & Maintenance",
+      "image": "blog/core-web-vitals-explained.jpg",
+      "date": "2026-08-24",
+      "author": "OrbitWick Team",
+      "tags": ["Core Web Vitals", "website performance", "page speed", "monitoring"],
+      "service": { "name": "Website Management & Maintenance", "href": "services.html#maintenance" },
+      "content": [
+        { "type": "p", "text": "Visitors judge a website within seconds. If a page loads slowly, jumps around while loading or ignores taps, they leave. Core Web Vitals are a set of measurements that capture these experiences, and they are one of the signals search engines consider." },
+        { "type": "h2", "text": "The three measurements" },
+        { "type": "ul", "items": [
+          "Largest Contentful Paint (LCP): how quickly the main content appears.",
+          "Interaction to Next Paint (INP): how quickly the page responds when someone taps or clicks.",
+          "Cumulative Layout Shift (CLS): how much the layout moves unexpectedly while loading."
+        ] },
+        { "type": "h2", "text": "What usually causes poor scores" },
+        { "type": "p", "text": "The common causes are oversized images, too many scripts, heavy plugins, slow hosting, missing caching and elements that load without reserved space, which makes the page jump. Fixes are often practical: compress and properly size images, load scripts only where needed, enable caching and set dimensions for media." },
+        { "type": "h2", "text": "Why monitoring matters" },
+        { "type": "p", "text": "Performance is not a one-time task. A new plugin, a large image or a software update can quietly slow a site down. Ongoing performance monitoring tracks load times and uptime, alerts you to problems and shows trends over time." },
+        { "type": "h2", "text": "Benefits beyond search" },
+        { "type": "p", "text": "A fast, stable site keeps visitors engaged, supports better conversion on forms and checkouts and feels more trustworthy. Improving speed is one of the most cost-effective upgrades a business can make." },
+        { "type": "p", "text": "Performance monitoring and optimisation are part of our maintenance plans, so your site stays quick as it grows." }
+      ]
+    },
+    {
+      "slug": "native-vs-cross-platform-mobile-apps",
+      "title": "Native or Cross-Platform: Choosing the Right Approach for Your Mobile App",
+      "excerpt": "Android, iOS or both? Compare native and cross-platform mobile development to decide before you commit your budget.",
+      "category": "Mobile App Development",
+      "image": "blog/native-vs-cross-platform-mobile-apps.jpg",
+      "date": "2026-08-17",
+      "author": "OrbitWick Team",
+      "tags": ["mobile app development", "Android", "iOS", "cross-platform"],
+      "service": { "name": "Mobile App Development", "href": "services.html#mobile" },
+      "content": [
+        { "type": "p", "text": "One of the first decisions in any mobile project is how the app will be built. The choice affects cost, timeline, performance and how easy the app is to maintain. There is no universal answer, but there is usually a right answer for your situation." },
+        { "type": "h2", "text": "Native development" },
+        { "type": "p", "text": "Native apps are written separately for Android and iOS using each platform's own tools. They offer the best access to device features, the smoothest performance and the closest match to each platform's design conventions. The trade-off is maintaining two codebases, which generally means more time and budget." },
+        { "type": "h2", "text": "Cross-platform development" },
+        { "type": "p", "text": "Cross-platform frameworks let one codebase produce apps for both Android and iOS. This usually shortens delivery and makes updates simpler, because a fix or feature is built once. Modern frameworks perform well for most business apps, though very graphics-heavy or hardware-intensive apps can still benefit from native code." },
+        { "type": "h2", "text": "How to decide" },
+        { "type": "ul", "items": [
+          "Tight budget and timeline, both platforms needed: cross-platform is often the better fit.",
+          "Advanced device features or top-tier performance: consider native.",
+          "Audience concentrated on one platform: start with that platform only.",
+          "Frequent updates expected: a shared codebase reduces effort."
+        ] },
+        { "type": "h2", "text": "Do not skip design and backend planning" },
+        { "type": "p", "text": "Whichever route you choose, results depend on solid mobile UI/UX design and prototyping, a clean API and backend integration, and a plan for maintenance after launch. App stores update their requirements regularly, so ongoing updates are part of owning an app, not an optional extra." }
+      ]
+    },
+    {
+      "slug": "website-revamp-and-seo",
+      "title": "How a Website Revamp Can Protect and Improve Your SEO",
+      "excerpt": "A redesign can boost rankings or damage them. See how to keep what already works, improve what does not and avoid common SEO mistakes.",
+      "category": "Website Revamp & Rebranding",
+      "image": "blog/website-revamp-and-seo.jpg",
+      "date": "2026-08-10",
+      "author": "OrbitWick Team",
+      "tags": ["website redesign", "SEO", "rebranding", "responsive design"],
+      "service": { "name": "Website Revamp & Rebranding", "href": "services.html#revamp" },
+      "content": [
+        { "type": "p", "text": "A revamp is a chance to improve both the look and the performance of your website. Handled carelessly, though, it can erase years of search visibility. The difference lies in planning the redesign with SEO in mind from the start." },
+        { "type": "h2", "text": "Start with what already works" },
+        { "type": "p", "text": "Before changing anything, review which pages bring traffic and enquiries today. These pages, their addresses and their key content deserve special care. A good revamp builds on existing strengths rather than discarding them." },
+        { "type": "h2", "text": "Protect your URLs" },
+        { "type": "p", "text": "If page addresses change, set up permanent redirects from each old address to its new equivalent. Without them, visitors land on error pages and search engines lose the link between old and new content." },
+        { "type": "h2", "text": "Improve structure and content" },
+        { "type": "ul", "items": [
+          "Clear page hierarchy with logical navigation",
+          "Descriptive titles, headings and meta descriptions",
+          "Content restructured so each page has one clear purpose",
+          "Image optimisation with useful alternative text",
+          "Internal links that connect related pages"
+        ] },
+        { "type": "h2", "text": "Responsive design and speed" },
+        { "type": "p", "text": "Search engines evaluate the mobile experience and page speed, so a responsive layout on phones and tablets and an optimised, fast-loading build are part of SEO, not separate from it." },
+        { "type": "h2", "text": "Rebranding without losing recognition" },
+        { "type": "p", "text": "If your colours, typography or logo are changing, keep the transition clear for returning customers. Update your name, logo and descriptions consistently across your website and online profiles." },
+        { "type": "p", "text": "After launch, monitor traffic and rankings, fix any broken links promptly and keep improving. A well-planned revamp gives you a modern site and a stronger search presence together." }
+      ]
+    }
+  ]
+}
