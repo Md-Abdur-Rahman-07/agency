@@ -393,6 +393,7 @@ section {
   background: var(--ow-black);
   color: #fff;
 }
+
 .contact-group {
   margin-bottom: 1.75rem;
 }
@@ -412,6 +413,7 @@ section {
   font-size: .95rem;
   overflow-wrap: anywhere;
 }
+
 /* Footer */
 footer {
   background: var(--ow-black);
@@ -619,13 +621,14 @@ body {
 }
 
 .ow-nav .navbar-brand img {
-  height: 70px;
+  margin:10px 0;
+  height: 60px;
   width: auto;
   display: block;
 }
 
 footer .brand img {
-  height: 80px;
+  height: 50px;
   width: auto;
   display: block;
 }
@@ -795,7 +798,17 @@ a.service-card {
   }
 }
 
+@media (max-width: 767px) {
+  .ow-nav .navbar-brand img {
+    height: 50px;
+  }
+
+}
+
 @media (max-width: 575px) {
+   .ow-nav .navbar-brand img {
+    height: 40px;
+  }
   .story-steps {
     grid-template-columns: 1fr;
   }
