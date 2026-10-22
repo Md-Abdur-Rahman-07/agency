@@ -1,301 +1,596 @@
 {
   "posts": [
     {
-      "slug": "wireframes-vs-prototypes",
-      "title": "Wireframes vs Prototypes: What They Are and When You Need Each",
-      "excerpt": "Wireframes and prototypes are often mixed up, yet they solve different problems. Learn what each one does and how they work together in UI/UX design.",
-      "category": "UI/UX & Graphic Design",
-      "image": "blog/wireframes-vs-prototypes.jpg",
-      "date": "2026-10-14",
-      "author": "OrbitWick Team",
-      "tags": ["wireframes", "prototypes", "UI/UX design", "Figma"],
-      "service": { "name": "UI/UX & Graphic Design", "href": "services.html#design" },
+      "slug": "best-tech-stack-for-startups-mern-vs-nextjs-vs-wordpress",
+      "title": "Best Tech Stack for Your Startup Website: MERN vs Next.js vs WordPress",
+      "excerpt": "Not sure whether to build your startup website with MERN, Next.js or WordPress? Compare cost, speed, scalability and SEO to pick the right stack.",
+      "category": "Web Development",
+      "image": "data/blog/best-tech-stack-for-startups-mern-vs-nextjs-vs-wordpress.png",
+      "date": "2026-10-22",
+      "author": "Borhan U.",
+      "tags": [
+        "MERN stack",
+        "Next.js",
+        "WordPress",
+        "startup website",
+        "Full Stack Web Development"
+      ],
+      "service": {
+        "name": "Full Stack Web Development",
+        "href": "services.html#web"
+      },
       "content": [
-        { "type": "p", "text": "Before a single line of code is written, good products are planned visually. Two of the most useful planning tools are wireframes and prototypes. They are related, but they answer different questions, and knowing the difference helps you review design work with confidence." },
-        { "type": "h2", "text": "What is a wireframe?" },
-        { "type": "p", "text": "A wireframe is a simple, low-detail layout of a page or screen. It shows where content and features sit, such as the navigation, headings, images, forms and buttons, without colours, final fonts or imagery. Think of it as the floor plan of a building." },
-        { "type": "p", "text": "Wireframes answer structural questions. Is the most important content easy to find? Does the page flow in a logical order? Are there too many options competing for attention? Because they are quick to change, they are the cheapest place to fix problems." },
-        { "type": "h2", "text": "What is a prototype?" },
-        { "type": "p", "text": "A prototype is an interactive model of the product. Tapping a button opens the next screen, a menu expands, a form moves to its next step. Prototypes are usually built from polished designs in a tool such as Figma, so they look and feel close to the finished product without needing a developer." },
-        { "type": "p", "text": "Prototypes answer experience questions. Can a new visitor complete the task without help? Does the journey feel natural? Where do people hesitate? Testing a prototype with real users reveals issues that static pages hide." },
-        { "type": "h2", "text": "How they work together" },
-        { "type": "ul", "items": [
-          "Start with wireframes to agree on structure and priorities.",
-          "Move to visual design to apply brand colours, type and imagery.",
-          "Build a clickable prototype to test the journey.",
-          "Refine, then hand the Figma files to developers with clear specifications."
-        ] },
-        { "type": "h2", "text": "Why this saves money" },
-        { "type": "p", "text": "Changing a layout in a wireframe takes minutes. Changing it after development can take days. Investing in wireframes and prototypes up front reduces rework, keeps stakeholders aligned and gives developers a clear target." },
-        { "type": "p", "text": "This is why our design process always includes wireframes, a clickable prototype and organised Figma files ready for developer handoff." }
+        {
+          "type": "p",
+          "text": "Once a startup decides to enter the market, one of the first big questions is how to build its digital footprint. Your website is your shop window, your sales agent and often your first impression. Choose the wrong technology and you may pay for it later with slow pages, high maintenance bills or a painful rebuild."
+        },
+        {
+          "type": "p",
+          "text": "If you are asking what the best tech stack for a startup website is, this guide will help you decide. We compare MERN, Next.js and WordPress in plain language so you can choose with confidence."
+        },
+        {
+          "type": "h2",
+          "text": "Quick overview of the three options"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "MERN stands for MongoDB, Express.js, React and Node.js. It is a full JavaScript stack that gives you complete control over the frontend and the backend, which makes it ideal for custom web applications.",
+            "Next.js is a React framework that supports server side rendering and static generation. It is known for speed, strong SEO and flexibility, and it suits marketing sites and full applications alike.",
+            "WordPress is a content management system that powers a huge share of the web. It is fast to launch, easy to manage and backed by thousands of themes and plugins."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Four questions to ask before you choose"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "What is your business for and how big is it?",
+            "What type of content will your site have?",
+            "How many users may visit?",
+            "How much are you willing to invest?"
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "1. Your business type and size"
+        },
+        {
+          "type": "p",
+          "text": "Imagine you run a consultancy in your local area and most of your work happens offline. You need a clean website that explains your services, builds trust and brings in enquiries. WordPress is usually the most practical choice here because it is quick to launch, cheap to run and easy for a non technical team to update. A Next.js marketing site is a great option too if you want top speed and a more custom design."
+        },
+        {
+          "type": "p",
+          "text": "Now imagine a large shop or retail company that needs an ecommerce website where customers browse, pay, track orders and manage accounts. WordPress with WooCommerce works well for small and medium stores. For a large catalogue, custom pricing rules, multi vendor features or complex integrations, Next.js with a custom backend or a MERN application gives you far more control and room to grow."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Small business with mostly informational needs: WordPress or Next.js",
+            "Growing online business with custom features: Next.js",
+            "Software product, marketplace or platform: MERN or Next.js with a Node backend"
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "2. What types of content will your site have?"
+        },
+        {
+          "type": "p",
+          "text": "Static content such as Home, About, Services and Contact pages rarely changes. WordPress and Next.js both handle this very well. Next.js can pre-build these pages, which makes them load extremely fast and helps your Google rankings."
+        },
+        {
+          "type": "p",
+          "text": "If your team publishes blog posts often, WordPress has the friendliest editor and the best out of the box SEO tools. Next.js can do the same when paired with a headless CMS, though it needs more setup."
+        },
+        {
+          "type": "p",
+          "text": "Highly dynamic content such as dashboards, user accounts, live data, chat, bookings and personalised feeds needs a proper application. This is where MERN and Next.js shine. WordPress can stretch to cover some of it with plugins, but too many plugins slow your site and increase security risk."
+        },
+        {
+          "type": "h2",
+          "text": "3. How many users may visit?"
+        },
+        {
+          "type": "p",
+          "text": "Traffic matters because the stack you pick decides how easily you can grow."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "WordPress handles low to medium traffic well. At higher traffic it needs caching, a CDN, optimised hosting and careful plugin management. It can scale, but it takes effort and budget.",
+            "Next.js is excellent for scale. Static pages can be served from a CDN around the world, which keeps your site fast even when traffic spikes.",
+            "MERN uses Node.js to handle many concurrent connections efficiently and MongoDB to scale horizontally. It suits applications with many active users, provided the architecture is designed well from day one."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "In short, Next.js usually leads for the balance of speed, SEO and scalability. MERN is a proven choice for heavy application workloads. WordPress is perfectly fine for small to medium traffic."
+        },
+        {
+          "type": "h2",
+          "text": "4. How much are you willing to invest?"
+        },
+        {
+          "type": "p",
+          "text": "Your cost is more than the build. Think about hosting, a domain, security, updates, backups and ongoing maintenance. Real costs vary by project, so treat the levels below as general guidance."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Low budget: WordPress on shared hosting or cPanel with premium themes and plugins. Delivery is quick, but you must watch plugin updates, security patches and vulnerability risks.",
+            "Medium budget: Next.js in static or hybrid mode on modern hosting or a small VPS. You get a custom design with better speed and SEO, but you need a developer for changes.",
+            "High budget: MERN or a full custom Next.js build on cloud infrastructure with databases, APIs, monitoring, DevOps and regular developer support. The cost is higher and so is the control."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Hidden costs to remember:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "WordPress: premium plugin licences, security tools, frequent updates and cleanup after hacks",
+            "Next.js and MERN: developer time, cloud and database costs and monitoring",
+            "All stacks: backups, SSL, uptime monitoring and performance tuning"
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Which stack for which type of website?"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Company portfolio: WordPress or Next.js. WordPress is the cheapest and fastest to launch while Next.js gives better performance and a more unique design.",
+            "Ecommerce store: WordPress with WooCommerce for small stores, Next.js with a headless commerce backend for growing brands and MERN for custom marketplaces. Speed directly affects sales, so performance matters here.",
+            "LMS: MERN or Next.js with a Node backend for a custom platform with user roles, video, quizzes, progress tracking and payments. WordPress with an LMS plugin works for a simple course site with a small student base.",
+            "Real estate website: Next.js. Property listings need fast search, filters, maps and strong SEO for local keywords. WordPress can work for a small agency with few listings.",
+            "SaaS or web application: MERN or Next.js. You need custom logic, authentication, dashboards and APIs, which these stacks are built for."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Frequently asked questions"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Is WordPress good for startups? Yes, when you need to launch quickly on a limited budget. It becomes harder to manage when you need heavy customisation or high performance at scale.",
+            "Is Next.js better than WordPress for SEO? Next.js can deliver faster pages and cleaner code, which supports better Core Web Vitals. WordPress has excellent SEO plugins and is easy to optimise. Both can rank very well when set up properly.",
+            "Is MERN good for a startup website? It is great for web apps and platforms. For a simple marketing site it is often more than you need.",
+            "Can I switch from WordPress to Next.js later? Yes. Many businesses start with WordPress and migrate later. Planning for it early saves time and money."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Our final advice"
+        },
+        {
+          "type": "p",
+          "text": "There is no single best stack for every startup. Choose WordPress when you need speed to market and a low budget. Choose Next.js when performance, SEO and scalability matter most. Choose MERN when you are building a custom platform or application. The smartest approach is to match the technology to your business goals today while leaving room for growth tomorrow."
+        },
+        {
+          "type": "h2",
+          "text": "Why choose OrbitWick for your startup website?"
+        },
+        {
+          "type": "p",
+          "text": "At OrbitWick we handle everything from scratch to deployment, so you get the best performance at the lowest sensible cost. We do not push a stack because it is trendy. We recommend the one that fits your business."
+        },
+        {
+          "type": "p",
+          "text": "Our services include:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Website strategy and tech stack consulting",
+            "UI and UX design",
+            "WordPress development and customisation",
+            "Next.js website development",
+            "MERN stack web application development",
+            "Ecommerce development",
+            "LMS and real estate platform development",
+            "Hosting, VPS and cPanel setup and deployment",
+            "Security hardening, maintenance and support",
+            "Migration from WordPress to Next.js or other stacks"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Why hire us:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "End to end delivery from idea to launch",
+            "Honest advice based on your budget and goals",
+            "Performance and SEO built in from day one",
+            "Clean scalable code that your business can grow with",
+            "Transparent pricing with no hidden surprises",
+            "Ongoing support after deployment"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Ready to build a website that works as hard as you do? Let us talk about your project."
+        },
+        {
+          "type": "p",
+          "text": "Email: contact.orbitwick@gmail.com"
+        }
       ]
     },
     {
-      "slug": "brand-identity-basics",
-      "title": "What a Basic Brand Identity Includes (and Why a Logo Is Only the Start)",
-      "excerpt": "A logo is one piece of a brand. Here are the core elements of a basic brand identity and how they keep your business looking consistent everywhere.",
-      "category": "UI/UX & Graphic Design",
-      "image": "blog/brand-identity-basics.jpg",
-      "date": "2026-10-07",
+      "slug": "website-security-testing",
+      "title": "Website Security Testing: Risks, Process and Checklist",
+      "excerpt": "Learn how website security testing uncovers hidden vulnerabilities, what a penetration test includes, and when to assess your business website.",
+      "category": "Cybersecurity & Penetration Testing",
+      "image": "data/blog/website-security-testing.png",
+      "date": "2026-10-20",
       "author": "OrbitWick Team",
-      "tags": ["logo design", "brand identity", "branding", "graphic design"],
-      "service": { "name": "UI/UX & Graphic Design", "href": "services.html#design" },
+      "tags": [
+        "website security testing",
+        "web application security",
+        "penetration testing",
+        "vulnerability assessment",
+        "website security checklist"
+      ],
+      "service": {
+        "name": "Web Application Security & Penetration Testing",
+        "href": "services.html#cybersecurity"
+      },
       "content": [
-        { "type": "p", "text": "Many businesses start with a logo and stop there. A logo matters, but customers recognise a brand through many small, repeated signals: colour, typography, spacing, tone and the way everything fits together. A basic brand identity pulls these into one simple system." },
-        { "type": "h2", "text": "The logo" },
-        { "type": "p", "text": "A strong logo is simple, memorable and works at any size, from a browser tab to a printed banner. A good logo package includes versions for light and dark backgrounds, a compact icon version for small spaces and files in the formats you will need for web and print." },
-        { "type": "h2", "text": "Colour palette" },
-        { "type": "p", "text": "A small, deliberate palette is easier to apply consistently than a long list of colours. A typical set has a primary brand colour, one or two supporting colours and neutrals for text and backgrounds. Defining exact values for each avoids slightly different shades creeping in over time." },
-        { "type": "h2", "text": "Typography" },
-        { "type": "p", "text": "Choosing one font family for headings and one for body text, with clear sizes and weights, gives every page a recognisable voice. Typography is also one of the biggest factors in readability." },
-        { "type": "h2", "text": "Usage guidelines" },
-        { "type": "p", "text": "A short guide explains how to use the logo, how much space to leave around it, which colour combinations to avoid and what the brand should never look like. Guidelines are what keep your identity consistent when different people, such as designers, printers and agencies, work with it." },
-        { "type": "h2", "text": "Where it shows up" },
-        { "type": "ul", "items": [
-          "Your website and mobile app interfaces",
-          "Social media profiles and posts",
-          "Business cards, letterheads and invoices",
-          "Presentations, proposals and marketing material"
-        ] },
-        { "type": "p", "text": "A basic identity does not need to be complicated. It needs to be clear, documented and easy to apply, so your business looks the same wherever customers meet it." }
+        {
+          "type": "p",
+          "text": "Your website loads quickly, forms work correctly and customers can complete purchases. But a website that works as expected can still contain security weaknesses. Website security testing examines whether your application protects its data, accounts and business functions when someone interacts with it in unexpected ways."
+        },
+        {
+          "type": "p",
+          "text": "For businesses, these weaknesses can affect customer trust, service availability and the confidentiality of sensitive information. Understanding what to test helps you make security part of your website's development and maintenance."
+        },
+        {
+          "type": "h2",
+          "text": "What is website security testing?"
+        },
+        {
+          "type": "p",
+          "text": "Website security testing is the assessment of a website and its supporting application components to identify vulnerabilities. Depending on the agreed scope, it can cover login systems, access permissions, forms, file uploads, sessions, APIs and deployment settings."
+        },
+        {
+          "type": "p",
+          "text": "The aim is to identify weaknesses, establish their potential impact and provide practical recommendations. A useful assessment explains what needs fixing, why it matters and how to verify the improvement."
+        },
+        {
+          "type": "h2",
+          "text": "Functional testing vs security testing"
+        },
+        {
+          "type": "p",
+          "text": "Functional testing checks whether features behave as intended. Security testing examines whether those features can be misused or accessed without the correct permissions. Both are necessary, but they answer different questions."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A functional test checks whether a customer can view an order. A security test checks whether they can access another customer's order.",
+            "A functional test checks whether a password reset email arrives. A security test examines whether the reset process protects the account.",
+            "A functional test checks whether a file uploads successfully. A security test examines whether the application rejects unsafe files and controls access to stored uploads."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Common website security risks"
+        },
+        {
+          "type": "p",
+          "text": "Security weaknesses can exist in application code, configuration and business workflows. The following areas deserve attention during a web application security assessment."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Broken access control: Users can view data or perform actions outside their permitted role.",
+            "Authentication and session weaknesses: Login, password recovery or session handling fails to protect user accounts adequately.",
+            "Injection vulnerabilities: Untrusted input changes how a backend command or query is interpreted.",
+            "Cross-site scripting: Unsafe handling of content allows unwanted scripts to run in a visitor's browser.",
+            "Unsafe file uploads: Uploaded files are insufficiently validated, stored or served.",
+            "Security misconfiguration: Debug information, unnecessary services or inappropriate settings expose the application.",
+            "Vulnerable dependencies: Outdated components introduce known weaknesses.",
+            "Business logic flaws: Application workflows allow actions that violate intended business rules."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Vulnerability assessment vs penetration testing"
+        },
+        {
+          "type": "p",
+          "text": "A vulnerability assessment identifies and prioritizes potential weaknesses. Penetration testing goes further by attempting to validate exploitable weaknesses within an agreed scope and demonstrate their impact. The activities can overlap, so the deliverables should be defined before testing starts."
+        },
+        {
+          "type": "p",
+          "text": "Automated scanning can support both approaches, but it does not replace examination of application-specific permissions and workflows. A scanner may detect a suspicious configuration without understanding how a customer account or approval process should behave."
+        },
+        {
+          "type": "h2",
+          "text": "What does a website security assessment include?"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Scope agreement: Define the website, environments, accounts, integrations and testing limits.",
+            "Application review: Understand important features, user roles and sensitive data flows.",
+            "Security testing: Assess relevant authentication, authorization, input handling, session management and configuration controls.",
+            "Finding validation: Confirm suspected weaknesses and record supporting evidence.",
+            "Risk prioritization: Explain the likely impact and conditions required for exploitation.",
+            "Remediation guidance: Recommend practical changes for the development or operations team.",
+            "Retesting: Check whether the implemented fixes address the reported issues."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Website security checklist for businesses"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Keep application frameworks, plugins and dependencies updated.",
+            "Use HTTPS and protect sensitive configuration and credentials.",
+            "Apply appropriate access permissions to customer, staff and administrator accounts.",
+            "Use multi-factor authentication where supported, particularly for privileged accounts.",
+            "Validate input and handle output safely.",
+            "Review file upload restrictions and storage permissions.",
+            "Protect login, password recovery and session workflows.",
+            "Maintain backups and test the recovery process.",
+            "Monitor relevant security events without unnecessarily recording sensitive data.",
+            "Review security after significant changes and verify important fixes."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "When should you test your website?"
+        },
+        {
+          "type": "p",
+          "text": "Consider an assessment before launching a new website, after a major redesign or migration, and when introducing sensitive features such as payments, customer accounts or administrative tools. Changes to permissions and integrations also deserve review."
+        },
+        {
+          "type": "p",
+          "text": "The frequency of ongoing testing should reflect the sensitivity of your data, how often the application changes and the risks your business faces. An assessment captures conditions at a particular time; ongoing maintenance remains necessary."
+        },
+        {
+          "type": "h2",
+          "text": "Does HTTPS mean a website is secure?"
+        },
+        {
+          "type": "p",
+          "text": "HTTPS protects data in transit between a visitor and the server. It does not establish that the application has correct access controls, safe input handling or secure business workflows. A website needs protection at several layers."
+        },
+        {
+          "type": "h2",
+          "text": "Can security testing guarantee that a website is safe?"
+        },
+        {
+          "type": "p",
+          "text": "No assessment can guarantee the absence of vulnerabilities. Testing helps uncover weaknesses within the agreed scope and time available. Its value comes from addressing the findings and maintaining security as the application evolves."
+        },
+        {
+          "type": "h2",
+          "text": "Discuss website security testing with OrbitWick"
+        },
+        {
+          "type": "p",
+          "text": "OrbitWick helps businesses assess web application security and understand remediation priorities. Share your website's key features and concerns so we can discuss a suitable assessment scope and the guidance your team needs."
+        }
       ]
     },
     {
-      "slug": "rest-api-basics",
-      "title": "REST APIs Explained: How Your Website and Apps Talk to Your Data",
-      "excerpt": "REST APIs connect front-ends, mobile apps and databases. This plain-language guide covers how they work and what makes one well designed.",
-      "category": "Full-Stack Development",
-      "image": "blog/rest-api-basics.jpg",
-      "date": "2026-09-30",
+      "slug": "api-security-testing",
+      "title": "API Security Testing: Common Risks and a Practical Checklist",
+      "excerpt": "Explore common API security risks, how an assessment works, and practical checks for authentication, access control, sensitive data and rate limits.",
+      "category": "Cybersecurity & Penetration Testing",
+      "image": "data/blog/api-security-testing.png",
+      "date": "2026-10-20",
       "author": "OrbitWick Team",
-      "tags": ["REST API", "backend development", "integration", "web development"],
-      "service": { "name": "Full-Stack Web Development", "href": "services.html#development" },
+      "tags": [
+        "API security testing",
+        "API penetration testing",
+        "API security assessment",
+        "API authorization",
+        "API security checklist"
+      ],
+      "service": {
+        "name": "API Security Assessment",
+        "href": "services.html#cybersecurity"
+      },
       "content": [
-        { "type": "p", "text": "Behind most modern websites and apps sits an API, short for application programming interface. It is the messenger that lets the part users see, the front end, request and update information stored on the server. REST is the most common style for building these interfaces." },
-        { "type": "h2", "text": "How a REST API works" },
-        { "type": "p", "text": "A REST API exposes resources, such as products, customers or orders, at clear addresses called endpoints. The client uses standard HTTP methods to work with them." },
-        { "type": "ul", "items": [
-          "GET retrieves data, for example a list of orders.",
-          "POST creates something new, such as a new customer.",
-          "PUT or PATCH updates an existing record.",
-          "DELETE removes a record."
-        ] },
-        { "type": "p", "text": "The server replies with data, usually in JSON, along with a status code that says whether the request succeeded or failed." },
-        { "type": "h2", "text": "Why businesses rely on APIs" },
-        { "type": "p", "text": "One API can serve a website, an Android app, an iOS app and an internal dashboard at the same time. It also allows your system to connect to payment providers, shipping services, accounting tools and other third parties without rebuilding anything." },
-        { "type": "h2", "text": "What good API design looks like" },
-        { "type": "ul", "items": [
-          "Consistent, predictable endpoint names",
-          "Proper authentication and permission checks on every request",
-          "Clear error messages and correct status codes",
-          "Input validation to protect your database",
-          "Versioning, so updates do not break existing apps",
-          "Documentation that other developers can follow"
-        ] },
-        { "type": "h2", "text": "Security and performance" },
-        { "type": "p", "text": "APIs are a common target, so they should limit request rates, validate every input and expose only the data a user is allowed to see. Efficient database queries and sensible caching keep responses fast as your data grows." },
-        { "type": "p", "text": "Whether you need a new API for a custom application or integration with existing services, a clean REST design makes everything built on top of it easier to maintain." }
-      ]
-    },
-    {
-      "slug": "authentication-and-user-roles",
-      "title": "Authentication and User Roles: Controlling Who Can Do What in Your App",
-      "excerpt": "Logins and permissions protect your data and shape the user experience. Learn the difference between authentication and authorisation and how roles work.",
-      "category": "Full-Stack Development",
-      "image": "blog/authentication-and-user-roles.jpg",
-      "date": "2026-09-22",
-      "author": "OrbitWick Team",
-      "tags": ["authentication", "user roles", "access control", "web applications"],
-      "service": { "name": "Full-Stack Web Development", "href": "services.html#development" },
-      "content": [
-        { "type": "p", "text": "Any web application with user accounts needs to answer two questions: who is this person, and what are they allowed to do? These are two separate problems, called authentication and authorisation, and getting both right is central to a safe, usable product." },
-        { "type": "h2", "text": "Authentication: proving who you are" },
-        { "type": "p", "text": "Authentication verifies identity. The familiar method is an email and password, but strong systems add layers: multi-factor authentication, login attempt limits, secure password storage using modern hashing, and session handling that expires and can be revoked. Some applications also offer sign-in with an existing account from a trusted provider." },
-        { "type": "h2", "text": "Authorisation: deciding what you can do" },
-        { "type": "p", "text": "Once a user is signed in, authorisation decides what they can see and change. A common approach is role-based access control, where permissions are grouped into roles." },
-        { "type": "ul", "items": [
-          "Customer: view their own orders and profile.",
-          "Staff: manage orders and respond to enquiries.",
-          "Manager: view reports and manage staff accounts.",
-          "Administrator: configure the whole system."
-        ] },
-        { "type": "h2", "text": "Principle of least privilege" },
-        { "type": "p", "text": "Each role should have only the access it needs. If a mistake or a compromised account occurs, limited permissions limit the damage. Checks must also happen on the server for every request, not only by hiding buttons in the interface." },
-        { "type": "h2", "text": "Dashboards and admin panels" },
-        { "type": "p", "text": "Roles are what make dashboards useful. A sales team sees sales figures, finance sees invoices and administrators see settings, all from the same application. Planning roles early keeps the system flexible as your team and features grow." },
-        { "type": "p", "text": "When we build custom applications, authentication and user roles are designed in from the start, because adding them later is slower and riskier." }
-      ]
-    },
-    {
-      "slug": "shopify-vs-woocommerce",
-      "title": "Shopify vs WooCommerce: Choosing the Right Platform for Your Online Store",
-      "excerpt": "Both platforms can power a successful store. Compare cost, control, maintenance and growth to find the one that matches your business.",
-      "category": "CMS & E-commerce",
-      "image": "blog/shopify-vs-woocommerce.jpg",
-      "date": "2026-09-15",
-      "author": "OrbitWick Team",
-      "tags": ["Shopify", "WooCommerce", "e-commerce", "online store"],
-      "service": { "name": "CMS & E-commerce Development", "href": "services.html#cms" },
-      "content": [
-        { "type": "p", "text": "Shopify and WooCommerce are two of the most popular ways to run an online store. They can both sell products, accept payments and manage orders, but they take different approaches. Understanding the trade-offs avoids an expensive platform switch later." },
-        { "type": "h2", "text": "Shopify: managed and straightforward" },
-        { "type": "p", "text": "Shopify is a hosted platform. Hosting, security updates, checkout and core features are handled for you, so you can launch quickly and focus on products and marketing. Themes and apps extend it. The trade-offs are monthly fees, transaction costs on some payment setups and less freedom to change deep behaviour." },
-        { "type": "h2", "text": "WooCommerce: flexible and customisable" },
-        { "type": "p", "text": "WooCommerce is a plugin for WordPress. You host it yourself, which gives you more control over design, data and functionality, and it pairs naturally with content marketing and blogging. In return, you or your developer are responsible for hosting, updates, backups and security." },
-        { "type": "h2", "text": "Key differences at a glance" },
-        { "type": "ul", "items": [
-          "Setup speed: Shopify is usually faster to launch.",
-          "Customisation: WooCommerce offers more freedom.",
-          "Maintenance: Shopify handles most of it; WooCommerce needs a plan.",
-          "Content and SEO: WordPress gives WooCommerce strong publishing tools.",
-          "Costs: Shopify is predictable; WooCommerce varies with hosting and extensions."
-        ] },
-        { "type": "h2", "text": "How to choose" },
-        { "type": "p", "text": "If you want a reliable store with minimal technical upkeep, Shopify is often the better fit. If you need custom features, deep control or already run a WordPress site, WooCommerce may suit you better. Either way, a well-built store needs clean product structure, fast pages, a simple checkout and careful plugin or app choices." },
-        { "type": "p", "text": "We build and set up both, and can recommend the right one after learning how you sell." }
-      ]
-    },
-    {
-      "slug": "security-audit-vs-vulnerability-assessment",
-      "title": "Security Audit vs Vulnerability Assessment: What Is the Difference?",
-      "excerpt": "The two terms are often used interchangeably. Here is what each one covers, what you receive at the end and how they lead to remediation.",
-      "category": "Cybersecurity",
-      "image": "data/blog/security-audit-vs-vulnerability-assessment.jpg",
-      "date": "2026-09-08",
-      "author": "OrbitWick Team",
-      "tags": ["security audit", "vulnerability assessment", "website security", "remediation"],
-      "service": { "name": "Cybersecurity Services", "href": "services.html#security" },
-      "content": [
-        { "type": "p", "text": "If you are planning to improve your website's security, you will quickly meet two terms: security audit and vulnerability assessment. They overlap, yet they are not the same, and knowing the difference helps you ask for the right service." },
-        { "type": "h2", "text": "What a vulnerability assessment does" },
-        { "type": "p", "text": "A vulnerability assessment looks for known weaknesses in your website or application. It combines automated scanning with manual checks to find issues such as outdated components, insecure forms, exposed files and missing protections. The result is a prioritised list of findings, ranked by how serious each one is." },
-        { "type": "h2", "text": "What a security audit does" },
-        { "type": "p", "text": "A security audit is broader. It reviews how your site is configured and managed against good-practice standards. Beyond technical flaws, it considers access controls, server and hosting settings, backup arrangements, how updates are handled and whether sensible policies exist." },
-        { "type": "h2", "text": "Side by side" },
-        { "type": "ul", "items": [
-          "Assessment: focuses on finding technical weaknesses.",
-          "Audit: reviews configuration, processes and overall posture.",
-          "Assessment output: ranked list of vulnerabilities.",
-          "Audit output: findings plus recommendations on controls and practices."
-        ] },
-        { "type": "h2", "text": "From findings to fixes" },
-        { "type": "p", "text": "A report is only useful if something happens afterwards. The next steps are security hardening, which tightens settings and removes unnecessary exposure, secure configuration of servers and applications, and remediation, which fixes the specific vulnerabilities found. Re-testing confirms the fixes worked." },
-        { "type": "h2", "text": "When to schedule one" },
-        { "type": "p", "text": "Before launching a new site or app, after major changes, and at least once a year for any site that handles customer data or payments. If you are unsure which you need, we can scope it with you and explain every finding in plain language." }
-      ]
-    },
-    {
-      "slug": "website-backups-explained",
-      "title": "Website Backups Explained: What to Back Up, How Often and Where to Store It",
-      "excerpt": "A reliable backup is the difference between a quick recovery and a lost site. Learn the basics of frequency, storage and restore testing.",
-      "category": "Management & Maintenance",
-      "image": "blog/website-backups-explained.jpg",
-      "date": "2026-08-31",
-      "author": "OrbitWick Team",
-      "tags": ["website backups", "disaster recovery", "website maintenance"],
-      "service": { "name": "Website Management & Maintenance", "href": "services.html#maintenance" },
-      "content": [
-        { "type": "p", "text": "Websites fail for many reasons: a faulty update, a hacked account, a server problem or a simple human mistake. Whatever the cause, a recent backup lets you get back online quickly. Here is how to think about backups properly." },
-        { "type": "h2", "text": "What needs to be backed up" },
-        { "type": "ul", "items": [
-          "Website files, including themes, plugins and uploads",
-          "The database, which holds pages, products, orders and users",
-          "Configuration files and environment settings",
-          "Email and DNS settings, where they are managed with the site"
-        ] },
-        { "type": "h2", "text": "How often?" },
-        { "type": "p", "text": "The right schedule depends on how often your content changes. A brochure site that rarely changes may be fine with weekly backups. A store or a site with user activity should back up the database daily or even more often, because losing a day of orders is costly." },
-        { "type": "h2", "text": "Where to store backups" },
-        { "type": "p", "text": "Keep at least one copy away from your main server. If backups sit on the same server and that server fails or is compromised, you lose both. A common approach is to keep several recent versions in separate cloud storage, so you can roll back to a point before a problem began." },
-        { "type": "h2", "text": "Test your restores" },
-        { "type": "p", "text": "A backup that has never been restored is an assumption, not a safeguard. Regular restore tests confirm the files are complete, show how long recovery takes and reveal gaps before an emergency does." },
-        { "type": "h2", "text": "Part of ongoing care" },
-        { "type": "p", "text": "Backups work best alongside software updates, security monitoring and technical support. Our maintenance plans include regular backups so recovery is routine rather than a crisis." }
-      ]
-    },
-    {
-      "slug": "core-web-vitals-explained",
-      "title": "Core Web Vitals Explained: Measuring Website Speed and Experience",
-      "excerpt": "Core Web Vitals are Google's measures of loading, interactivity and visual stability. Learn what they mean and how performance monitoring improves them.",
-      "category": "Management & Maintenance",
-      "image": "blog/core-web-vitals-explained.jpg",
-      "date": "2026-08-24",
-      "author": "OrbitWick Team",
-      "tags": ["Core Web Vitals", "website performance", "page speed", "monitoring"],
-      "service": { "name": "Website Management & Maintenance", "href": "services.html#maintenance" },
-      "content": [
-        { "type": "p", "text": "Visitors judge a website within seconds. If a page loads slowly, jumps around while loading or ignores taps, they leave. Core Web Vitals are a set of measurements that capture these experiences, and they are one of the signals search engines consider." },
-        { "type": "h2", "text": "The three measurements" },
-        { "type": "ul", "items": [
-          "Largest Contentful Paint (LCP): how quickly the main content appears.",
-          "Interaction to Next Paint (INP): how quickly the page responds when someone taps or clicks.",
-          "Cumulative Layout Shift (CLS): how much the layout moves unexpectedly while loading."
-        ] },
-        { "type": "h2", "text": "What usually causes poor scores" },
-        { "type": "p", "text": "The common causes are oversized images, too many scripts, heavy plugins, slow hosting, missing caching and elements that load without reserved space, which makes the page jump. Fixes are often practical: compress and properly size images, load scripts only where needed, enable caching and set dimensions for media." },
-        { "type": "h2", "text": "Why monitoring matters" },
-        { "type": "p", "text": "Performance is not a one-time task. A new plugin, a large image or a software update can quietly slow a site down. Ongoing performance monitoring tracks load times and uptime, alerts you to problems and shows trends over time." },
-        { "type": "h2", "text": "Benefits beyond search" },
-        { "type": "p", "text": "A fast, stable site keeps visitors engaged, supports better conversion on forms and checkouts and feels more trustworthy. Improving speed is one of the most cost-effective upgrades a business can make." },
-        { "type": "p", "text": "Performance monitoring and optimisation are part of our maintenance plans, so your site stays quick as it grows." }
-      ]
-    },
-    {
-      "slug": "native-vs-cross-platform-mobile-apps",
-      "title": "Native or Cross-Platform: Choosing the Right Approach for Your Mobile App",
-      "excerpt": "Android, iOS or both? Compare native and cross-platform mobile development to decide before you commit your budget.",
-      "category": "Mobile App Development",
-      "image": "blog/native-vs-cross-platform-mobile-apps.jpg",
-      "date": "2026-08-17",
-      "author": "OrbitWick Team",
-      "tags": ["mobile app development", "Android", "iOS", "cross-platform"],
-      "service": { "name": "Mobile App Development", "href": "services.html#mobile" },
-      "content": [
-        { "type": "p", "text": "One of the first decisions in any mobile project is how the app will be built. The choice affects cost, timeline, performance and how easy the app is to maintain. There is no universal answer, but there is usually a right answer for your situation." },
-        { "type": "h2", "text": "Native development" },
-        { "type": "p", "text": "Native apps are written separately for Android and iOS using each platform's own tools. They offer the best access to device features, the smoothest performance and the closest match to each platform's design conventions. The trade-off is maintaining two codebases, which generally means more time and budget." },
-        { "type": "h2", "text": "Cross-platform development" },
-        { "type": "p", "text": "Cross-platform frameworks let one codebase produce apps for both Android and iOS. This usually shortens delivery and makes updates simpler, because a fix or feature is built once. Modern frameworks perform well for most business apps, though very graphics-heavy or hardware-intensive apps can still benefit from native code." },
-        { "type": "h2", "text": "How to decide" },
-        { "type": "ul", "items": [
-          "Tight budget and timeline, both platforms needed: cross-platform is often the better fit.",
-          "Advanced device features or top-tier performance: consider native.",
-          "Audience concentrated on one platform: start with that platform only.",
-          "Frequent updates expected: a shared codebase reduces effort."
-        ] },
-        { "type": "h2", "text": "Do not skip design and backend planning" },
-        { "type": "p", "text": "Whichever route you choose, results depend on solid mobile UI/UX design and prototyping, a clean API and backend integration, and a plan for maintenance after launch. App stores update their requirements regularly, so ongoing updates are part of owning an app, not an optional extra." }
-      ]
-    },
-    {
-      "slug": "website-revamp-and-seo",
-      "title": "How a Website Revamp Can Protect and Improve Your SEO",
-      "excerpt": "A redesign can boost rankings or damage them. See how to keep what already works, improve what does not and avoid common SEO mistakes.",
-      "category": "Website Revamp & Rebranding",
-      "image": "blog/website-revamp-and-seo.jpg",
-      "date": "2026-08-10",
-      "author": "OrbitWick Team",
-      "tags": ["website redesign", "SEO", "rebranding", "responsive design"],
-      "service": { "name": "Website Revamp & Rebranding", "href": "services.html#revamp" },
-      "content": [
-        { "type": "p", "text": "A revamp is a chance to improve both the look and the performance of your website. Handled carelessly, though, it can erase years of search visibility. The difference lies in planning the redesign with SEO in mind from the start." },
-        { "type": "h2", "text": "Start with what already works" },
-        { "type": "p", "text": "Before changing anything, review which pages bring traffic and enquiries today. These pages, their addresses and their key content deserve special care. A good revamp builds on existing strengths rather than discarding them." },
-        { "type": "h2", "text": "Protect your URLs" },
-        { "type": "p", "text": "If page addresses change, set up permanent redirects from each old address to its new equivalent. Without them, visitors land on error pages and search engines lose the link between old and new content." },
-        { "type": "h2", "text": "Improve structure and content" },
-        { "type": "ul", "items": [
-          "Clear page hierarchy with logical navigation",
-          "Descriptive titles, headings and meta descriptions",
-          "Content restructured so each page has one clear purpose",
-          "Image optimisation with useful alternative text",
-          "Internal links that connect related pages"
-        ] },
-        { "type": "h2", "text": "Responsive design and speed" },
-        { "type": "p", "text": "Search engines evaluate the mobile experience and page speed, so a responsive layout on phones and tablets and an optimised, fast-loading build are part of SEO, not separate from it." },
-        { "type": "h2", "text": "Rebranding without losing recognition" },
-        { "type": "p", "text": "If your colours, typography or logo are changing, keep the transition clear for returning customers. Update your name, logo and descriptions consistently across your website and online profiles." },
-        { "type": "p", "text": "After launch, monitor traffic and rankings, fix any broken links promptly and keep improving. A well-planned revamp gives you a modern site and a stronger search presence together." }
+        {
+          "type": "p",
+          "text": "APIs connect websites, mobile applications and business systems. They exchange data, support account access and enable transactions. API security testing examines whether these interfaces protect information and enforce the rules that determine who can access each resource or action."
+        },
+        {
+          "type": "p",
+          "text": "An application can appear secure while its API exposes sensitive information or permits unauthorized actions. Testing the interface directly helps identify weaknesses that may not be visible through the website or mobile app."
+        },
+        {
+          "type": "h2",
+          "text": "What is API security testing?"
+        },
+        {
+          "type": "p",
+          "text": "API security testing evaluates an API's authentication, authorization, data handling and resistance to misuse. An assessment examines requests and responses alongside the application's intended permissions and business rules."
+        },
+        {
+          "type": "p",
+          "text": "A useful assessment does more than list suspicious endpoints. It validates findings, explains their potential impact and gives developers practical guidance for remediation."
+        },
+        {
+          "type": "h2",
+          "text": "Why APIs need dedicated security testing"
+        },
+        {
+          "type": "p",
+          "text": "APIs expose application functions directly to clients. Restrictions in a website interface do not necessarily prevent a user from sending a request to the underlying API. Security controls must therefore be enforced by the server."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Web and mobile clients may share endpoints that return sensitive information.",
+            "Different roles may require different permissions for the same resource.",
+            "Older API versions can remain accessible after a replacement is released.",
+            "Resource-intensive operations can create availability and cost risks.",
+            "Changes to an endpoint can affect several connected applications."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Common API security vulnerabilities"
+        },
+        {
+          "type": "p",
+          "text": "The following examples are useful assessment areas rather than an exhaustive list. Their relevance depends on the API's architecture, data and business functions."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Broken object-level authorization: Access to an individual record is not checked correctly.",
+            "Broken authentication: Identity verification or token handling can be bypassed or misused.",
+            "Broken property-level authorization: Users can read or modify fields beyond their permissions.",
+            "Broken function-level authorization: Restricted actions are available to unauthorized roles.",
+            "Unrestricted resource consumption: Requests can consume excessive computing or paid service resources.",
+            "Security misconfiguration: Inappropriate settings weaken protection or expose unnecessary information.",
+            "Improper inventory management: Older or undocumented endpoints escape security oversight."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Authentication vs authorization in APIs"
+        },
+        {
+          "type": "p",
+          "text": "Authentication establishes who is making a request. Authorization determines what that identity may access or change. A successful login does not give a user permission to view every record or invoke every operation."
+        },
+        {
+          "type": "p",
+          "text": "For example, an API serving customer invoices must check access to the requested invoice, not simply confirm that the caller is signed in. Using identifiers that are difficult to guess does not replace a permission check."
+        },
+        {
+          "type": "h2",
+          "text": "Protecting sensitive API response data"
+        },
+        {
+          "type": "p",
+          "text": "An API should return only the information the caller needs and is permitted to receive. Internal account attributes, confidential business fields and privileged settings require explicit controls."
+        },
+        {
+          "type": "p",
+          "text": "Write operations need the same care. Developers should define which properties a caller may change instead of accepting every field included in a request. These rules should reflect both the user's role and the current business context."
+        },
+        {
+          "type": "h2",
+          "text": "Why rate limits are only part of API protection"
+        },
+        {
+          "type": "p",
+          "text": "Limiting request frequency helps control abuse, but individual requests can also be expensive. Large uploads, broad searches and complex reports may consume substantial resources even at a low request rate."
+        },
+        {
+          "type": "p",
+          "text": "Review request sizes, pagination, timeouts, concurrency and usage quotas as appropriate. Controls should reflect the cost and purpose of the operation rather than applying one limit to every endpoint."
+        },
+        {
+          "type": "h2",
+          "text": "Automated scanning vs manual API testing"
+        },
+        {
+          "type": "p",
+          "text": "Automated tools help discover endpoints and flag some configuration or input-handling issues. They are useful for repeatable checks, but they may not understand the permissions and business rules specific to your application."
+        },
+        {
+          "type": "p",
+          "text": "Manual assessment examines those relationships. It can compare permitted behavior across accounts and roles, evaluate multi-step workflows and determine whether a suspected weakness has a meaningful impact. Combining both approaches provides broader coverage."
+        },
+        {
+          "type": "h2",
+          "text": "What happens during an API security assessment?"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Define the scope: Agree on API hosts, environments, endpoints, accounts and operational limits.",
+            "Review the interface: Examine documentation, request formats, supported versions and important workflows.",
+            "Assess authentication: Review credential handling, token validation and relevant session controls.",
+            "Assess authorization: Check permissions across users, roles, resources, properties and operations.",
+            "Review data handling: Examine input validation, error responses and sensitive information exposure.",
+            "Evaluate resource controls: Review limits on requests and expensive operations within the agreed scope.",
+            "Validate findings: Confirm issues with controlled testing and document supporting evidence.",
+            "Provide remediation guidance: Explain affected components, impact, priorities and recommended changes.",
+            "Retest fixes: Verify that reported weaknesses have been addressed."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "API security checklist for development teams"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Require appropriate authentication for protected endpoints.",
+            "Enforce server-side permissions for sensitive records, fields and actions.",
+            "Validate request parameters, content types and input data.",
+            "Return only the information each caller is permitted to receive.",
+            "Apply suitable request limits, quotas and resource controls.",
+            "Protect credentials, tokens, secrets and configuration.",
+            "Use HTTPS to protect data in transit.",
+            "Avoid exposing sensitive information in errors or logs.",
+            "Maintain an inventory of API versions, endpoints and owners.",
+            "Retire obsolete endpoints and review access to non-production environments.",
+            "Review permissions when roles or business workflows change.",
+            "Include relevant security checks in release workflows and retest significant fixes."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "When should you test your APIs?"
+        },
+        {
+          "type": "p",
+          "text": "Assess APIs before launching sensitive functionality and after significant changes to authentication, permissions or business workflows. New integrations, mobile applications and administrative features can also introduce risks that deserve review."
+        },
+        {
+          "type": "p",
+          "text": "Ongoing assessment frequency should reflect how often the API changes, what data it handles and its importance to business operations. Keep documentation and endpoint inventories current between assessments."
+        },
+        {
+          "type": "h2",
+          "text": "Do private APIs need security testing?"
+        },
+        {
+          "type": "p",
+          "text": "Yes. Restricting network access can reduce exposure, but it does not establish that permissions and data handling are correct. Internal applications, integrations and compromised accounts may still interact with a private API."
+        },
+        {
+          "type": "h2",
+          "text": "What should an API security report include?"
+        },
+        {
+          "type": "p",
+          "text": "A useful report identifies the assessment scope, affected endpoints, validated findings, supporting evidence and potential impact. It should explain remediation priorities and distinguish confirmed vulnerabilities from observations or testing limitations."
+        },
+        {
+          "type": "h2",
+          "text": "Discuss API security testing with OrbitWick"
+        },
+        {
+          "type": "p",
+          "text": "OrbitWick helps businesses assess application security and prioritize practical improvements. Share your API documentation, key workflows and security concerns to discuss an assessment suited to your platform."
+        },
+        {
+          "type": "p",
+          "text": "All testing should take place within an explicitly authorized scope, with agreed accounts, environments and operational limits."
+        }
       ]
     }
   ]
