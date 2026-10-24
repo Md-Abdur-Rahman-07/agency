@@ -368,10 +368,11 @@
 
         <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
           <div class="contact-form-status alert" role="status" aria-live="polite" hidden></div>
-          <form class="contact-form row g-3" action="https://formsubmit.co/ajax/contact.orbitwick@gmail.com"
-            method="post">
-            <input type="text" name="_honey" tabindex="-1" autocomplete="off" hidden>
-            <input type="hidden" name="_subject" value="New OrbitWick consultation request">
+          <form class="contact-form row g-3" action="contact.php" method="post">
+            <div class="visually-hidden" aria-hidden="true">
+              <label for="website-confirm">Leave this field empty</label>
+              <input type="text" id="website-confirm" name="website_confirm" tabindex="-1" autocomplete="off">
+            </div>
             <div class="col-md-6">
               <label for="cf-name" class="form-label">Your name <span class="req">*</span></label>
               <input type="text" id="cf-name" class="form-control" name="name" autocomplete="name" maxlength="120"
@@ -425,8 +426,8 @@
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-burgundy">Request a Free Consultation</button>
-              <p class="form-note mt-3 mb-0"><i class="bi bi-envelope"></i> Your request will be sent to us directly.
-                Submissions are processed by FormSubmit.</p>
+              <p class="form-note mt-3 mb-0"><i class="bi bi-lock"></i> Your project details will be treated
+                confidentially.</p>
             </div>
           </form>
         </div>
