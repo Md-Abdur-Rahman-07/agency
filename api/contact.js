@@ -110,8 +110,9 @@ module.exports = async function contactHandler(req, res) {
   const user = (process.env.SMTP_USERNAME || '').trim();
   const pass = process.env.SMTP_PASSWORD || '';
   const port = Number(process.env.SMTP_PORT || 587);
-  const secureSetting = (process.env.SMTP_SECURE || 'tls').trim().toLowerCase();
+  const secureSetting = (process.env.SMTP_SECURE || 'tls').trim().toLowerCase() || 'tls';
   const from = (process.env.SMTP_FROM_EMAIL || user).trim();
+  const secureSettings = ['tls', 'starttls', 'ssl', 'true', 'false'];
 
   const missing = [];
   if (!host) missing.push('SMTP_HOST');
@@ -127,9 +128,13 @@ module.exports = async function contactHandler(req, res) {
   }
 
   if (!Number.isInteger(port) || port < 1 || port > 65535
-    || !['tls', 'ssl'].includes(secureSetting)
+    || !secureSettings.includes(secureSetting)
     || !isValidEmail(from)) {
-    console.error('Contact form SMTP configuration is invalid.');
+    console.error('Contact form SMTP configuration is invalid:', {
+      port: Number.isInteger(port) && port >= 1 && port <= 65535 ? undefined : 'SMTP_PORT',
+      secureSetting: secureSettings.includes(secureSetting) ? undefined : 'SMTP_SECURE',
+      from: isValidEmail(from) ? undefined : 'SMTP_FROM_EMAIL'
+    });
     return respond(res, 500, {
       success: false,
       message: 'Email delivery is not configured correctly. Please try again later.'
@@ -140,8 +145,8 @@ module.exports = async function contactHandler(req, res) {
     host,
     port,
     // Port 587 uses STARTTLS (false); port 465 usually uses SSL (true).
-    secure: secureSetting === 'ssl',
-    requireTLS: secureSetting === 'tls',
+    secure: secureSetting === 'ssl' || secureSetting === 'true',
+    requireTLS: secureSetting === 'tls' || secureSetting === 'starttls' || secureSetting === 'false',
     auth: { user, pass },
     connectionTimeout: 10000,
     greetingTimeout: 10000,
