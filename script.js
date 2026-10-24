@@ -59,22 +59,61 @@
     });
   }
 
-  function initContactStatus() {
+  function initContactForm() {
     var form = document.querySelector('.contact-form');
-    var result = new URLSearchParams(window.location.search).get('contact');
-    if (!form || (result !== 'success' && result !== 'error')) return;
+    var status = document.querySelector('.contact-form-status');
+    if (!form || !status) return;
 
-    var status = document.createElement('div');
-    status.className = 'col-12 alert ' + (result === 'success' ? 'alert-success' : 'alert-danger');
-    status.setAttribute('role', 'status');
-    status.textContent = result === 'success'
-      ? 'Thanks — your consultation request has been sent. We will be in touch soon.'
-      : 'We could not send your request. Please review the form and try again.';
-    form.prepend(status);
-
-    if (window.history && window.history.replaceState) {
-      window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+    function displayStatus(type, message) {
+      status.className = 'contact-form-status alert alert-' + type;
+      status.textContent = message;
+      status.hidden = false;
     }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (form.dataset.submitting === 'true') return;
+
+      var submitButton = form.querySelector('[type="submit"]');
+      var buttonText = submitButton.textContent;
+      var values = new FormData(form);
+      values.set('_replyto', String(values.get('email') || '').trim());
+      form.dataset.submitting = 'true';
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+      displayStatus('info', 'Sending your request...');
+
+      function showFailure() {
+        displayStatus('danger', 'We could not send your request. Please try again or email ');
+        var emailLink = document.createElement('a');
+        emailLink.href = 'mailto:contact.orbitwick@gmail.com';
+        emailLink.textContent = 'contact.orbitwick@gmail.com';
+        status.appendChild(emailLink);
+        status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      fetch(form.action, {
+        method: 'POST',
+        body: values,
+        headers: { Accept: 'application/json' }
+      })
+        .then(function (response) {
+          return response.json().then(function (result) {
+            if (!response.ok || (result.success !== true && result.success !== 'true')) {
+              throw new Error(result.message || 'Form submission failed');
+            }
+            displayStatus('success', 'Thanks! Your request has been sent. We will be in touch soon.');
+            form.reset();
+            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+        })
+        .catch(showFailure)
+        .then(function () {
+          form.dataset.submitting = 'false';
+          submitButton.disabled = false;
+          submitButton.textContent = buttonText;
+        });
+    });
   }
 
   function initBlog() {
@@ -310,7 +349,7 @@
 
   initAnimations();
   initToolsSlider();
-  initContactStatus();
+  initContactForm();
   initBlog();
   initBlogPost();
 })();
