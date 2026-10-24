@@ -39,9 +39,162 @@
   }
 
   function initAnimations() {
-    if (window.AOS) {
-      window.AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 });
+    if (!window.AOS) return;
+
+    document.querySelectorAll('[data-aos], [data-aos-delay], [data-aos-duration], [data-aos-easing]')
+      .forEach(function (element) {
+        element.removeAttribute('data-aos');
+        element.removeAttribute('data-aos-delay');
+        element.removeAttribute('data-aos-duration');
+        element.removeAttribute('data-aos-easing');
+      });
+
+    var directions = ['fade-right', 'fade-left'];
+    var cardSelector = [
+      '.service-card',
+      '.portfolio-card',
+      '.blog-card',
+      '.rd-card',
+      '.process-step',
+      '.story-step',
+      '.about-reason',
+      '.value-box',
+      '.accordion-item',
+      '.hero-stat',
+      '.contact-item'
+    ].join(', ');
+
+    function animateTogether(elements) {
+      elements.forEach(function (element, index) {
+        element.setAttribute('data-aos', directions[index % directions.length]);
+      });
     }
+
+    document.querySelectorAll(
+      'header.hero, header.page-hero, header.about-hero, body > section, main > section, main > article'
+    ).forEach(function (section) {
+      if (section.matches('.overview')) return;
+
+      if (section.matches('.portfolio-preview')) {
+        var portfolioCopy = section.querySelector('.container > .row > .col-lg-5');
+        if (portfolioCopy) animateTogether([portfolioCopy]);
+        return;
+      }
+
+      if (section.matches('.svc-detail')) {
+        if (['design', 'mobile', 'maintenance', 'cms'].indexOf(section.id) !== -1) {
+          var serviceColumns = section.querySelectorAll('.container > .row > [class*="col-"]');
+          animateTogether(Array.prototype.slice.call(serviceColumns));
+        }
+        return;
+      }
+
+      var cards = section.querySelectorAll(cardSelector);
+      if (cards.length) {
+        animateTogether(Array.prototype.slice.call(cards));
+        return;
+      }
+
+      var columns = section.querySelectorAll('.container > .row > [class*="col-"]');
+      if (columns.length) {
+        animateTogether(Array.prototype.slice.call(columns));
+        return;
+      }
+
+      var content = section.querySelector('.container > .text-center, .container > .post-content');
+      if (content) animateTogether([content]);
+    });
+
+    var prefersReducedMotion = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    window.AOS.init({
+      duration: 550,
+      easing: 'ease-out-cubic',
+      once: false,
+      offset: 100,
+      anchorPlacement: 'top-bottom',
+      disable: prefersReducedMotion
+    });
+  }
+
+  function initStatCounters() {
+    var overview = document.querySelector('.overview');
+    var counters = overview
+      ? Array.prototype.slice.call(overview.querySelectorAll('[data-counter-target]'))
+      : [];
+    if (!counters.length) return;
+
+    var prefersReducedMotion = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion || !('IntersectionObserver' in window)) return;
+
+    var formatter = new Intl.NumberFormat();
+    var animationFrame = null;
+    var startedAt = null;
+    var duration = 1200;
+
+    function resetCounters() {
+      if (animationFrame !== null) {
+        window.cancelAnimationFrame(animationFrame);
+        animationFrame = null;
+      }
+      startedAt = null;
+      counters.forEach(function (element) {
+        var suffix = element.getAttribute('data-counter-suffix') || '';
+        element.textContent = '0' + suffix;
+      });
+    }
+
+    function animateCounters(timestamp) {
+      if (startedAt === null) startedAt = timestamp;
+      var progress = Math.min((timestamp - startedAt) / duration, 1);
+      var easedProgress = 1 - Math.pow(1 - progress, 3);
+
+      counters.forEach(function (element) {
+        var target = Number(element.getAttribute('data-counter-target'));
+        var suffix = element.getAttribute('data-counter-suffix') || '';
+        element.textContent = formatter.format(Math.round(target * easedProgress)) + suffix;
+      });
+
+      if (progress < 1) {
+        animationFrame = window.requestAnimationFrame(animateCounters);
+      } else {
+        animationFrame = null;
+      }
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          resetCounters();
+          animationFrame = window.requestAnimationFrame(animateCounters);
+        } else {
+          resetCounters();
+        }
+      });
+    }, { threshold: 0.25 });
+
+    observer.observe(overview);
+  }
+
+  function initHeroCursorCircle() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    document.querySelectorAll('.hero-cursor-area').forEach(function (area) {
+      area.addEventListener('pointermove', function (event) {
+        if (event.pointerType === 'touch') return;
+
+        var bounds = area.getBoundingClientRect();
+        area.style.setProperty('--cursor-x', (event.clientX - bounds.left) + 'px');
+        area.style.setProperty('--cursor-y', (event.clientY - bounds.top) + 'px');
+        area.classList.add('is-cursor-active');
+      });
+
+      area.addEventListener('pointerleave', function () {
+        area.classList.remove('is-cursor-active');
+      });
+    });
   }
 
   function initToolsSlider() {
@@ -151,7 +304,7 @@
         var thumbnail = post.image
           ? '<img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="lazy">'
           : '<i class="bi ' + escapeHtml(post.icon || 'bi-journal-text') + '"></i>';
-        return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="blog-post.html?slug=' +
+        return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="/blog-post?slug=' +
           encodeURIComponent(post.slug) + '"><div class="blog-thumb">' + thumbnail +
           '<span class="blog-cat">' + escapeHtml(post.category) + '</span></div><div class="blog-body">' +
           '<div class="blog-meta">' + formatDate(post.date) + ' &middot; ' + readTime(post) + '</div><h3>' +
@@ -205,11 +358,11 @@
     }
 
     function notFound() {
-      document.title = 'Article not found | OrbitWick Blog';
+      document.title = 'Article not found | OrbitWick';
       titleElement.textContent = 'Article not found';
       document.getElementById('postCat').textContent = 'Blog';
       document.getElementById('crumb').textContent = 'Not found';
-      postBody.innerHTML = '<p>We could not find that article. <a href="blog.html">Browse all articles</a>.</p>';
+      postBody.innerHTML = '<p>We could not find that article. <a href="/blog">Browse all articles</a>.</p>';
     }
 
     function renderBlock(block) {
@@ -225,7 +378,7 @@
       var thumbnail = post.image
         ? '<img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="lazy" width="1600" height="840">'
         : '<i class="bi bi-journal-text"></i>';
-      return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="blog-post.html?slug=' +
+      return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="/blog-post?slug=' +
         encodeURIComponent(post.slug) + '"><div class="blog-thumb">' + thumbnail +
         '<span class="blog-cat">' + escapeHtml(post.category) + '</span></div><div class="blog-body">' +
         '<div class="blog-meta">' + formatDate(post.date) + ' &middot; ' + readTime(post) + '</div><h3>' +
@@ -234,8 +387,8 @@
     }
 
     function render(post, allPosts) {
-      var url = siteUrl + '/blog-post.html?slug=' + encodeURIComponent(post.slug);
-      var pageTitle = post.title + ' | OrbitWick Blog';
+      var url = siteUrl + '/blog-post?slug=' + encodeURIComponent(post.slug);
+      var pageTitle = post.title + ' | OrbitWick';
       var imageUrl = post.image ? siteUrl + '/' + post.image : '';
 
       document.title = pageTitle;
@@ -341,11 +494,13 @@
       .catch(function () {
         hidePostFigure();
         titleElement.textContent = 'Article could not be loaded';
-        postBody.innerHTML = '<p>If you are previewing locally, serve the site over HTTP (for example, run <code>python3 -m http.server</code> in this folder). <a href="blog.html">Back to the blog</a>.</p>';
+        postBody.innerHTML = '<p>If you are previewing locally, serve the site over HTTP (for example, run <code>python3 -m http.server</code> in this folder). <a href="/blog">Back to the blog</a>.</p>';
       });
   }
 
   initAnimations();
+  initStatCounters();
+  initHeroCursorCircle();
   initToolsSlider();
   initContactForm();
   initBlog();

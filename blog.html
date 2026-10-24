@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog | OrbitWick</title>
   <meta name="description" content="Practical articles from OrbitWick on web design, development, mobile apps, cybersecurity, website revamps and maintenance.">
-  <link rel="canonical" href="https://www.orbitwick.com/blog.html">
+  <link rel="canonical" href="https://www.orbitwick.com/blog">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Blog | OrbitWick">
   <meta property="og:description" content="Practical articles on web design, development, mobile apps, cybersecurity and website care.">
@@ -15,7 +15,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -23,31 +23,63 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg ow-nav sticky-top" data-bs-theme="dark">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="img/logo-white.png" alt="OrbitWick" width="140" height="34"></a>
+    <a class="navbar-brand" href="/"><img src="img/logo-white.png" alt="OrbitWick" width="140" height="34"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="rd.html">R&amp;D</a></li>
-        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
-        <li class="nav-item ms-lg-3"><a class="btn btn-burgundy btn-sm px-3" href="index.html#contact">Get in touch</a></li>
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn btn-burgundy btn-sm px-3" href="/#contact">Get in touch</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- PAGE HERO -->
-<header class="page-hero">
+<header class="page-hero hero-cursor-area">
   <div class="container">
-    <div class="eyebrow mb-3" data-aos="fade-up">Insights</div>
-    <h1 class="display-4 fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">The OrbitWick Blog</h1>
-    <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200">Practical guides on design, development, mobile apps, security and keeping your website healthy.</p>
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <div class="eyebrow mb-3" data-aos="fade-up">Insights</div>
+        <h1 class="display-4 fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">The OrbitWick Blog</h1>
+        <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200">Practical guides on design, development, mobile
+          apps, security and keeping your website healthy.</p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+        <img class="page-hero-image" src="img/site/img.jpg"
+          alt="A developer writing code at a laptop" width="6000" height="4000" fetchpriority="high">
+      </div>
+    </div>
   </div>
 </header>
+<nav class="svc-nav" aria-label="Our services">
+  <div class="svc-nav-lane">
+    <div class="svc-nav-track">
+      <div class="svc-nav-group">
+        <a href="/services#design"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
+        <a href="/services#development"><i class="bi bi-code-slash" aria-hidden="true"></i>Web Development</a>
+        <a href="/services#mobile"><i class="bi bi-phone" aria-hidden="true"></i>Mobile Apps</a>
+        <a href="/services#security"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity</a>
+        <a href="/services#maintenance"><i class="bi bi-gear" aria-hidden="true"></i>Website Care</a>
+        <a href="/services#revamp"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
+        <a href="/services#cms"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
+      </div>
+      <div class="svc-nav-group" aria-hidden="true" inert>
+        <a href="/services#design" tabindex="-1"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
+        <a href="/services#development" tabindex="-1"><i class="bi bi-code-slash" aria-hidden="true"></i>Web Development</a>
+        <a href="/services#mobile" tabindex="-1"><i class="bi bi-phone" aria-hidden="true"></i>Mobile Apps</a>
+        <a href="/services#security" tabindex="-1"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity</a>
+        <a href="/services#maintenance" tabindex="-1"><i class="bi bi-gear" aria-hidden="true"></i>Website Care</a>
+        <a href="/services#revamp" tabindex="-1"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
+        <a href="/services#cms" tabindex="-1"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
 <!-- POSTS -->
 <section>
@@ -71,44 +103,59 @@
         <p class="mb-0" style="color:#f0cdd5">Tell us about it and we will reply with next steps.</p>
       </div>
       <div class="col-lg-4 text-lg-end">
-        <a href="index.html#contact" class="btn btn-outline-light-ow">Contact us</a>
+        <a href="/#contact" class="btn btn-outline-light-ow">Contact us</a>
       </div>
     </div>
   </div>
 </div>
 
 <!-- FOOTER -->
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-5">
-        <a href="index.html" class="brand d-inline-block mb-3"><img src="img/logo-white.png" alt="OrbitWick" width="156" height="38"></a>
-        <p class="mb-0" style="max-width:380px">Design, development and security for businesses that want a dependable web presence.</p>
+    <div class="row g-4 footer-main">
+      <div class="col-12 col-md-6 col-lg-4">
+        <a href="/" class="brand d-inline-block mb-3"><img src="img/logo-white.png" alt="OrbitWick" width="156" height="38"></a>
+        <p class="footer-intro mb-0">Design, development and security for businesses that want a dependable web presence.</p>
       </div>
-      <div class="col-6 col-lg-3">
-        <h6 class="mb-3">Company</h6>
-        <ul class="list-unstyled mb-0">
-          <li><a href="about.html">About us</a></li>
-          <li><a href="rd.html">R&amp;D</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+      <div class="col-12 col-md-6 col-lg-2">
+        <h6 class="footer-heading">Explore</h6>
+        <ul class="footer-links list-unstyled mb-0">
+          <li><a href="/about">About us</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/rd">R&amp;D</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="col-6 col-lg-4">
-        <h6 class="mb-3">Services</h6>
-        <ul class="list-unstyled mb-0">
-          <li><a href="services.html#design">UI/UX &amp; Graphic Design</a></li>
-          <li><a href="services.html#development">Full-Stack Development</a></li>
-          <li><a href="services.html#mobile">Mobile App Development</a></li>
-          <li><a href="services.html#security">Cybersecurity</a></li>
-          <li><a href="services.html#maintenance">Management &amp; Maintenance</a></li>
-          <li><a href="services.html#revamp">Website Revamp &amp; Rebranding</a></li>
-          <li><a href="services.html#cms">CMS &amp; E-commerce</a></li>
+      <div class="col-12 col-md-6 col-lg-3">
+        <h6 class="footer-heading">Services</h6>
+        <ul class="footer-links list-unstyled mb-0">
+          <li><a href="/services#design">UI/UX &amp; Graphic Design</a></li>
+          <li><a href="/services#development">Full-Stack Development</a></li>
+          <li><a href="/services#mobile">Mobile App Development</a></li>
+          <li><a href="/services#security">Cybersecurity</a></li>
+          <li><a href="/services#maintenance">Management &amp; Maintenance</a></li>
+          <li><a href="/services#revamp">Website Revamp &amp; Rebranding</a></li>
+          <li><a href="/services#cms">CMS &amp; E-commerce</a></li>
         </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <h6 class="footer-heading">Find us</h6>
+        <div class="footer-locations">
+          <address class="footer-location">
+            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+            <span><strong>Bangladesh</strong><br>Agrabad Commercial Area,<br>Chattogram</span>
+          </address>
+          <address class="footer-location">
+            <i class="bi bi-geo-alt" aria-hidden="true"></i>
+            <span><strong>United States</strong><br>Austin, TX 78701, USA</span>
+          </address>
+        </div>
       </div>
     </div>
-    <hr class="my-4">
-    <div class="small">&copy; 2026 OrbitWick. All rights reserved.</div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 OrbitWick. All rights reserved.</span>
+    </div>
   </div>
 </footer>
 

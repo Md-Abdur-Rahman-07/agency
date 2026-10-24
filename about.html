@@ -13,7 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -22,7 +22,7 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg ow-nav sticky-top" data-bs-theme="dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/logo-white.png" alt="OrbitWick" width="140"
+      <a class="navbar-brand" href="/"><img src="img/logo-white.png" alt="OrbitWick" width="140"
           height="34"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
         aria-label="Toggle navigation">
@@ -30,12 +30,11 @@
       </button>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="rd.html">R&amp;D</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item ms-lg-3"><a class="btn btn-burgundy btn-sm px-3" href="index.html#contact">Get in
+          <li class="nav-item"><a class="nav-link " href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-burgundy btn-sm px-3" href="/#contact">Get in
               touch</a></li>
         </ul>
       </div>
@@ -43,30 +42,61 @@
   </nav>
 
   <!-- PAGE HERO -->
-  <header class="page-hero">
+  <header class="about-hero hero-cursor-area">
     <div class="container">
-      <div class="eyebrow mb-3" data-aos="fade-up">About us</div>
-      <h1 class="display-4 fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">One studio. <span
-          style="color:#d9758a">Every discipline.</span></h1>
-      <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200">A team of engineers bringing design, development and
-        security together for clients.</p>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="eyebrow mb-3">A technology studio</div>
+          <h1 class="display-4 fw-bold mb-4">Good ideas deserve <span>thoughtful technology.</span></h1>
+          <a href="#our-story" class="btn btn-burgundy">Get to know us</a>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+          <img class="about-hero-image" src="img/site/img6.jpg"
+            alt="Colleagues collaborating around a table" width="6090" height="4060" fetchpriority="high">
+        </div>
+      </div>
     </div>
   </header>
+  <nav class="svc-nav" aria-label="Our services">
+    <div class="svc-nav-lane">
+      <div class="svc-nav-track">
+        <div class="svc-nav-group">
+          <a href="/services#design"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
+          <a href="/services#development"><i class="bi bi-code-slash" aria-hidden="true"></i>Web Development</a>
+          <a href="/services#mobile"><i class="bi bi-phone" aria-hidden="true"></i>Mobile Apps</a>
+          <a href="/services#security"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity</a>
+          <a href="/services#maintenance"><i class="bi bi-gear" aria-hidden="true"></i>Website Care</a>
+          <a href="/services#revamp"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
+          <a href="/services#cms"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
+        </div>
+        <div class="svc-nav-group" aria-hidden="true" inert>
+          <a href="/services#design" tabindex="-1"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
+          <a href="/services#development" tabindex="-1"><i class="bi bi-code-slash" aria-hidden="true"></i>Web Development</a>
+          <a href="/services#mobile" tabindex="-1"><i class="bi bi-phone" aria-hidden="true"></i>Mobile Apps</a>
+          <a href="/services#security" tabindex="-1"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity</a>
+          <a href="/services#maintenance" tabindex="-1"><i class="bi bi-gear" aria-hidden="true"></i>Website Care</a>
+          <a href="/services#revamp" tabindex="-1"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
+          <a href="/services#cms" tabindex="-1"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <!-- STORY -->
-  <section>
+  <section id="our-story">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
+        <div class="col-lg-9" data-aos="fade-up">
           <div class="eyebrow">Our story</div>
-          <h2 class="section-title mt-2">Built by engineers, for dependable digital products</h2>
+          <h2 class="section-title mt-2">Different strengths. One dependable team.</h2>
           <div class="section-bar"></div>
-          <p class="text-grey">OrbitWick was founded by a group of engineers who studied together and went on to develop
-            deep expertise in different areas of technology, from interface design and software development to security
-            and infrastructure.</p>
-          <p class="text-grey mb-0">Working with clients, we saw how often a single project was split across several
-            vendors, with design, code and security handled in isolation. We formed OrbitWick to bring those disciplines
-            into one accountable team, so projects are planned, built, secured and supported as a whole.</p>
+          <p class="text-grey">OrbitWick began with a group of engineers who studied together and later developed
+            expertise across design, software development, cybersecurity and infrastructure. We shared a belief that
+            technology should solve real problems, feel intuitive to use and be built to last.</p>
+          <p class="text-grey mb-0">We saw clients having to coordinate separate vendors for design, development and
+            security, often with no one looking after the whole experience. OrbitWick brings those disciplines together
+            in one collaborative studio. From the first conversation through launch and ongoing care, our team keeps the
+            work connected, communicates clearly and takes responsibility for the details.</p>
         </div>
       </div>
 
@@ -99,134 +129,135 @@
     </div>
   </section>
 
-  <!-- VALUES -->
+  <!-- WHY CHOOSE US -->
   <section class="bg-grey-ow">
     <div class="container">
       <div class="row g-5 align-items-center">
-        <div class="col-lg-5" data-aos="fade-right">
-          <div class="eyebrow">What we stand for</div>
-          <h2 class="section-title mt-2">A team of professionals</h2>
-          <div class="section-bar"></div>
-          <p class="text-grey mb-0">OrbitWick brings design, engineering and security together so clients do not have to
-            juggle multiple vendors. We keep our team lean, our communication clear and our work accountable.</p>
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-why-image">
+            <img
+              src="img/site/img2.jpg" alt="A team working together at a laptop" width="3100" height="1744"
+              loading="lazy">
+          </div>
         </div>
-        <div class="col-lg-7">
-          <div class="row g-4">
-            <div class="col-6" data-aos="fade-up">
-              <div class="value-box">
-                <h5>Clarity</h5>
-                <p>Plain-language proposals, honest timelines.</p>
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="eyebrow">Why choose us</div>
+          <h2 class="section-title mt-2">A partner for the whole journey</h2>
+          <div class="section-bar"></div>
+          <p class="text-grey mb-4">You get a connected team focused on making your digital work clear, capable and
+            easier to maintain.</p>
+          <div class="about-reasons">
+            <article class="about-reason">
+              <i class="bi bi-diagram-3" aria-hidden="true"></i>
+              <div>
+                <h3>Connected expertise</h3>
+                <p>Design, development and security work together instead of in separate silos.</p>
               </div>
-            </div>
-            <div class="col-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="value-box">
-                <h5>Quality</h5>
-                <p>Clean code and pixel-careful design.</p>
+            </article>
+            <article class="about-reason">
+              <i class="bi bi-chat-square-text" aria-hidden="true"></i>
+              <div>
+                <h3>Clear communication</h3>
+                <p>Understand the plan, the trade-offs and what comes next at every stage.</p>
               </div>
-            </div>
-            <div class="col-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="value-box">
-                <h5>Security</h5>
-                <p>Protection built in, not bolted on.</p>
+            </article>
+            <article class="about-reason">
+              <i class="bi bi-shield-check" aria-hidden="true"></i>
+              <div>
+                <h3>Quality with care</h3>
+                <p>We consider usability, reliability and security throughout the work.</p>
               </div>
-            </div>
-            <div class="col-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="value-box">
-                <h5>Care</h5>
-                <p>Long-term support after launch.</p>
+            </article>
+            <article class="about-reason">
+              <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+              <div>
+                <h3>Support beyond launch</h3>
+                <p>Keep improving with practical maintenance and ongoing support.</p>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section>
+  <!-- FAQ -->
+  <section id="about-faq">
     <div class="container">
-      <div class="text-center mx-auto mb-5" style="max-width:640px" data-aos="fade-up">
-        <div class="eyebrow">The people</div>
-        <h2 class="section-title mt-2">Meet the Team</h2>
+      <div class="text-center mx-auto mb-5" style="max-width:680px" data-aos="fade-up">
+        <div class="eyebrow">Frequently asked questions</div>
+        <h2 class="section-title mt-2">A few things you might be wondering</h2>
         <div class="section-bar"></div>
+        <p class="text-grey mb-0">Not seeing your question? <a href="/#contact">Talk to our team</a>.</p>
       </div>
-      <div class="row justify-content-center g-4">
-        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-
-          <article class="team-card">
-            <div class="team-photo">
-              <img
-                src="https://ui-avatars.com/api/?name=Abdur+Rahman&size=500&background=4e1221&color=ffffff&bold=true&font-size=0.36"
-                alt="Abdur Rahman" loading="lazy">
+      <div class="about-faq-list mx-auto" data-aos="fade-up">
+        <div class="accordion" id="aboutFaq">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="aboutFaqHeadingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#aboutFaqOne" aria-expanded="true" aria-controls="aboutFaqOne">
+                What kind of projects can OrbitWick help with?
+              </button>
+            </h3>
+            <div id="aboutFaqOne" class="accordion-collapse collapse show" aria-labelledby="aboutFaqHeadingOne"
+              data-bs-parent="#aboutFaq">
+              <div class="accordion-body">We work across UI/UX and graphic design, web and mobile development,
+                cybersecurity, CMS and e-commerce, website revamps, and ongoing website management.</div>
             </div>
-            <div class="team-body">
-              <h4>Abdur Rahman</h4>
-              <div class="team-role">Head of Operations</div>
-              <p>Manages operations, project coordination, and client communication.</p>
-              <div class="team-tags">
-                <span>Operations</span>
-                <span>Project Coordination</span>
-                <span>Client Relations</span>
-              </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="aboutFaqHeadingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#aboutFaqTwo" aria-expanded="false" aria-controls="aboutFaqTwo">
+                Can you join an existing project or team?
+              </button>
+            </h3>
+            <div id="aboutFaqTwo" class="accordion-collapse collapse" aria-labelledby="aboutFaqHeadingTwo"
+              data-bs-parent="#aboutFaq">
+              <div class="accordion-body">Yes. We can discuss a focused need, such as a redesign or security review, as
+                well as projects that need support across several disciplines.</div>
             </div>
-          </article>
-
-
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="aboutFaqHeadingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#aboutFaqThree" aria-expanded="false" aria-controls="aboutFaqThree">
+                How does a project typically get started?
+              </button>
+            </h3>
+            <div id="aboutFaqThree" class="accordion-collapse collapse" aria-labelledby="aboutFaqHeadingThree"
+              data-bs-parent="#aboutFaq">
+              <div class="accordion-body">We start by learning about your goals, users and constraints. Then we agree on
+                a clear scope and next steps before moving into design, implementation and review.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="aboutFaqHeadingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#aboutFaqFour" aria-expanded="false" aria-controls="aboutFaqFour">
+                Do you provide support after a website or app launches?
+              </button>
+            </h3>
+            <div id="aboutFaqFour" class="accordion-collapse collapse" aria-labelledby="aboutFaqHeadingFour"
+              data-bs-parent="#aboutFaq">
+              <div class="accordion-body">Yes. We offer website management and maintenance to help keep digital
+                products updated, dependable and ready to grow after launch.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="aboutFaqHeadingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#aboutFaqFive" aria-expanded="false" aria-controls="aboutFaqFive">
+                How can I discuss my project with your team?
+              </button>
+            </h3>
+            <div id="aboutFaqFive" class="accordion-collapse collapse" aria-labelledby="aboutFaqHeadingFive"
+              data-bs-parent="#aboutFaq">
+              <div class="accordion-body">Send us a few details through the <a href="/#contact">contact
+                  form</a>. We will review your needs and get back to you about possible next steps.</div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-          <article class="team-card">
-            <div class="team-photo">
-              <!-- Replace src with the person's real photo, e.g. images/borhan.jpg -->
-              <img
-                src="https://ui-avatars.com/api/?name=Borhan+Uddin&size=500&background=6d1a2e&color=ffffff&bold=true&font-size=0.36"
-                alt="Borhan Uddin" loading="lazy">
-            </div>
-            <div class="team-body">
-              <h4>Borhan Uddin</h4>
-              <div class="team-role">Head of Marketing</div>
-              <p>Leads brand positioning, digital campaigns and client acquisition, turning OrbitWick's work into
-                visible results.</p>
-              <div class="team-tags"><span>Branding</span><span>SEO</span><span>Campaigns</span></div>
-            </div>
-          </article>
-        </div>
-        <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-          <article class="team-card">
-            <div class="team-photo">
-              <!-- Replace src with the person's real photo, e.g. images/shahadat.jpg -->
-              <img
-                src="https://ui-avatars.com/api/?name=Shahadat+Fahim&size=500&background=111113&color=ffffff&bold=true&font-size=0.36"
-                alt="Shahadat Fahim" loading="lazy">
-            </div>
-            <div class="team-body">
-              <h4>Shahadat Fahim</h4>
-              <div class="team-role">Head of Human Resources</div>
-              <p>Manages recruitment, onboarding and team culture, keeping the people behind OrbitWick supported and
-                growing.</p>
-              <div class="team-tags"><span>Recruitment</span><span>Culture</span><span>Onboarding</span></div>
-            </div>
-          </article>
-        </div>
-        <!-- <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-          <article class="team-card">
-            <div class="team-photo">
-        
-              <img
-                src="https://ui-avatars.com/api/?name=Sadman+Safin&size=500&background=6c6c72&color=ffffff&bold=true&font-size=0.36"
-                alt="Sadman Safin" loading="lazy">
-            </div>
-            <div class="team-body">
-              <h4>Sadman Safin</h4>
-              <div class="team-role">Head of Legal &amp; Finance</div>
-
-              <p>Oversees legal compliance and financial operations to ensure regulatory compliance and fiscal
-                responsibility.</p>
-
-              <div class="team-tags"><span>Legal</span><span>Finance</span><span>Compliance</span></div>
-            </div>
-          </article>
-        </div> -->
-
       </div>
     </div>
   </section>
@@ -240,46 +271,60 @@
           <p class="mb-0" style="color:#f0cdd5">Tell us about your project and we will reply with next steps.</p>
         </div>
         <div class="col-lg-4 text-lg-end">
-          <a href="index.html#contact" class="btn btn-outline-light-ow">Contact us</a>
+          <a href="/#contact" class="btn btn-outline-light-ow">Contact us</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-5">
-          <a href="index.html" class="brand d-inline-block mb-3"><img src="img/logo-white.png" alt="OrbitWick"
+      <div class="row g-4 footer-main">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="/" class="brand d-inline-block mb-3"><img src="img/logo-white.png" alt="OrbitWick"
               width="156" height="38"></a>
-          <p class="mb-0" style="max-width:380px">Design, development and security for businesses that want a dependable
-            web presence.</p>
+          <p class="footer-intro mb-0">Design, development and security for businesses that want a dependable web presence.</p>
         </div>
-        <div class="col-6 col-lg-3">
-          <h6 class="mb-3">Company</h6>
-          <ul class="list-unstyled mb-0">
-            <li><a href="about.html">About us</a></li>
-            <li><a href="rd.html">R&amp;D</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h6 class="footer-heading">Explore</h6>
+          <ul class="footer-links list-unstyled mb-0">
+            <li><a href="/about">About us</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/rd">R&amp;D</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-4">
-          <h6 class="mb-3">Services</h6>
-          <ul class="list-unstyled mb-0">
-            <li><a href="services.html#design">UI/UX &amp; Graphic Design</a></li>
-            <li><a href="services.html#development">Full-Stack Development</a></li>
-            <li><a href="services.html#mobile">Mobile App Development</a></li>
-            <li><a href="services.html#security">Cybersecurity</a></li>
-            <li><a href="services.html#maintenance">Management &amp; Maintenance</a></li>
-            <li><a href="services.html#revamp">Website Revamp &amp; Rebranding</a></li>
-            <li><a href="services.html#cms">CMS &amp; E-commerce</a></li>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-heading">Services</h6>
+          <ul class="footer-links list-unstyled mb-0">
+            <li><a href="/services#design">UI/UX &amp; Graphic Design</a></li>
+            <li><a href="/services#development">Full-Stack Development</a></li>
+            <li><a href="/services#mobile">Mobile App Development</a></li>
+            <li><a href="/services#security">Cybersecurity</a></li>
+            <li><a href="/services#maintenance">Management &amp; Maintenance</a></li>
+            <li><a href="/services#revamp">Website Revamp &amp; Rebranding</a></li>
+            <li><a href="/services#cms">CMS &amp; E-commerce</a></li>
           </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-heading">Find us</h6>
+          <div class="footer-locations">
+            <address class="footer-location">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span><strong>Bangladesh</strong><br>Agrabad Commercial Area,<br>Chattogram</span>
+            </address>
+            <address class="footer-location">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span><strong>United States</strong><br>Austin, TX 78701, USA</span>
+            </address>
+          </div>
         </div>
       </div>
-      <hr class="my-4">
-      <div class="small">&copy; 2026 OrbitWick. All rights reserved.</div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OrbitWick. All rights reserved.</span>
+      </div>
     </div>
   </footer>
 

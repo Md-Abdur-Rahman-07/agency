@@ -13,7 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -22,7 +22,7 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg ow-nav sticky-top" data-bs-theme="dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/logo-white.png" alt="OrbitWick" width="140"
+      <a class="navbar-brand" href="/"><img src="img/logo-white.png" alt="OrbitWick" width="140"
           height="34"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
         aria-label="Toggle navigation">
@@ -30,12 +30,11 @@
       </button>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="rd.html">R&amp;D</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item ms-lg-3"><a class="btn btn-burgundy btn-sm px-3" href="index.html#contact">Get in
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-burgundy btn-sm px-3" href="/#contact">Get in
               touch</a></li>
         </ul>
       </div>
@@ -43,22 +42,48 @@
   </nav>
 
   <!-- PAGE HERO -->
-  <header class="page-hero">
+  <header class="page-hero hero-cursor-area">
     <div class="container">
-      <div class="eyebrow mb-3" data-aos="fade-up">What we do</div>
-      <h1 class="display-4 fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">Our Services</h1>
-      <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200">Everything you need to launch, grow and safeguard
-        your online business, from first sketch to long-term care.</p>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="eyebrow mb-3" data-aos="fade-up">What we do</div>
+          <h1 class="display-4 fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">Our Services</h1>
+          <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200">Everything you need to launch, grow and safeguard
+            your online business, from first sketch to long-term care.</p>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+          <img class="page-hero-image" src="img/site/img2.jpg"
+            alt="A team planning work together around a laptop" width="3100" height="1744" fetchpriority="high">
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- QUICK NAV -->
-  <div class="svc-nav">
-    <div class="container"><a href="#design">UI/UX &amp; Graphic Design</a><a href="#development">Full-Stack Web
-        Development</a><a href="#mobile">Mobile App Development</a><a href="#security">Cybersecurity
-        Services</a><a href="#maintenance">Website Management &amp; Maintenance</a><a href="#revamp">Website Revamp
-        &amp; Rebranding</a><a href="#cms">CMS &amp; E-commerce Development</a></div>
-  </div>
+  <!-- SERVICE MARQUEE -->
+  <nav class="svc-nav" aria-label="Jump to a service">
+    <div class="svc-nav-lane">
+      <div class="svc-nav-track">
+        <div class="svc-nav-group">
+          <a href="#design"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
+          <a href="#development"><i class="bi bi-code-slash" aria-hidden="true"></i>Full-Stack Web Development</a>
+          <a href="#mobile"><i class="bi bi-phone" aria-hidden="true"></i>Mobile App Development</a>
+          <a href="#security"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity Services</a>
+          <a href="#maintenance"><i class="bi bi-gear" aria-hidden="true"></i>Website Management</a>
+          <a href="#revamp"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
+          <a href="#cms"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
+        </div>
+        <div class="svc-nav-group" aria-hidden="true" inert>
+          <a href="#design" tabindex="-1"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
+          <a href="#development" tabindex="-1"><i class="bi bi-code-slash" aria-hidden="true"></i>Full-Stack Web Development</a>
+          <a href="#mobile" tabindex="-1"><i class="bi bi-phone" aria-hidden="true"></i>Mobile App Development</a>
+          <a href="#security" tabindex="-1"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity Services</a>
+          <a href="#maintenance" tabindex="-1"><i class="bi bi-gear" aria-hidden="true"></i>Website Management</a>
+          <a href="#revamp" tabindex="-1"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
+          <a href="#cms" tabindex="-1"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <section id="design" class="svc-detail">
     <div class="container">
@@ -75,7 +100,7 @@
           <div class="svc-tags mb-4">
             <span>Figma</span><span>Wireframes</span><span>Prototypes</span><span>Branding</span>
           </div>
-          <a href="index.html#contact" class="btn btn-burgundy">Ask about this service</a>
+          <a href="/#contact" class="btn btn-burgundy">Ask about this service</a>
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
           <div class="svc-panel">
@@ -107,7 +132,7 @@
             tools, dashboards or customer-facing apps.</p>
           <div class="svc-tags mb-4"><span>Frontend</span><span>Backend</span><span>REST
               APIs</span><span>Databases</span></div>
-          <a href="index.html#contact" class="btn btn-burgundy">Ask about this service</a>
+          <a href="/#contact" class="btn btn-burgundy">Ask about this service</a>
         </div>
         <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="100">
           <div class="svc-panel">
@@ -140,7 +165,7 @@
             existing web product to mobile.</p>
           <div class="svc-tags mb-4"><span>Android</span><span>iOS</span><span>Cross-Platform</span><span>Mobile
               UI/UX</span></div>
-          <a href="index.html#contact" class="btn btn-burgundy">Ask about this service</a>
+          <a href="/#contact" class="btn btn-burgundy">Ask about this service</a>
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
           <div class="svc-panel">
@@ -174,7 +199,7 @@
           <div class="svc-tags mb-4">
             <span>Audits</span><span>Assessments</span><span>Hardening</span><span>Remediation</span>
           </div>
-          <a href="index.html#contact" class="btn btn-burgundy">Ask about this service</a>
+          <a href="/#contact" class="btn btn-burgundy">Ask about this service</a>
         </div>
         <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="100">
           <div class="svc-panel">
@@ -206,7 +231,7 @@
             worrying about the technical side.</p>
           <div class="svc-tags mb-4"><span>Updates</span><span>Backups</span><span>Monitoring</span><span>Support</span>
           </div>
-          <a href="index.html#contact" class="btn btn-burgundy">Ask about this service</a>
+          <a href="/#contact" class="btn btn-burgundy">Ask about this service</a>
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
           <div class="svc-panel">
@@ -238,7 +263,7 @@
           <p class="svc-meta"><strong>Ideal for:</strong> Businesses whose website or visual identity no longer reflects
             the quality of their work.</p>
           <div class="svc-tags mb-4"><span>Redesign</span><span>Rebranding</span><span>Performance</span><span>SEO</span></div>
-          <a href="index.html#contact" class="btn btn-burgundy">Ask about this service</a>
+          <a href="/#contact" class="btn btn-burgundy">Ask about this service</a>
         </div>
         <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-delay="100">
           <div class="svc-panel">
@@ -269,7 +294,7 @@
           <p class="svc-meta"><strong>Ideal for:</strong> Businesses that want to get online quickly and keep control of
             their own content and products.</p>
           <div class="svc-tags mb-4"><span>WordPress</span><span>Shopify</span><span>WooCommerce</span></div>
-          <a href="index.html#contact" class="btn btn-burgundy">Ask about this service</a>
+          <a href="/#contact" class="btn btn-burgundy">Ask about this service</a>
         </div>
         <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
           <div class="svc-panel">
@@ -287,11 +312,11 @@
     </div>
   </section>
 
-  <!-- PROCESS -->
-  <section style="background:var(--ow-black)" class="text-white">
+  <!-- PROJECT PROCESS -->
+  <section class="project-process">
     <div class="container">
-      <div class="text-center mx-auto mb-5" style="max-width:640px" data-aos="fade-up">
-        <div class="eyebrow" style="color:#d9758a">How we work</div>
+      <div class="text-center mx-auto mb-4" style="max-width:640px">
+        <div class="eyebrow">How we work</div>
         <h2 class="section-title mt-2">How a project runs</h2>
         <div class="section-bar"></div>
       </div>
@@ -300,84 +325,89 @@
           <div class="process-step">
             <div class="circle" style="background:var(--ow-burgundy)">1</div>
             <h5>Discover</h5>
-            <p style="color:#a1a1a8">We listen, ask questions and define the goals.</p>
+            <p>We listen, ask questions and define the goals.</p>
           </div>
         </div>
         <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
           <div class="process-step">
             <div class="circle" style="background:var(--ow-burgundy)">2</div>
             <h5>Plan</h5>
-            <p style="color:#a1a1a8">A clear scope, timeline and proposal in plain language.</p>
+            <p>A clear scope, timeline and proposal in plain language.</p>
           </div>
         </div>
         <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
           <div class="process-step">
             <div class="circle" style="background:var(--ow-burgundy)">3</div>
             <h5>Build</h5>
-            <p style="color:#a1a1a8">Design and development with regular check-ins.</p>
+            <p>Design and development with regular check-ins.</p>
           </div>
         </div>
         <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
           <div class="process-step">
             <div class="circle" style="background:var(--ow-burgundy)">4</div>
             <h5>Launch &amp; care</h5>
-            <p style="color:#a1a1a8">We go live together, then keep it secure and healthy.</p>
+            <p>We go live together, then keep it secure and healthy.</p>
           </div>
         </div>
+      </div>
+      <div class="process-cta">
+        <div>
+          <h3>Not sure which service you need?</h3>
+          <p>Describe your project and we will recommend the right starting point.</p>
+        </div>
+        <a href="/#contact" class="btn btn-burgundy">Start a project</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <div class="cta">
-    <div class="container">
-      <div class="row align-items-center g-3" data-aos="fade-up">
-        <div class="col-lg-8">
-          <h3 class="mb-1">Not sure which service you need?</h3>
-          <p class="mb-0" style="color:#f0cdd5">Describe your project and we will recommend the right starting point.
-          </p>
-        </div>
-        <div class="col-lg-4 text-lg-end">
-          <a href="index.html#contact" class="btn btn-outline-light-ow">Start a project</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- FOOTER -->
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-5">
-          <a href="index.html" class="brand d-inline-block mb-3"><img src="img/logo-white.png" alt="OrbitWick"
+      <div class="row g-4 footer-main">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="/" class="brand d-inline-block mb-3"><img src="img/logo-white.png" alt="OrbitWick"
               width="156" height="38"></a>
-          <p class="mb-0" style="max-width:380px">Design, development and security for businesses that want a dependable
-            web presence.</p>
+          <p class="footer-intro mb-0">Design, development and security for businesses that want a dependable web presence.</p>
         </div>
-        <div class="col-6 col-lg-3">
-          <h6 class="mb-3">Company</h6>
-          <ul class="list-unstyled mb-0">
-            <li><a href="about.html">About us</a></li>
-            <li><a href="rd.html">R&amp;D</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+        <div class="col-12 col-md-6 col-lg-2">
+          <h6 class="footer-heading">Explore</h6>
+          <ul class="footer-links list-unstyled mb-0">
+            <li><a href="/about">About us</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/rd">R&amp;D</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-4">
-          <h6 class="mb-3">Services</h6>
-          <ul class="list-unstyled mb-0">
-            <li><a href="services.html#design">UI/UX &amp; Graphic Design</a></li>
-            <li><a href="services.html#development">Full-Stack Development</a></li>
-            <li><a href="services.html#mobile">Mobile App Development</a></li>
-            <li><a href="services.html#security">Cybersecurity</a></li>
-            <li><a href="services.html#maintenance">Management &amp; Maintenance</a></li>
-            <li><a href="services.html#revamp">Website Revamp &amp; Rebranding</a></li>
-            <li><a href="services.html#cms">CMS &amp; E-commerce</a></li>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-heading">Services</h6>
+          <ul class="footer-links list-unstyled mb-0">
+            <li><a href="/services#design">UI/UX &amp; Graphic Design</a></li>
+            <li><a href="/services#development">Full-Stack Development</a></li>
+            <li><a href="/services#mobile">Mobile App Development</a></li>
+            <li><a href="/services#security">Cybersecurity</a></li>
+            <li><a href="/services#maintenance">Management &amp; Maintenance</a></li>
+            <li><a href="/services#revamp">Website Revamp &amp; Rebranding</a></li>
+            <li><a href="/services#cms">CMS &amp; E-commerce</a></li>
           </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h6 class="footer-heading">Find us</h6>
+          <div class="footer-locations">
+            <address class="footer-location">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span><strong>Bangladesh</strong><br>Agrabad Commercial Area,<br>Chattogram</span>
+            </address>
+            <address class="footer-location">
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <span><strong>United States</strong><br>Austin, TX 78701, USA</span>
+            </address>
+          </div>
         </div>
       </div>
-      <hr class="my-4">
-      <div class="small">&copy; 2026 OrbitWick. All rights reserved.</div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OrbitWick. All rights reserved.</span>
+      </div>
     </div>
   </footer>
 
