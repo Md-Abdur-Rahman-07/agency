@@ -64,25 +64,53 @@
     var status = document.querySelector('.contact-form-status');
     if (!form || !status) return;
 
-    var result = new URLSearchParams(window.location.search).get('contact');
-    if (result !== 'success' && result !== 'error') return;
-
-    status.className = 'contact-form-status alert alert-' +
-      (result === 'success' ? 'success' : 'danger');
-    status.textContent = result === 'success'
-      ? 'Thanks! Your request has been sent. We will be in touch soon.'
-      : 'We could not send your request. Please check your details and try again. If the problem continues, email ';
-    if (result === 'error') {
-      var emailLink = document.createElement('a');
-      emailLink.href = 'mailto:contact.orbitwick@gmail.com';
-      emailLink.textContent = 'contact.orbitwick@gmail.com';
-      status.appendChild(emailLink);
+    function displayStatus(type, message) {
+      status.className = 'contact-form-status alert alert-' + type;
+      status.textContent = message;
+      status.hidden = false;
     }
-    status.hidden = false;
 
-    if (window.history && window.history.replaceState) {
-      window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
-    }
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (form.dataset.submitting === 'true') return;
+
+      var submitButton = form.querySelector('[type="submit"]');
+      var buttonText = submitButton.textContent;
+      var formData = new FormData(form);
+      var values = {};
+      formData.forEach(function (value, key) {
+        values[key] = value;
+      });
+
+      form.dataset.submitting = 'true';
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+      displayStatus('info', 'Sending your request...');
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(values)
+      })
+        .then(function (response) {
+          return response.json().then(function (result) {
+            if (!response.ok || !result.success) {
+              throw new Error(result.message || 'Form submission failed');
+            }
+            displayStatus('success', 'Thanks! Your request has been sent. We will be in touch soon.');
+            form.reset();
+          });
+        })
+        .catch(function () {
+          displayStatus('danger', 'We could not send your request. Please try again or email contact.orbitwick@gmail.com.');
+        })
+        .then(function () {
+          form.dataset.submitting = 'false';
+          submitButton.disabled = false;
+          submitButton.textContent = buttonText;
+          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    });
   }
 
   function initBlog() {
