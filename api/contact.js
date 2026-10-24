@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer');
 
 const RECIPIENT_EMAIL = 'contact.orbitwick@gmail.com';
+
 const SERVICES = [
   'UI/UX & Graphic Design',
   'Full-Stack Web Development',
@@ -10,6 +11,7 @@ const SERVICES = [
   'Website Revamp & Rebranding',
   'CMS & E-commerce Development'
 ];
+
 const TIMELINES = [
   '',
   'As soon as possible',
@@ -31,6 +33,10 @@ function singleLine(value) {
   return asString(value).replace(/[\r\n]+/g, ' ');
 }
 
+function isValidEmail(value) {
+  return value.length <= 254 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
 function isValidWebsite(value) {
   if (!value) return true;
 
@@ -49,13 +55,28 @@ function respond(res, status, payload) {
 module.exports = async function contactHandler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
-    return respond(res, 405, { success: false, message: 'Method not allowed.' });
+    return respond(res, 405, {
+      success: false,
+      message: 'Method not allowed.'
+    });
   }
 
-  const body = req.body && typeof req.body === 'object' && !Array.isArray(req.body)
-    ? req.body
-    : {};
+  let body = req.body;
+  if (typeof body === 'string') {
+    try {
+      body = JSON.parse(body);
+    } catch {
+      return respond(res, 400, {
+        success: false,
+        message: 'Invalid request body.'
+      });
+    }
+  }
+  if (!body || typeof body !== 'object' || Array.isArray(body)) {
+    body = {};
+  }
 
+  // Honeypot field: silently ignore automated spam submissions.
   if (asString(body.website_confirm) !== '') {
     return respond(res, 200, { success: true });
   }
@@ -68,11 +89,9 @@ module.exports = async function contactHandler(req, res) {
   const timeline = singleLine(body.timeline);
   const message = asString(body.message);
 
-  const validEmail = email.length <= 254
-    && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   const valid = name !== ''
     && textLength(name) <= 120
-    && validEmail
+    && isValidEmail(email)
     && textLength(company) <= 160
     && isValidWebsite(website)
     && SERVICES.includes(service)
@@ -87,14 +106,14 @@ module.exports = async function contactHandler(req, res) {
     });
   }
 
-  const host = process.env.SMTP_HOST || '';
-  const user = process.env.SMTP_USERNAME || '';
+  const host = (process.env.SMTP_HOST || '').trim();
+  const user = (process.env.SMTP_USERNAME || '').trim();
   const pass = process.env.SMTP_PASSWORD || '';
   const port = Number(process.env.SMTP_PORT || 587);
-  const secureSetting = (process.env.SMTP_SECURE || 'tls').toLowerCase();
-  const from = process.env.SMTP_FROM_EMAIL || user;
-  const missing = [];
+  const secureSetting = (process.env.SMTP_SECURE || 'tls').trim().toLowerCase();
+  const from = (process.env.SMTP_FROM_EMAIL || user).trim();
 
+  const missing = [];
   if (!host) missing.push('SMTP_HOST');
   if (!user) missing.push('SMTP_USERNAME');
   if (!pass) missing.push('SMTP_PASSWORD');
@@ -109,7 +128,7 @@ module.exports = async function contactHandler(req, res) {
 
   if (!Number.isInteger(port) || port < 1 || port > 65535
     || !['tls', 'ssl'].includes(secureSetting)
-    || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(from)) {
+    || !isValidEmail(from)) {
     console.error('Contact form SMTP configuration is invalid.');
     return respond(res, 500, {
       success: false,
@@ -120,7 +139,9 @@ module.exports = async function contactHandler(req, res) {
   const transporter = nodemailer.createTransport({
     host,
     port,
+    // Port 587 uses STARTTLS (false); port 465 usually uses SSL (true).
     secure: secureSetting === 'ssl',
+    requireTLS: secureSetting === 'tls',
     auth: { user, pass },
     connectionTimeout: 10000,
     greetingTimeout: 10000,
@@ -149,9 +170,16 @@ module.exports = async function contactHandler(req, res) {
       subject: 'New OrbitWick consultation request',
       text: emailBody
     });
+
     return respond(res, 200, { success: true });
   } catch (error) {
-    console.error('Contact form email could not be sent:', error);
+    // Keep passwords out of logs while retaining useful diagnostics.
+    console.error('Contact form email could not be sent:', {
+      code: error.code,
+      responseCode: error.responseCode,
+      command: error.command,
+      message: error.message
+    });
     return respond(res, 502, {
       success: false,
       message: 'We could not send your request. Please try again later.'
