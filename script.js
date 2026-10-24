@@ -506,3 +506,39 @@
   initBlog();
   initBlogPost();
 })();
+
+// Disable Right Click
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
+
+// Disable Common Developer Tools Shortcuts
+document.addEventListener("keydown", function (e) {
+
+    const key = e.key.toLowerCase();
+
+    // F12
+    if (e.key === "F12") {
+        e.preventDefault();
+        return;
+    }
+
+    // Ctrl + Shift + I / J / C
+    if (e.ctrlKey && e.shiftKey && ["i", "j", "c"].includes(key)) {
+        e.preventDefault();
+        return;
+    }
+
+    // Ctrl + U (View Page Source)
+    if (e.ctrlKey && key === "u") {
+        e.preventDefault();
+        return;
+    }
+
+    // Mac: Cmd + Option + I / J / C
+    if (e.metaKey && e.altKey && ["i", "j", "c"].includes(key)) {
+        e.preventDefault();
+        return;
+    }
+
+});
