@@ -123,21 +123,20 @@ module.exports = async function contactHandler(req, res) {
     console.error('Contact form SMTP configuration missing:', missing.join(', '));
     return respond(res, 500, {
       success: false,
-      message: 'Email delivery is not configured. Please try again later.'
+      message: `Email delivery is not configured. Check: ${missing.join(', ')}.`
     });
   }
 
-  if (!Number.isInteger(port) || port < 1 || port > 65535
-    || !secureSettings.includes(secureSetting)
-    || !isValidEmail(from)) {
-    console.error('Contact form SMTP configuration is invalid:', {
-      port: Number.isInteger(port) && port >= 1 && port <= 65535 ? undefined : 'SMTP_PORT',
-      secureSetting: secureSettings.includes(secureSetting) ? undefined : 'SMTP_SECURE',
-      from: isValidEmail(from) ? undefined : 'SMTP_FROM_EMAIL'
-    });
+  const invalid = [];
+  if (!Number.isInteger(port) || port < 1 || port > 65535) invalid.push('SMTP_PORT');
+  if (!secureSettings.includes(secureSetting)) invalid.push('SMTP_SECURE');
+  if (!isValidEmail(from)) invalid.push('SMTP_FROM_EMAIL');
+
+  if (invalid.length) {
+    console.error('Contact form SMTP configuration is invalid:', invalid.join(', '));
     return respond(res, 500, {
       success: false,
-      message: 'Email delivery is not configured correctly. Please try again later.'
+      message: `Email delivery configuration is invalid. Check: ${invalid.join(', ')}.`
     });
   }
 

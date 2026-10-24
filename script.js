@@ -95,7 +95,8 @@
         .then(function (response) {
           return response.json().then(function (result) {
             if (!response.ok || !result.success) {
-              throw new Error(result.message || 'Form submission failed');
+              displayStatus('danger', result.message || 'We could not send your request. Please try again later.');
+              return;
             }
             displayStatus('success', 'Thanks! Your request has been sent. We will be in touch soon.');
             form.reset();
