@@ -539,9 +539,9 @@
 })();
 
 // Disable Right Click
-// document.addEventListener("contextmenu", function (e) {
-//     e.preventDefault();
-// });
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
 
 // Disable Common Developer Tools Shortcuts
 document.addEventListener("keydown", function (e) {
