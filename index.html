@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="home-page">
 
 <head>
   <meta charset="UTF-8">
@@ -9,435 +9,669 @@
     content="OrbitWick builds, secures and maintains websites and web apps: UI/UX design, full-stack development, CMS &amp; e-commerce, cybersecurity, mobile apps, website revamps and website management.">
   <link rel="icon" type="image/png" href="img/fav.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <meta name="theme-color" content="#111113">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <meta name="theme-color" content="#0f0f10">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- Icons used across the page -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12" />
+        <polyline points="12 5 19 12 12 19" />
+      </symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="7" y1="17" x2="17" y2="7" />
+        <polyline points="7 7 17 7 17 17" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.5l2.9 6.2 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z" />
+      </symbol>
+    </defs>
+  </svg>
+
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg ow-nav sticky-top" data-bs-theme="dark">
-    <div class="container">
-      <a class="navbar-brand" href="/"><img src="img/logo-white.png" alt="OrbitWick" width="140"
-          height="34"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <header class="site-nav">
+    <nav class="wrap nav-inner" aria-label="Main">
+      <a class="nav-brand" href="index.html"><img src="img/logo-white.png" alt="OrbitWick" width="178" height="34"></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+        aria-controls="nav-menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+          stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="17" x2="20" y2="17" />
+        </svg>
       </button>
-      <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li>
-          <li class="nav-item ms-lg-3"><a class="btn btn-burgundy btn-sm px-3" href="/#contact">Get in
-              touch</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a class="btn btn-accent btn-sm" href="index.html#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- HERO -->
-  <header class="hero hero-cursor-area">
-    <div class="container position-relative" style="z-index:1">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6">
-          <div class="eyebrow mb-3" data-aos="fade-up">Design · Development · Security</div>
-          <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">
-            <span style="color:#6d1a2e;">We build, scale and secure your</span>
+  <main>
 
-            <span style="color:#ef708b">digital future.</span>
-          </h1>
-          <!-- <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">OrbitWick is a technology studio delivering
-            polished interfaces, robust web applications, secure infrastructure and dependable ongoing care, all under
-            one roof.</p> -->
-          <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="300">
-            <a href="/services" class="btn btn-burgundy">Explore services</a>
-            <a href="#contact" class="btn btn-outline-light-ow">Get a Free Consultant</a>
+    <!-- HERO -->
+    <section class="hero hero-cursor-area">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">Design · Development · Security</div>
+          <h1>We build, scale and secure your digital future.</h1>
+          <p class="hero-lead">OrbitWick is a technology studio delivering polished interfaces, robust web
+            applications, secure infrastructure and dependable ongoing care, all under one roof.</p>
+          <div class="hero-actions">
+            <a href="services.html" class="btn btn-accent">Explore services
+              <svg width="18" height="18" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></a>
+            <a href="#contact" class="btn btn-outline">Get a Free Consultation</a>
           </div>
         </div>
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-          <div class="video-frame ratio ratio-16x9">
-            <!-- Add your video at video/orbitwick-intro.mp4 (and optionally a poster at img/video-poster.jpg) -->
-            <video autoplay muted loop playsinline preload="metadata" poster="img/video-poster.jpg">
-              <source src="img/video.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+        <div class="hero-media">
+          <video autoplay muted loop playsinline preload="metadata" poster="img/home/video-poster.jpg">
+            <source src="img/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="hero-tag hero-tag-top glass">
+            <svg width="20" height="20" aria-hidden="true">
+              <use href="#i-pin" />
+            </svg>
+            <span><strong>Bangladesh · United States</strong><span>Chattogram &amp; Austin, TX</span></span>
           </div>
+          <a class="hero-tag hero-tag-bottom glass" href="#contact">
+            <span><strong>Free consultation</strong><span>We reply with clear next steps.</span></span>
+            <svg width="20" height="20" aria-hidden="true">
+              <use href="#i-arrow-up" />
+            </svg>
+          </a>
         </div>
-        <!-- <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-          <div class="hero-visual">
-            <picture>
-              <img src="img/hero2.png"
-                alt="Robotic figure in a thinking pose, representing OrbitWick's engineering and research" width="900"
-                height="1261" fetchpriority="high">
-            </picture>
-          </div>
-        </div> -->
       </div>
-      <div class="row mt-2">
-        <section class="tools-slider" aria-label="Technologies we use">
-          <div class="container">
-            <div class="tools-window">
-              <div class="tools-track">
-                <div class="tools-group">
-                  <div class="tool-icon">
-                    <img src="img/SVG/nodejs.svg" alt="Node.js logo" />
-                  </div>
+    </section>
 
-                  <div class="tool-icon">
-                    <img src="img/SVG/wordpress.svg" alt="WordPress logo" />
-                  </div>
-
-                  <div class="tool-icon">
-                    <img src="img/SVG/wix.svg" alt="Wix logo" />
-                  </div>
-
-                  <div class="tool-icon">
-                    <img src="img/SVG/javascript.svg" alt="JavaScript logo" />
-                  </div>
-
-                  <div class="tool-icon">
-                    <img src="img/SVG/flutter.svg" alt="Flutter logo" />
-                  </div>
-
-                  <div class="tool-icon">
-                    <img src="img/SVG/react-native.svg" alt="React Native logo" />
-                  </div>
-
-                  <div class="tool-icon">
-                    <img src="img/SVG/figma.svg" alt="Figma logo" />
-                  </div>
-
-                  <div class="tool-icon">
-                    <img src="img/SVG/illustrator.svg" alt="Adobe Illustrator logo" />
-                  </div>
-
-                  <div class="tool-icon">
-                    <img src="img/SVG/csharp.svg" alt="C# logo" />
-                  </div>
-
-                  <div class="tool-icon">
-                    <img src="img/SVG/aspnet.svg" alt=".NET logo representing ASP.NET development" />
-                  </div>
-                </div>
+    <!-- TECHNOLOGIES -->
+    <section class="tech" aria-label="Technologies we use">
+      <div class="wrap tech-inner">
+        <div class="tech-label">Technologies we use</div>
+        <div class="tools-slider">
+          <div class="tools-window">
+            <div class="tools-track">
+              <div class="tools-group">
+                <div class="tool-icon"><img src="img/SVG/nodejs.svg" alt="Node.js logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/wordpress.svg" alt="WordPress logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/wix.svg" alt="Wix logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/javascript.svg" alt="JavaScript logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/flutter.svg" alt="Flutter logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/react-native.svg" alt="React Native logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/figma.svg" alt="Figma logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/illustrator.svg" alt="Adobe Illustrator logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/csharp.svg" alt="C# logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/aspnet.svg" alt=".NET logo representing ASP.NET development" width="48" height="34"></div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-    </div>
-  </header>
-
-  <!-- OVERVIEW: STATS + VIDEO -->
-  <section class="bg-black-ow text-white overview">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-
-
-        <div class="col-lg-12">
-          <!-- <div class="eyebrow" style="color:#d9758a">Why OrbitWick</div>
-          <h2 class="section-title mt-2">One team. Start to finish.</h2>
-          <div class="section-bar"></div>
-          <p class="mb-4" style="color:#bdbdc4">Design, engineering and security under one roof, so you work with a
-            single accountable partner.</p> -->
-          <div class="row g-4">
-            <div class="col-lg-3 col-6">
-              <div class="hero-stat"><strong data-counter-target="700" data-counter-suffix="+">500+</strong><span>Projects completed</span></div>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="hero-stat"><strong data-counter-target="7">7</strong><span>Core service lines</span></div>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="hero-stat"><strong data-counter-target="400" data-counter-suffix="+">400+</strong><span>Clients served</span></div>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="hero-stat"><strong>Ongoing</strong><span>Support plans</span></div>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="container">
-      <div class="text-center mx-auto mb-5" style="max-width:680px" data-aos="fade-up">
-        <div class="eyebrow">What we do</div>
-        <h2 class="section-title mt-2">Our Services</h2>
-        <div class="section-bar"></div>
-        <p class="text-grey">Everything you need to launch, grow and safeguard your online business.</p>
-      </div>
-      <div class="row g-4 justify-content-start">
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-          <a class="service-card" href="/services#design">
-            <div class="service-num">01</div>
-            <div class="service-icon"><i class="bi bi-palette"></i></div>
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <div class="eyebrow">What we do</div>
+            <h2 class="section-title">Our Services</h2>
+          </div>
+          <p>Everything you need to launch, grow and safeguard your online business.</p>
+        </div>
+
+        <div class="service-grid" data-aos="fade-up">
+          <a class="service-cell" href="services.html#design">
+            <div class="service-top">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                <path d="M2 2l7.586 7.586" />
+                <circle cx="11" cy="11" r="2" />
+              </svg>
+              <span class="service-num">01</span>
+            </div>
             <h3>UI/UX &amp; Graphic Design</h3>
             <p>Website and app UI/UX design, wireframes, prototypes, Figma designs, logo design and basic brand
               identity.</p>
-            <span class="service-more">Learn more <i class="bi bi-arrow-right"></i></span>
+            <span class="service-more">Learn more <svg width="16" height="16" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></span>
           </a>
-        </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <a class="service-card" href="/services#development">
-            <div class="service-num">02</div>
-            <div class="service-icon"><i class="bi bi-code-slash"></i></div>
+
+          <a class="service-cell" href="services.html#development">
+            <div class="service-top">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+              <span class="service-num">02</span>
+            </div>
             <h3>Full-Stack Web Development</h3>
-            <p>Frontend and backend development, REST APIs, database integration, authentication, dashboards and custom
-              web applications.</p>
-            <span class="service-more">Learn more <i class="bi bi-arrow-right"></i></span>
+            <p>Frontend and backend development, REST APIs, database integration, authentication, dashboards and
+              custom web applications.</p>
+            <span class="service-more">Learn more <svg width="16" height="16" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></span>
           </a>
-        </div>
-         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <a class="service-card" href="/services#mobile">
-            <div class="service-num">03</div>
-            <div class="service-icon"><i class="bi bi-phone"></i></div>
+
+          <a class="service-cell" href="services.html#mobile">
+            <div class="service-top">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+              <span class="service-num">03</span>
+            </div>
             <h3>Mobile App Development</h3>
             <p>Android, iOS and cross-platform apps with mobile UI/UX, API integration and ongoing maintenance and
               updates.</p>
-            <span class="service-more">Learn more <i class="bi bi-arrow-right"></i></span>
+            <span class="service-more">Learn more <svg width="16" height="16" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></span>
           </a>
-        </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-          <a class="service-card" href="/services#security">
-            <div class="service-num">04</div>
-            <div class="service-icon"><i class="bi bi-shield-lock"></i></div>
+
+          <a class="service-cell" href="services.html#security">
+            <div class="service-top">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                <polyline points="9 12 11 14 15 10" />
+              </svg>
+              <span class="service-num">04</span>
+            </div>
             <h3>Cybersecurity Services</h3>
             <p>Website security audits, vulnerability assessments, security hardening, secure configuration and
               vulnerability remediation.</p>
-            <span class="service-more">Learn more <i class="bi bi-arrow-right"></i></span>
+            <span class="service-more">Learn more <svg width="16" height="16" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></span>
           </a>
-        </div>
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <a class="service-card" href="/services#maintenance">
-            <div class="service-num">05</div>
-            <div class="service-icon"><i class="bi bi-gear-wide-connected"></i></div>
+
+          <a class="service-cell" href="services.html#maintenance">
+            <div class="service-top">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" y1="21" x2="4" y2="14" />
+                <line x1="4" y1="10" x2="4" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12" y2="3" />
+                <line x1="20" y1="21" x2="20" y2="16" />
+                <line x1="20" y1="12" x2="20" y2="3" />
+                <line x1="1" y1="14" x2="7" y2="14" />
+                <line x1="9" y1="8" x2="15" y2="8" />
+                <line x1="17" y1="16" x2="23" y2="16" />
+              </svg>
+              <span class="service-num">05</span>
+            </div>
             <h3>Website Management &amp; Maintenance</h3>
             <p>Monthly or yearly plans covering updates, backups, bug fixes, performance monitoring, security updates
               and technical support.</p>
-            <span class="service-more">Learn more <i class="bi bi-arrow-right"></i></span>
+            <span class="service-more">Learn more <svg width="16" height="16" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></span>
           </a>
-        </div>
-     
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-          <a class="service-card" href="/services#revamp">
-            <div class="service-num">06</div>
-            <div class="service-icon"><i class="bi bi-brush"></i></div>
-            <h3>Website Revamp &amp; Rebranding</h3>
-            <p>Redesign outdated websites with modern UI/UX, refreshed branding, responsive layouts, better performance
-              and SEO-friendly structure.</p>
-            <span class="service-more">Learn more <i class="bi bi-arrow-right"></i></span>
-          </a>
-        </div>
 
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <a class="service-card" href="/services#cms">
-            <div class="service-num">07</div>
-            <div class="service-icon"><i class="bi bi-cart3"></i></div>
+          <a class="service-cell" href="services.html#revamp">
+            <div class="service-top">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="23 4 23 10 17 10" />
+                <polyline points="1 20 1 14 7 14" />
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+              </svg>
+              <span class="service-num">06</span>
+            </div>
+            <h3>Website Revamp &amp; Rebranding</h3>
+            <p>Redesign outdated websites with modern UI/UX, refreshed branding, responsive layouts, better
+              performance and SEO-friendly structure.</p>
+            <span class="service-more">Learn more <svg width="16" height="16" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></span>
+          </a>
+
+          <a class="service-cell" href="services.html#cms">
+            <div class="service-top">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+              </svg>
+              <span class="service-num">07</span>
+            </div>
             <h3>CMS &amp; E-commerce Development</h3>
             <p>WordPress websites, Shopify stores, WooCommerce, business websites and online stores.</p>
-            <span class="service-more">Learn more <i class="bi bi-arrow-right"></i></span>
+            <span class="service-more">Learn more <svg width="16" height="16" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></span>
+          </a>
+
+          <a class="service-cell service-all" href="services.html">
+            <div class="service-top">
+              <span>All services</span>
+              <svg width="28" height="28" aria-hidden="true">
+                <use href="#i-arrow-up" />
+              </svg>
+            </div>
+            <strong>View all services in detail</strong>
           </a>
         </div>
-
       </div>
-      <div class="text-center mt-5" data-aos="fade-up">
-        <a href="/services" class="btn btn-burgundy">View all services in detail <i
-            class="bi bi-arrow-right ms-1"></i></a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PORTFOLIO PREVIEW -->
-  <section class="portfolio-preview bg-grey-ow">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-5" data-aos="fade-right">
-          <div class="eyebrow">Portfolio</div>
-          <h2 class="section-title mt-2">Thoughtful ideas, made tangible.</h2>
-          <div class="section-bar"></div>
-          <p class="text-grey mb-4">Explore the creative and technical disciplines we bring together to shape
-            thoughtful digital experiences.</p>
-          <a href="/portfolio" class="btn btn-burgundy">
-            Explore our portfolio <i class="bi bi-arrow-right ms-1"></i>
+    <!-- PORTFOLIO -->
+    <section class="section section-alt" id="work">
+      <div class="wrap">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <div class="eyebrow">Selected work</div>
+            <h2 class="section-title">Featured projects.</h2>
+          </div>
+          <div class="section-head-side">
+            <a href="portfolio.html" class="btn btn-dark btn-sm">Explore our portfolio
+              <svg width="18" height="18" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></a>
+          </div>
+        </div>
+
+        <div class="work-grid" data-aos="fade-up">
+          <a class="work-card card" href="portfolio.html#digital-experiences">
+            <div class="work-card-image">
+              <img src="img/home/portfolio-img9.jpg" alt="Mobile app interface shown on a smartphone" width="1600"
+                height="1067" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <span class="work-meta">Mobile experiences</span>
+              <h3>Useful by design</h3>
+              <p>Android · iOS · Cross-platform</p>
+            </div>
+            <svg class="work-arrow" width="16" height="16" aria-hidden="true">
+              <use href="#i-arrow" />
+            </svg>
+          </a>
+
+          <a class="work-card card" href="portfolio.html#design">
+            <div class="work-card-image">
+              <img src="img/home/portfolio-img7.jpg" alt="Digital interface design being reviewed on screen"
+                width="1600" height="1067" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <span class="work-meta">Product design</span>
+              <h3>Make every detail count</h3>
+              <p>UI/UX · Figma · Prototypes</p>
+            </div>
+            <svg class="work-arrow" width="16" height="16" aria-hidden="true">
+              <use href="#i-arrow" />
+            </svg>
+          </a>
+
+          <a class="work-card card work-card-featured" href="portfolio.html">
+            <div class="work-card-image">
+              <img src="img/home/video-poster.jpg" alt="Online store with product collections and sale pricing"
+                width="1600" height="900" loading="lazy">
+            </div>
+            <div class="work-card-body">
+              <span class="work-meta">CMS &amp; E-commerce</span>
+              <h3>Online stores, start to finish</h3>
+              <p>WordPress · Shopify · WooCommerce</p>
+            </div>
+            <svg class="work-arrow" width="16" height="16" aria-hidden="true">
+              <use href="#i-arrow" />
+            </svg>
           </a>
         </div>
-        <div class="col-lg-7" >
-          <div class="portfolio-collage">
-            <a class="portfolio-collage-item portfolio-collage-main" href="/portfolio#digital-experiences">
-              <img src="img/site/img9.jpg" alt="Mobile app experience displayed on a smartphone" width="6240"
-                height="4160" loading="lazy">
-              <span>Digital experiences</span>
-            </a>
-            <a class="portfolio-collage-item portfolio-collage-design" href="/portfolio#design">
-              <img src="img/site/img7.jpg" alt="Interface design work on a screen" width="5472" height="3648"
-                loading="lazy">
-              <span>Product design</span>
-            </a>
-            <a class="portfolio-collage-item portfolio-collage-engineering"
-              href="/portfolio#engineering">
-              <img src="img/site/img11.jpg" alt="Development workstation and technical equipment" width="6616"
-                height="4411" loading="lazy">
-              <span>Thoughtful engineering</span>
-            </a>
+      </div>
+    </section>
+
+    <!-- WHY ORBITWICK: STATS -->
+    <section class="overview section on-dark">
+      <div class="wrap">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <div class="eyebrow">Why OrbitWick</div>
+            <h2 class="section-title">One team. Start to finish.</h2>
+          </div>
+          <p>Design, engineering and security under one roof, so you work with a single accountable partner.</p>
+        </div>
+        <div class="stats" data-aos="fade-up">
+          <div class="stat"><strong data-counter-target="700" data-counter-start="600"
+              data-counter-suffix="+">700+</strong><span>Projects completed</span></div>
+          <div class="stat"><strong data-counter-target="7" data-counter-start="0">7</strong><span>Core service lines</span></div>
+          <div class="stat"><strong data-counter-target="400" data-counter-start="300"
+              data-counter-suffix="+">400+</strong><span>Clients served</span></div>
+          <div class="stat"><strong>Ongoing</strong><span>Support plans</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS
+         SAMPLE CONTENT: the eight reviews below are placeholders written to show the layout.
+         Replace every quote, name, role and location with real client reviews before publishing. -->
+    <section class="section reviews" id="reviews">
+      <div class="wrap">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <div class="eyebrow">Client reviews</div>
+            <h2 class="section-title">What clients say about working with us</h2>
+          </div>
+        </div>
+
+        <div class="reviews-layout" data-aos="fade-up">
+          <aside class="review-badge card" aria-label="Review summary">
+            <img class="review-seal" src="img/verified.png" alt="" width="72" height="88" loading="lazy">
+            <div class="review-score">5.0</div>
+            <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+            <strong>Verified reviews</strong>
+            <small>From our clients</small>
+          </aside>
+
+      <div class="review-rows">
+        <div class="review-row">
+          <div class="review-track">
+            <div class="review-group">
+              <figure class="review card">
+                <div class="review-top">
+                  <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+                  <span class="review-service">CMS &amp; E-commerce</span>
+                </div>
+                <blockquote>OrbitWick redesigned our storefront and rebuilt the checkout. Pages load noticeably
+                  faster, and the handover notes meant our own team could manage products from day one.</blockquote>
+                <figcaption>
+                  <span class="review-avatar" aria-hidden="true">SM</span>
+                  <span><strong>Sarah Mitchell</strong><span>Founder, online fragrance store · Austin, USA</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="review card">
+                <div class="review-top">
+                  <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+                  <span class="review-service">Cybersecurity</span>
+                </div>
+                <blockquote>They ran a security audit before our launch, explained every finding in plain language
+                  and fixed the critical issues within the week. We went live with confidence.</blockquote>
+                <figcaption>
+                  <span class="review-avatar" aria-hidden="true">TH</span>
+                  <span><strong>Tanvir Hossain</strong><span>CTO, payments startup · Dhaka, Bangladesh</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="review card">
+                <div class="review-top">
+                  <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+                  <span class="review-service">Full-Stack Development</span>
+                </div>
+                <blockquote>Clear scope, weekly check-ins and no surprises on the invoice. The dashboard they built
+                  replaced three spreadsheets and our team actually enjoys using it.</blockquote>
+                <figcaption>
+                  <span class="review-avatar" aria-hidden="true">DK</span>
+                  <span><strong>Daniel Kim</strong><span>Operations Lead, logistics company · Dallas, USA</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="review card">
+                <div class="review-top">
+                  <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+                  <span class="review-service">Mobile App Development</span>
+                </div>
+                <blockquote>Our app went from Figma prototype to both app stores in one release cycle. The small
+                  details in the onboarding flow made a real difference to sign-ups.</blockquote>
+                <figcaption>
+                  <span class="review-avatar" aria-hidden="true">PS</span>
+                  <span><strong>Priya Sharma</strong><span>Product Manager, wellness app · London, UK</span></span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-row review-row-reverse">
+          <div class="review-track">
+            <div class="review-group">
+              <figure class="review card">
+                <div class="review-top">
+                  <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+                  <span class="review-service">UI/UX &amp; Graphic Design</span>
+                </div>
+                <blockquote>The brand refresh gave us a logo, colours and a website that finally look like the same
+                  company. Every design decision came with a reason we could understand.</blockquote>
+                <figcaption>
+                  <span class="review-avatar" aria-hidden="true">FA</span>
+                  <span><strong>Farhana Akter</strong><span>Marketing Director, education provider · Chattogram,
+                      Bangladesh</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="review card">
+                <div class="review-top">
+                  <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+                  <span class="review-service">Management &amp; Maintenance</span>
+                </div>
+                <blockquote>We are on their monthly maintenance plan. Updates, backups and fixes just happen, and a
+                  short report each month tells us exactly what was done.</blockquote>
+                <figcaption>
+                  <span class="review-avatar" aria-hidden="true">JR</span>
+                  <span><strong>James Reynolds</strong><span>Owner, home services business · Houston, USA</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="review card">
+                <div class="review-top">
+                  <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+                  <span class="review-service">Website Revamp</span>
+                </div>
+                <blockquote>They revamped a ten-year-old website without losing our search rankings. The new
+                  structure is far easier to update and it works properly on phones.</blockquote>
+                <figcaption>
+                  <span class="review-avatar" aria-hidden="true">MT</span>
+                  <span><strong>Michael Turner</strong><span>Director, manufacturing firm · Toronto, Canada</span></span>
+                </figcaption>
+              </figure>
+
+              <figure class="review card">
+                <div class="review-top">
+                  <span class="stars" role="img" aria-label="5 out of 5 stars"><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg><svg aria-hidden="true"><use href="#i-star" /></svg></span>
+                  <span class="review-service">Products &amp; SaaS</span>
+                </div>
+                <blockquote>Good communicators across time zones. Questions we sent in our evening were answered by
+                  our morning, and releases landed on the dates we agreed.</blockquote>
+                <figcaption>
+                  <span class="review-avatar" aria-hidden="true">EC</span>
+                  <span><strong>Emily Carter</strong><span>Co-founder, SaaS startup · Sydney, Australia</span></span>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+        </div>
+      </div>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-5" data-aos="fade-right">
-          <div class="eyebrow">Contact</div>
-          <h2 class="section-title mt-2">Let's build something solid</h2>
-          <div class="section-bar"></div>
-          <p class="text-grey mb-4">Request a free consultation by sharing your project details. We reply with clear
-            next steps.</p>
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="wrap">
+        <div class="contact-box" data-aos="fade-up">
 
-          <div class="row mt-5 flex-row">
-            <div class="col-lg-5 contact-group">
-              <h5>Any query</h5>
-              <div class="contact-icons">
-                <a href="mailto:contact.orbitwick@gmail.com" aria-label="Email OrbitWick" title="Email"><i
-                    class="bi bi-envelope"></i></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"
-                  aria-label="Chat with OrbitWick on WhatsApp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-              </div>
+          <div class="contact-panel on-dark">
+            <div class="eyebrow">Contact</div>
+            <h2>Let's build something solid</h2>
+            <p>Request a free consultation by sharing your project details. We reply with clear next steps.</p>
 
+            <div class="contact-group">
+              <h3>Any query</h3>
+              <ul class="contact-list">
+                <li><a href="mailto:contact.orbitwick@gmail.com"
+                    aria-label="Email OrbitWick"><span>Email</span><span>contact.orbitwick@gmail.com</span></a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer"
+                    aria-label="Chat with OrbitWick on WhatsApp"><span>WhatsApp</span><span>Chat with OrbitWick
+                      <svg width="16" height="16" aria-hidden="true">
+                        <use href="#i-arrow-up" />
+                      </svg></span></a></li>
+              </ul>
             </div>
 
-            <div class="col-lg-5 contact-group">
-              <h5>Follow us</h5>
-              <div class="contact-icons">
-                <a href="https://www.facebook.com/share/19suEp2ySE/" target="_blank" rel="noopener noreferrer"
-                  aria-label="OrbitWick on Facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.linkedin.com/company/orbitwick/" target="_blank" rel="noopener noreferrer"
-                  aria-label="OrbitWick on LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              </div>
+            <div class="contact-group">
+              <h3>Follow us</h3>
+              <ul class="contact-list">
+                <li><a href="https://www.facebook.com/share/19suEp2ySE/" target="_blank" rel="noopener noreferrer"
+                    aria-label="OrbitWick on Facebook"><span>Facebook</span><span>OrbitWick
+                      <svg width="16" height="16" aria-hidden="true">
+                        <use href="#i-arrow-up" />
+                      </svg></span></a></li>
+                <li><a href="https://www.linkedin.com/company/orbitwick/" target="_blank" rel="noopener noreferrer"
+                    aria-label="OrbitWick on LinkedIn"><span>LinkedIn</span><span>OrbitWick
+                      <svg width="16" height="16" aria-hidden="true">
+                        <use href="#i-arrow-up" />
+                      </svg></span></a></li>
+              </ul>
             </div>
+
+            <p class="contact-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              Your project details will be treated confidentially.
+            </p>
+          </div>
+
+          <div class="contact-main">
+            <div class="contact-form-status alert" role="status" aria-live="polite" hidden></div>
+            <form class="contact-form" action="/api/contact" method="post">
+              <div class="visually-hidden" aria-hidden="true">
+                <label for="website-confirm">Leave this field empty</label>
+                <input type="text" id="website-confirm" name="website_confirm" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="field">
+                <label for="cf-name">Your name <span class="req">*</span></label>
+                <input type="text" id="cf-name" name="name" autocomplete="name" maxlength="120" required>
+              </div>
+              <div class="field">
+                <label for="cf-email">Email address <span class="req">*</span></label>
+                <input type="email" id="cf-email" name="email" autocomplete="email" maxlength="254" required>
+              </div>
+              <div class="field">
+                <label for="cf-company">Company or business name <span class="opt">(optional)</span></label>
+                <input type="text" id="cf-company" name="company" autocomplete="organization" maxlength="160">
+              </div>
+              <div class="field">
+                <label for="cf-url">Current website URL <span class="opt">(if applicable)</span></label>
+                <input type="url" id="cf-url" name="website" placeholder="https://" inputmode="url"
+                  autocomplete="url">
+              </div>
+              <div class="field">
+                <label for="cf-service">Service you need <span class="req">*</span></label>
+                <select id="cf-service" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option>UI/UX &amp; Graphic Design</option>
+                  <option>Full-Stack Web Development</option>
+                  <option>Mobile App Development</option>
+                  <option>Cybersecurity Services</option>
+                  <option>Website Management &amp; Maintenance</option>
+                  <option>Website Revamp &amp; Rebranding</option>
+                  <option>CMS &amp; E-commerce Development</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cf-timeline">Project timeline <span class="opt">(optional)</span></label>
+                <select id="cf-timeline" name="timeline">
+                  <option value="" selected>Select a timeline</option>
+                  <option>As soon as possible</option>
+                  <option>Within 1 month</option>
+                  <option>1&ndash;3 months</option>
+                  <option>3&ndash;6 months</option>
+                  <option>Flexible / not sure yet</option>
+                </select>
+              </div>
+              <div class="field field-full">
+                <label for="cf-message">Tell us about your project <span class="req">*</span></label>
+                <textarea id="cf-message" name="message" rows="6" maxlength="5000" required></textarea>
+              </div>
+              <div class="field-full">
+                <button type="submit" class="btn btn-accent">Request a Free Consultation</button>
+              </div>
+            </form>
           </div>
 
         </div>
-
-        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
-          <div class="contact-form-status alert" role="status" aria-live="polite" hidden></div>
-          <form class="contact-form row g-3" action="/api/contact" method="post">
-            <div class="visually-hidden" aria-hidden="true">
-              <label for="website-confirm">Leave this field empty</label>
-              <input type="text" id="website-confirm" name="website_confirm" tabindex="-1" autocomplete="off">
-            </div>
-            <div class="col-md-6">
-              <label for="cf-name" class="form-label">Your name <span class="req">*</span></label>
-              <input type="text" id="cf-name" class="form-control" name="name" autocomplete="name" maxlength="120"
-                required>
-            </div>
-            <div class="col-md-6">
-              <label for="cf-email" class="form-label">Email address <span class="req">*</span></label>
-              <input type="email" id="cf-email" class="form-control" name="email" autocomplete="email" maxlength="254"
-                required>
-            </div>
-            <div class="col-md-6">
-              <label for="cf-company" class="form-label">Company or business name <span
-                  class="opt">(optional)</span></label>
-              <input type="text" id="cf-company" class="form-control" name="company" autocomplete="organization"
-                maxlength="160">
-            </div>
-            <div class="col-md-6">
-              <label for="cf-url" class="form-label">Current website URL <span class="opt">(if
-                  applicable)</span></label>
-              <input type="url" id="cf-url" class="form-control" name="website" placeholder="https://" inputmode="url"
-                autocomplete="url">
-            </div>
-            <div class="col-md-6">
-              <label for="cf-service" class="form-label">Service you need <span class="req">*</span></label>
-              <select id="cf-service" class="form-select" name="service" required>
-                <option value="" selected disabled>Select a service</option>
-                <option>UI/UX &amp; Graphic Design</option>
-                <option>Full-Stack Web Development</option>
-                <option>Mobile App Development</option>
-                <option>Cybersecurity Services</option>
-                <option>Website Management &amp; Maintenance</option>
-                <option>Website Revamp &amp; Rebranding</option>
-                <option>CMS &amp; E-commerce Development</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label for="cf-timeline" class="form-label">Project timeline <span class="opt">(optional)</span></label>
-              <select id="cf-timeline" class="form-select" name="timeline">
-                <option value="" selected>Select a timeline</option>
-                <option>As soon as possible</option>
-                <option>Within 1 month</option>
-                <option>1&ndash;3 months</option>
-                <option>3&ndash;6 months</option>
-                <option>Flexible / not sure yet</option>
-              </select>
-            </div>
-            <div class="col-12">
-              <label for="cf-message" class="form-label">Tell us about your project <span class="req">*</span></label>
-              <textarea id="cf-message" class="form-control" name="message" rows="5" maxlength="5000"
-                required></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-burgundy">Request a Free Consultation</button>
-              <p class="form-note mt-3 mb-0"><i class="bi bi-lock"></i> Your project details will be treated
-                confidentially.</p>
-            </div>
-          </form>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row g-4 footer-main">
-        <div class="col-12 col-md-6 col-lg-4">
-          <a href="/" class="brand d-inline-block"><img src="img/logo-white.png" alt="OrbitWick" width="156"
-              height="38"></a>
-          <p class="footer-intro mb-0">Design, development and security for businesses that want a dependable web presence.</p>
+  <footer class="footer">
+    <img class="footer-bg" src="img/foot-tex.png" alt="" aria-hidden="true" loading="lazy">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html"><img src="img/logo-white.png" alt="OrbitWick" width="209" height="40"></a>
+          <p>Design, development and security for businesses that want a dependable web presence.</p>
         </div>
-        <div class="col-12 col-md-6 col-lg-2">
-          <h6 class="footer-heading">Explore</h6>
-          <ul class="footer-links list-unstyled mb-0">
-            <li><a href="/about">About us</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/rd">R&amp;D</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/#contact">Contact</a></li>
+        <div>
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-links">
+            <li><a href="about.html">About us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="rd.html">R&amp;D</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <h6 class="footer-heading">Services</h6>
-          <ul class="footer-links list-unstyled mb-0">
-            <li><a href="/services#design">UI/UX &amp; Graphic Design</a></li>
-            <li><a href="/services#development">Full-Stack Development</a></li>
-            <li><a href="/services#mobile">Mobile App Development</a></li>
-            <li><a href="/services#security">Cybersecurity</a></li>
-            <li><a href="/services#maintenance">Management &amp; Maintenance</a></li>
-            <li><a href="/services#revamp">Website Revamp &amp; Rebranding</a></li>
-            <li><a href="/services#cms">CMS &amp; E-commerce</a></li>
+        <div>
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-links">
+            <li><a href="services.html#design">UI/UX &amp; Graphic Design</a></li>
+            <li><a href="services.html#development">Full-Stack Development</a></li>
+            <li><a href="services.html#mobile">Mobile App Development</a></li>
+            <li><a href="services.html#security">Cybersecurity</a></li>
+            <li><a href="services.html#maintenance">Management &amp; Maintenance</a></li>
+            <li><a href="services.html#revamp">Website Revamp &amp; Rebranding</a></li>
+            <li><a href="services.html#cms">CMS &amp; E-commerce</a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          <h6 class="footer-heading">Find us</h6>
+        <div>
+          <h2 class="footer-heading">Find us</h2>
           <div class="footer-locations">
             <address class="footer-location">
-              <i class="bi bi-geo-alt" aria-hidden="true"></i>
-              <span><strong>Bangladesh</strong><br>Agrabad Commercial Area,<br>Chattogram</span>
+              <svg width="18" height="18" aria-hidden="true">
+                <use href="#i-pin" />
+              </svg>
+              <span><strong>Bangladesh</strong>Agrabad Commercial Area, Chattogram</span>
             </address>
             <address class="footer-location">
-              <i class="bi bi-geo-alt" aria-hidden="true"></i>
-              <span><strong>United States</strong><br>Austin, TX 78701, USA</span>
+              <svg width="18" height="18" aria-hidden="true">
+                <use href="#i-pin" />
+              </svg>
+              <span><strong>United States</strong>Austin, TX 78701, USA</span>
             </address>
           </div>
         </div>
@@ -447,7 +681,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>

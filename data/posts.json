@@ -17,7 +17,7 @@
       ],
       "service": {
         "name": "Full Stack Web Development",
-        "href": "/services#web"
+        "href": "services.html#development"
       },
       "content": [
         {
@@ -241,7 +241,7 @@
       ],
       "service": {
         "name": "Web Application Security & Penetration Testing",
-        "href": "/services#cybersecurity"
+        "href": "services.html#security"
       },
       "content": [
         {
@@ -403,7 +403,7 @@
       ],
       "service": {
         "name": "API Security Assessment",
-        "href": "/services#cybersecurity"
+        "href": "services.html#security"
       },
       "content": [
         {

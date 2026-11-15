@@ -38,84 +38,109 @@
     });
   }
 
+  function initNav() {
+    var nav = document.querySelector('.site-nav');
+    var toggle = nav && nav.querySelector('.nav-toggle');
+    if (!toggle) return;
+
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
+
+  // Deliberately minimal: every animated element gets the same short fade-up, once.
   function initAnimations() {
     if (!window.AOS) return;
 
-    document.querySelectorAll('[data-aos], [data-aos-delay], [data-aos-duration], [data-aos-easing]')
-      .forEach(function (element) {
+    // Page headers are visible straight away; only content further down fades in.
+    document.querySelectorAll('.hero, .page-hero, .about-hero').forEach(function (header) {
+      header.querySelectorAll('[data-aos]').forEach(function (element) {
         element.removeAttribute('data-aos');
         element.removeAttribute('data-aos-delay');
-        element.removeAttribute('data-aos-duration');
-        element.removeAttribute('data-aos-easing');
       });
+    });
 
-    var directions = ['fade-right', 'fade-left'];
-    var cardSelector = [
-      '.service-card',
-      '.portfolio-card',
-      '.blog-card',
-      '.rd-card',
-      '.process-step',
-      '.story-step',
-      '.about-reason',
-      '.value-box',
-      '.accordion-item',
-      '.hero-stat',
-      '.contact-item'
-    ].join(', ');
+    document.querySelectorAll('[data-aos]').forEach(function (element) {
+      element.setAttribute('data-aos', 'fade-up');
+      element.removeAttribute('data-aos-duration');
+      element.removeAttribute('data-aos-easing');
 
-    function animateTogether(elements) {
-      elements.forEach(function (element, index) {
-        element.setAttribute('data-aos', directions[index % directions.length]);
-      });
-    }
-
-    document.querySelectorAll(
-      'header.hero, header.page-hero, header.about-hero, body > section, main > section, main > article'
-    ).forEach(function (section) {
-      if (section.matches('.overview')) return;
-
-      if (section.matches('.portfolio-preview')) {
-        var portfolioCopy = section.querySelector('.container > .row > .col-lg-5');
-        if (portfolioCopy) animateTogether([portfolioCopy]);
-        return;
-      }
-
-      if (section.matches('.svc-detail')) {
-        if (['design', 'mobile', 'maintenance', 'cms'].indexOf(section.id) !== -1) {
-          var serviceColumns = section.querySelectorAll('.container > .row > [class*="col-"]');
-          animateTogether(Array.prototype.slice.call(serviceColumns));
-        }
-        return;
-      }
-
-      var cards = section.querySelectorAll(cardSelector);
-      if (cards.length) {
-        animateTogether(Array.prototype.slice.call(cards));
-        return;
-      }
-
-      var columns = section.querySelectorAll('.container > .row > [class*="col-"]');
-      if (columns.length) {
-        animateTogether(Array.prototype.slice.call(columns));
-        return;
-      }
-
-      var content = section.querySelector('.container > .text-center, .container > .post-content');
-      if (content) animateTogether([content]);
+      var delay = Number(element.getAttribute('data-aos-delay')) || 0;
+      if (delay > 150) element.setAttribute('data-aos-delay', '150');
     });
 
     var prefersReducedMotion = window.matchMedia &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     window.AOS.init({
-      duration: 550,
+      duration: 450,
       easing: 'ease-out-cubic',
-      once: false,
-      offset: 100,
+      once: true,
+      offset: 60,
+      startEvent: 'DOMContentLoaded',
       anchorPlacement: 'top-bottom',
       disable: prefersReducedMotion
     });
+  }
+
+  // Portfolio filter on the home page: show only the work of the chosen type.
+  function initWorkFilter() {
+    var buttons = Array.prototype.slice.call(document.querySelectorAll('.work-filter'));
+    var items = Array.prototype.slice.call(document.querySelectorAll('.work-featured, .work-card'));
+    if (!buttons.length || !items.length) return;
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var filter = button.getAttribute('data-filter');
+
+        buttons.forEach(function (other) {
+          other.setAttribute('aria-pressed', String(other === button));
+        });
+        items.forEach(function (item) {
+          item.hidden = filter !== 'all' && item.getAttribute('data-type') !== filter;
+        });
+      });
+    });
+  }
+
+  // Duplicate each review row so it can loop without a gap.
+  function initReviewSlider() {
+    document.querySelectorAll('.review-track').forEach(function (track) {
+      if (track.children.length > 1) return;
+
+      var group = track.firstElementChild;
+      if (!group) return;
+
+      var duplicate = group.cloneNode(true);
+      duplicate.setAttribute('aria-hidden', 'true');
+      track.appendChild(duplicate);
+    });
+  }
+
+  // Floating button, bottom right, that returns to the top of the page.
+  function initToTop() {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'to-top';
+    button.setAttribute('aria-label', 'Back to top');
+    button.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" ' +
+      'stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>';
+    document.body.appendChild(button);
+
+    function update() {
+      button.classList.toggle('is-visible', window.scrollY > 600);
+    }
+
+    button.addEventListener('click', function () {
+      var prefersReducedMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    });
+
+    window.addEventListener('scroll', update, { passive: true });
+    update();
   }
 
   function initStatCounters() {
@@ -142,7 +167,8 @@
       startedAt = null;
       counters.forEach(function (element) {
         var suffix = element.getAttribute('data-counter-suffix') || '';
-        element.textContent = '0' + suffix;
+        var start = Number(element.getAttribute('data-counter-start')) || 0;
+        element.textContent = formatter.format(start) + suffix;
       });
     }
 
@@ -153,8 +179,9 @@
 
       counters.forEach(function (element) {
         var target = Number(element.getAttribute('data-counter-target'));
+        var start = Number(element.getAttribute('data-counter-start')) || 0;
         var suffix = element.getAttribute('data-counter-suffix') || '';
-        element.textContent = formatter.format(Math.round(target * easedProgress)) + suffix;
+        element.textContent = formatter.format(Math.round(start + (target - start) * easedProgress)) + suffix;
       });
 
       if (progress < 1) {
@@ -304,7 +331,7 @@
         var thumbnail = post.image
           ? '<img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="lazy">'
           : '<i class="bi ' + escapeHtml(post.icon || 'bi-journal-text') + '"></i>';
-        return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="/blog-post?slug=' +
+        return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="blog-post.html?slug=' +
           encodeURIComponent(post.slug) + '"><div class="blog-thumb">' + thumbnail +
           '<span class="blog-cat">' + escapeHtml(post.category) + '</span></div><div class="blog-body">' +
           '<div class="blog-meta">' + formatDate(post.date) + ' &middot; ' + readTime(post) + '</div><h3>' +
@@ -362,7 +389,7 @@
       titleElement.textContent = 'Article not found';
       document.getElementById('postCat').textContent = 'Blog';
       document.getElementById('crumb').textContent = 'Not found';
-      postBody.innerHTML = '<p>We could not find that article. <a href="/blog">Browse all articles</a>.</p>';
+      postBody.innerHTML = '<p>We could not find that article. <a href="blog.html">Browse all articles</a>.</p>';
     }
 
     function renderBlock(block) {
@@ -378,7 +405,7 @@
       var thumbnail = post.image
         ? '<img src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="lazy" width="1600" height="840">'
         : '<i class="bi bi-journal-text"></i>';
-      return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="/blog-post?slug=' +
+      return '<div class="col-md-6 col-lg-4"><a class="blog-card" href="blog-post.html?slug=' +
         encodeURIComponent(post.slug) + '"><div class="blog-thumb">' + thumbnail +
         '<span class="blog-cat">' + escapeHtml(post.category) + '</span></div><div class="blog-body">' +
         '<div class="blog-meta">' + formatDate(post.date) + ' &middot; ' + readTime(post) + '</div><h3>' +
@@ -387,7 +414,7 @@
     }
 
     function render(post, allPosts) {
-      var url = siteUrl + '/blog-post?slug=' + encodeURIComponent(post.slug);
+      var url = siteUrl + '/blog-post.html?slug=' + encodeURIComponent(post.slug);
       var pageTitle = post.title + ' | OrbitWick';
       var imageUrl = post.image ? siteUrl + '/' + post.image : '';
 
@@ -494,23 +521,27 @@
       .catch(function () {
         hidePostFigure();
         titleElement.textContent = 'Article could not be loaded';
-        postBody.innerHTML = '<p>If you are previewing locally, serve the site over HTTP (for example, run <code>python3 -m http.server</code> in this folder). <a href="/blog">Back to the blog</a>.</p>';
+        postBody.innerHTML = '<p>If you are previewing locally, serve the site over HTTP (for example, run <code>python3 -m http.server</code> in this folder). <a href="blog.html">Back to the blog</a>.</p>';
       });
   }
 
+  initNav();
   initAnimations();
   initStatCounters();
   initHeroCursorCircle();
   initToolsSlider();
+  initWorkFilter();
+  initReviewSlider();
+  initToTop();
   initContactForm();
   initBlog();
   initBlogPost();
 })();
 
 // Disable Right Click
-document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-});
+// document.addEventListener("contextmenu", function (e) {
+//     e.preventDefault();
+// });
 
 // Disable Common Developer Tools Shortcuts
 document.addEventListener("keydown", function (e) {
