@@ -1,0 +1,8 @@
+# Build sources and notes that visitors do not need
+seo/
+blog/*.cjs
+blog/blog-shell.html
+blog/README.md
+blog/images/README.md
+portfolio/README.md
+.claude/

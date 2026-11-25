@@ -15,7 +15,7 @@
       ],
       "service": {
         "name": "Web Development",
-        "href": "services.html#development"
+        "href": "/services/website-development"
       },
       "takeaway": "Compare the work behind each quote before comparing the total. A page count alone cannot tell you what a website will cost.",
       "content": [
@@ -117,7 +117,7 @@
       ],
       "service": {
         "name": "Website Revamp",
-        "href": "services.html#revamp"
+        "href": "/services/website-redesign"
       },
       "takeaway": "Keep useful URLs where possible, map every necessary change and test the migration before launch. A new design does not require a new address for every page.",
       "content": [
@@ -227,7 +227,7 @@
       ],
       "service": {
         "name": "Website Care",
-        "href": "services.html#maintenance"
+        "href": "/services/website-maintenance"
       },
       "takeaway": "A maintenance plan should prove that important tasks still work and that recovery is possible. A list of completed updates is only part of the picture.",
       "content": [
@@ -334,7 +334,7 @@
       ],
       "service": {
         "name": "E-commerce",
-        "href": "services.html#cms"
+        "href": "/services/ecommerce-development"
       },
       "takeaway": "Follow an order all the way from product selection to fulfilment. A payment screen that looks right is not proof that the whole checkout works.",
       "content": [
@@ -449,7 +449,7 @@
       ],
       "service": {
         "name": "Mobile Apps",
-        "href": "services.html#mobile"
+        "href": "/services/mobile-app-development"
       },
       "takeaway": "Choose around the recurring task and the devices your customers use. Prototype the hardest device requirement before committing to a platform.",
       "content": [
@@ -556,7 +556,7 @@
       ],
       "service": {
         "name": "Cybersecurity",
-        "href": "services.html#security"
+        "href": "/services/cybersecurity"
       },
       "takeaway": "Ask for a defined scope, reproducible findings, a prioritised repair plan and retesting. A scan score alone does not tell you whether your business workflow is protected.",
       "content": [
@@ -670,7 +670,7 @@
       ],
       "service": {
         "name": "UI/UX Design",
-        "href": "services.html#design"
+        "href": "/services/ui-ux-design"
       },
       "takeaway": "Before redesigning everything, check whether the right visitors understand the offer, can complete the enquiry and receive a useful response.",
       "content": [
@@ -786,7 +786,7 @@
       ],
       "service": {
         "name": "SaaS & Products",
-        "href": "services.html#development"
+        "href": "/services/software-development"
       },
       "takeaway": "A useful MVP completes one valuable workflow for a defined audience. Reduce feature breadth while keeping essential permissions, recovery and support in scope.",
       "content": [
@@ -905,7 +905,7 @@
       ],
       "service": {
         "name": "Web Development",
-        "href": "services.html#development"
+        "href": "/services/website-development"
       },
       "takeaway": "Start with a slow page that matters to the business, identify what delays its main content, then measure the same journey after each change.",
       "content": [
@@ -1011,7 +1011,7 @@
       ],
       "service": {
         "name": "UI/UX Design",
-        "href": "services.html#design"
+        "href": "/services/ui-ux-design"
       },
       "takeaway": "Start by testing complete customer tasks with different ways of interacting. Automated checks help, but they do not establish that a website is fully accessible.",
       "content": [
@@ -1117,7 +1117,7 @@
       ],
       "service": {
         "name": "E-commerce",
-        "href": "services.html#cms"
+        "href": "/services/ecommerce-development"
       },
       "takeaway": "A useful product page helps shoppers choose the right item and gives search engines consistent information about that exact product and its variants.",
       "content": [
@@ -1223,7 +1223,7 @@
       ],
       "service": {
         "name": "Web Development",
-        "href": "services.html#development"
+        "href": "/services/website-development"
       },
       "takeaway": "Choose the publishing workflow first. A separate frontend is useful when it solves a real delivery requirement, but it adds systems that someone must maintain.",
       "content": [
@@ -1330,7 +1330,7 @@
       ],
       "service": {
         "name": "Web Development",
-        "href": "services.html#development"
+        "href": "/services/software-development"
       },
       "takeaway": "Define what happens to a real record from submission to completion, including failures and retries. Connecting two APIs is only part of the integration.",
       "content": [
@@ -1437,7 +1437,7 @@
       ],
       "service": {
         "name": "Web Development",
-        "href": "services.html#development"
+        "href": "/services/website-development"
       },
       "takeaway": "Define the rules behind an available appointment first. Then design the customer booking journey and the staff tools around those rules.",
       "content": [
@@ -1544,7 +1544,7 @@
       ],
       "service": {
         "name": "Website Revamp",
-        "href": "services.html#revamp"
+        "href": "/services/website-redesign"
       },
       "takeaway": "Build each service page around a distinct customer need. Explain the work, show credible evidence and make the next step specific.",
       "content": [
@@ -1650,7 +1650,7 @@
       ],
       "service": {
         "name": "Mobile Apps",
-        "href": "services.html#mobile"
+        "href": "/services/mobile-app-development"
       },
       "takeaway": "Plan onboarding around the first useful result. Ask for information and device permissions when users understand why they are needed.",
       "content": [
@@ -1757,7 +1757,7 @@
       ],
       "service": {
         "name": "Web Development",
-        "href": "services.html#development"
+        "href": "/services/software-development"
       },
       "takeaway": "Test subscription billing as a lifecycle: purchase, renewal, change, payment failure and cancellation. Define how each state affects product access.",
       "content": [
@@ -1864,7 +1864,7 @@
       ],
       "service": {
         "name": "Website Care",
-        "href": "services.html#maintenance"
+        "href": "/services/website-maintenance"
       },
       "takeaway": "A complete website handover gives your business control of its accounts, a usable operating guide and a tested route to support and recovery.",
       "content": [

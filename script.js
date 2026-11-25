@@ -1,43 +1,6 @@
 (function () {
   'use strict';
 
-  function escapeHtml(value) {
-    return String(value).replace(/[&<>"']/g, function (character) {
-      return {
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        "'": '&#39;'
-      }[character];
-    });
-  }
-
-  function wordCount(post) {
-    var count = 0;
-    (post.content || []).forEach(function (block) {
-      if (block.text) count += block.text.split(/\s+/).length;
-      if (block.items) {
-        block.items.forEach(function (item) {
-          count += item.split(/\s+/).length;
-        });
-      }
-    });
-    return count;
-  }
-
-  function readTime(post) {
-    return Math.max(1, Math.round(wordCount(post) / 200)) + ' min read';
-  }
-
-  function formatDate(date) {
-    return new Date(date + 'T00:00:00').toLocaleDateString('en-GB', {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    });
-  }
-
   function initNav() {
     var nav = document.querySelector('.site-nav');
     var toggle = nav && nav.querySelector('.nav-toggle');
@@ -103,27 +66,6 @@
     });
   }
 
-  // Portfolio filter on the home page: show only the work of the chosen type.
-  function initWorkFilter() {
-    var buttons = Array.prototype.slice.call(document.querySelectorAll('.work-filter'));
-    var items = Array.prototype.slice.call(document.querySelectorAll('.work-featured, .work-card'));
-    if (!buttons.length || !items.length) return;
-
-    buttons.forEach(function (button) {
-      button.addEventListener('click', function () {
-        var filter = button.getAttribute('data-filter');
-
-        buttons.forEach(function (other) {
-          other.setAttribute('aria-pressed', String(other === button));
-        });
-        items.forEach(function (item) {
-          item.hidden = filter !== 'all' && item.getAttribute('data-type') !== filter;
-        });
-      });
-    });
-  }
-
-  // Duplicate each review row so it can loop without a gap.
   function initReviewSlider() {
     document.querySelectorAll('.review-track').forEach(function (track) {
       if (track.children.length > 1) return;
@@ -318,7 +260,6 @@
   initStatCounters();
   initHeroCursorCircle();
   initToolsSlider();
-  initWorkFilter();
   initReviewSlider();
   initToTop();
   initContactForm();

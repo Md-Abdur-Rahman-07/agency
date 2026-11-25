@@ -198,7 +198,7 @@
     body.append(node('h3', '', item.title));
     if (text(item.description)) body.append(node('p', 'template-text', item.description));
     var actions = node('div', 'template-actions');
-    var use = node('a', '', 'Use this template'); use.href = siteRoot + 'index.html#contact';
+    var use = node('a', '', 'Use this template'); use.href = siteRoot + '#contact';
     use.setAttribute('aria-label', 'Use this template: ' + item.title); actions.append(use);
     if (url(item.previewUrl)) {
       var live = node('a', '', 'Preview \u2197'); live.href = url(item.previewUrl); live.target = '_blank'; live.rel = 'noopener noreferrer'; actions.append(live);
