@@ -22,7 +22,7 @@ const organization = {
     { '@type': 'PostalAddress', streetAddress: 'Agrabad Commercial Area', addressLocality: 'Chattogram', addressCountry: 'BD' },
     { '@type': 'PostalAddress', addressLocality: 'Austin', addressRegion: 'TX', postalCode: '78701', addressCountry: 'US' }
   ],
-  areaServed: ['Bangladesh', 'United States', 'Canada', 'Australia', 'Europe'],
+  areaServed: markets.map(m => m.area),
   knowsAbout: services.map(s => s.name),
   sameAs: ['https://www.facebook.com/share/19suEp2ySE/', 'https://www.linkedin.com/company/orbitwick/']
 };
@@ -51,16 +51,13 @@ function applySeo(html, block) {
   return html.replace(/<title>[\s\S]*?<\/title>/, () => block);
 }
 
-// Footer: service links go to their own pages, plus a row of markets. Applied to every page.
+// Footer: a "Working worldwide" column that links to the market pages. Applied to every page.
 function footer(html) {
-  const map = { design: 'ui-ux-design', development: 'website-development', mobile: 'mobile-app-development', security: 'cybersecurity', maintenance: 'website-maintenance', revamp: 'website-redesign', cms: 'ecommerce-development' };
   const i = html.indexOf('<footer');
-  let head = html.slice(0, i), foot = html.slice(i);
-  foot = foot.replace(/href="\/services#(\w+)"/g, (m, k) => map[k] ? `href="/services/${map[k]}"` : m);
-  if (!foot.includes('"/services/software-development"')) foot = foot.replace(/( *)(<li><a href="\/services\/website-development">)/, `$1<li><a href="/services/software-development">Software Development</a></li>\n$1$2`);
-  foot = foot.replace(/ *<nav class="footer-markets"[\s\S]*?<\/nav>\n/, '');
-  foot = foot.replace(/( *)<div class="footer-bottom">/, (m, s) => `${s}<nav class="footer-markets" aria-label="Where we work"><span>Where we work</span>${markets.map(k => `<a href="/locations/${k.slug}">${k.name}</a>`).join('')}</nav>\n${m}`);
-  return head + foot;
+  const foot = html.slice(i).replace(/( *)<h2 class="footer-heading">(?:Services|Working worldwide)<\/h2>\n *<ul class="footer-links">[\s\S]*?<\/ul>/, (m, s) =>
+    `${s}<h2 class="footer-heading">Working worldwide</h2>\n${s}<ul class="footer-links">\n${markets.map(k => `${s}  <li><a href="/locations/${k.slug}">${k.name}</a></li>`).join('\n')}\n${s}</ul>`);
+  if (!foot.includes('Working worldwide')) throw new Error('Footer column not found');
+  return html.slice(0, i) + foot;
 }
 
 for (const f of [...Object.keys(existing), 'blog/blog-shell.html']) {
@@ -89,7 +86,7 @@ function landing(dir, p) {
   const trail = market ? [['Home', 'index.html'], [p.name, f]] : [['Home', 'index.html'], ['Services', 'services.html'], [p.name, f]];
   const graph = [organization, serviceSchema, crumbs(trail), faqSchema(p.faq)];
   const others = market
-    ? `<h2>Services in ${p.name}</h2><div class="landing-links">${services.map(s => `<a href="../services/${s.slug}.html">${esc(s.name)}</a>`).join('')}</div>`
+    ? `<h2>Our services</h2><div class="landing-links">${services.map(s => `<a href="../services/${s.slug}.html">${esc(s.name)}</a>`).join('')}</div>`
     : `<h2>Related services</h2><div class="landing-links">${services.filter(s => s !== p).map(s => `<a href="${s.slug}.html">${esc(s.name)}</a>`).join('')}</div><h2>Where we work</h2><div class="landing-links">${markets.map(m => `<a href="../locations/${m.slug}.html">${m.name}</a>`).join('')}</div>`;
   const guides = market ? [] : posts.filter(a => a.service.href === `/services/${p.slug}`).slice(0, 5);
   const reading = guides.length ? `<h2>Helpful guides</h2><div class="landing-links">${guides.map(a => `<a href="../blog/${a.slug}.html">${esc(a.title)}</a>`).join('')}</div>` : '';

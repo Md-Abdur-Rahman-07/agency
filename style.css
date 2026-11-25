@@ -3590,9 +3590,5 @@ html:where(.home-page) {
 .landing-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .landing-links a { padding: 10px 14px; border: 1px solid #e2e2e5; border-radius: 4px; color: #44444c; font-size: 14px; text-decoration: none; }
 .landing-links a:hover { border-color: #6d1a2e; color: #6d1a2e; }
-.footer-markets { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 18px 0; border-top: 1px solid rgba(255,255,255,.16); font-size: 14px; }
-.footer-markets span { color: #a8a8ae; }
-.footer-markets a { color: #d6d6da; text-decoration: none; }
-.footer-markets a:hover { color: #fff; }
 @media(max-width:991px) { .landing-body { grid-template-columns: minmax(0,1fr); gap: 36px; } }
 @media(max-width:640px) { .landing { padding: 32px 0 56px; } .landing-body { margin-top: 36px; padding-top: 32px; } }
