@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Security made readable.",
+      "label": "Security dashboard concept",
+      "summary": "An audit dashboard concept that turns technical findings into clear priorities.",
+      "description": "A findings list groups issues by severity and pairs each item with context and a suggested next action. This is an interface concept, not an audit result.\n\nMake technical security findings understandable to a small operations team. The proposed scope includes severity filters, finding details, remediation notes and report layouts.\n\nThis sample case study demonstrates how a completed project can be presented. The figures and client are illustrative, and the video is placeholder footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img11.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "demoUrl": "img/video.mp4",
+      "liveUrl": "https://example.com",
+      "timeline": "6 weeks",
+      "client": "Northstar IT (demo)",
+      "year": "2026",
+      "role": "Dashboard design and frontend development",
+      "technologies": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "details": [
+        {
+          "label": "Challenge",
+          "value": "Make technical security findings understandable to a small operations team."
+        },
+        {
+          "label": "Scope & deliverables",
+          "value": "Severity filters, finding details, remediation notes and report layouts."
+        },
+        {
+          "label": "Project stages",
+          "value": "Discovery and scope → design and prototype → development → testing and handover"
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample client, budget and timeline."
+        }
+      ],
+      "cost": "$3,200",
+      "isDemo": true,
+      "demoCaption": "Sample video for this portfolio preview; replace with the project walkthrough."
+    }
+  ]
+}

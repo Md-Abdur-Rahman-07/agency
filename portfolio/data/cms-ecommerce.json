@@ -1,0 +1,94 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Commerce, considered.",
+      "label": "Storefront concept",
+      "summary": "An online store concept built around a calmer path from discovery to checkout.",
+      "description": "Product discovery, collection pages and a focused checkout flow bring the shopping experience into one consistent visual system.\n\nMake a growing product catalogue easy to browse on any screen. The proposed scope includes product discovery, collection pages, product detail templates and a checkout prototype.\n\nThis sample case study demonstrates how a completed project can be presented. The figures and client are illustrative, and the video is placeholder footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img7.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "demoUrl": "img/video.mp4",
+      "liveUrl": "https://example.com",
+      "timeline": "8 weeks",
+      "client": "Elm & Clay (demo)",
+      "year": "2026",
+      "role": "UX design and full-stack development",
+      "technologies": [
+        "Figma",
+        "Next.js",
+        "Stripe"
+      ],
+      "details": [
+        {
+          "label": "Challenge",
+          "value": "Make a growing product catalogue easy to browse on any screen."
+        },
+        {
+          "label": "Scope & deliverables",
+          "value": "Product discovery, collection pages, product detail templates and a checkout prototype."
+        },
+        {
+          "label": "Project stages",
+          "value": "Discovery and scope → design and prototype → development → testing and handover"
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample client, budget and timeline."
+        }
+      ],
+      "cost": "$4,800",
+      "isDemo": true,
+      "demoCaption": "Sample video for this portfolio preview; replace with the project walkthrough."
+    },
+    {
+      "id": 2,
+      "title": "Content with room to grow.",
+      "label": "CMS concept",
+      "summary": "A publishing experience built around clear content and simple navigation.",
+      "description": "A concept exploring article discovery, topic navigation and a reusable editorial page system.\n\nHelp an editorial team publish and organise a growing article library. The proposed scope includes topic pages, article templates, author profiles and editorial publishing flow.\n\nThis sample case study demonstrates how a completed project can be presented. The figures and client are illustrative, and the video is placeholder footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img8.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "demoUrl": "img/video.mp4",
+      "liveUrl": "https://example.com",
+      "timeline": "7 weeks",
+      "client": "Field Notes Journal (demo)",
+      "year": "2026",
+      "role": "CMS architecture and development",
+      "technologies": [
+        "WordPress",
+        "PHP",
+        "JavaScript"
+      ],
+      "details": [
+        {
+          "label": "Challenge",
+          "value": "Help an editorial team publish and organise a growing article library."
+        },
+        {
+          "label": "Scope & deliverables",
+          "value": "Topic pages, article templates, author profiles and editorial publishing flow."
+        },
+        {
+          "label": "Project stages",
+          "value": "Discovery and scope → design and prototype → development → testing and handover"
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample client, budget and timeline."
+        }
+      ],
+      "cost": "$3,600",
+      "isDemo": true,
+      "demoCaption": "Sample video for this portfolio preview; replace with the project walkthrough."
+    }
+  ]
+}

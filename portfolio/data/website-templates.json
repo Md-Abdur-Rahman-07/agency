@@ -1,0 +1,20 @@
+{
+  "templates": [
+    {
+      "id": 1,
+      "title": "Roadly",
+      "type": "Car rental template",
+      "description": "A ready-made car rental website with several home page styles, one-page versions, car listings, booking form, pricing, gallery, team and blog pages.",
+      "image": "portfolio/images/roadly-template.jpg",
+      "previewUrl": "https://md-abdur-rahman-07.github.io/Roadly-Template/"
+    },
+    {
+      "id": 2,
+      "title": "HomeCraft",
+      "type": "Construction & interiors template",
+      "description": "A home construction, remodeling and interior design website with a fixed side menu, light and dark theme, project gallery, services, about, blog and contact pages.",
+      "image": "portfolio/images/homecraft-template.jpg",
+      "previewUrl": "https://md-abdur-rahman-07.github.io/HomeCraft/"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Design",
+      "label": "Personal portfolio UI",
+      "summary": "A one-page portfolio for a software engineer, led by a single path from hello to contact.",
+      "description": "A light, spacious portfolio homepage for a software engineer. A dotted line runs through the whole page and guides the eye from the introduction to services, education, experience and contact.\n\nOversized section words sit quietly in the background, while soft cards and one solid black card keep attention on the main message.",
+      "background": {
+        "type": "image",
+        "display": "screenshot",
+        "url": "portfolio/images/portfolio-design.jpg",
+        "alt": "Portfolio homepage design with a waving character and the heading Hi, I am Rahim, your new Software Engineer"
+      },
+      "liveUrl": "https://www.figma.com/design/OBwu6oeJ4qGQz9lRjbzEXe/Portfolio-Design?node-id=1-25",
+      "liveLabel": "View in Figma ↗",
+      "technologies": [
+        "Figma",
+        "UI design",
+        "Visual design"
+      ],
+      "details": [
+        {
+          "label": "Sections",
+          "value": "Introduction, services, education, experience and contact"
+        },
+        {
+          "label": "Layout",
+          "value": "One long page connected by a dotted path"
+        },
+        {
+          "label": "Visual style",
+          "value": "Monochrome palette, soft cards and oversized background type"
+        },
+        {
+          "label": "Main actions",
+          "value": "Let's talk and Explore portfolio"
+        }
+      ]
+    }
+  ]
+}

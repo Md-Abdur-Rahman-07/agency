@@ -1,0 +1,176 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Flowdesk",
+      "label": "Team workspace · Demo product",
+      "summary": "Helping small teams organise projects, share priorities and keep work moving.",
+      "description": "A dashboard, project board and activity feed explore how a small team could organise daily work without switching between tools.\n\nHelp small teams see priorities, responsibilities and progress in one place. The proposed scope includes workspace setup, project boards, task ownership, roles and an activity feed.\n\nThis sample case study demonstrates how a completed project can be presented. The figures and client are illustrative, and the video is placeholder footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img8.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "demoUrl": "img/video.mp4",
+      "liveUrl": "https://example.com",
+      "timeline": "12 weeks",
+      "client": "OrbitWick Product Lab (demo)",
+      "year": "2026",
+      "role": "Product strategy, UI/UX and full-stack development",
+      "technologies": [
+        "Next.js",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "details": [
+        {
+          "label": "Who it serves",
+          "value": "Small teams, studios and project managers"
+        },
+        {
+          "label": "Challenge",
+          "value": "Help small teams see priorities, responsibilities and progress in one place."
+        },
+        {
+          "label": "Scope & deliverables",
+          "value": "Workspace setup, project boards, task ownership, roles and an activity feed."
+        },
+        {
+          "label": "Project stages",
+          "value": "Discovery and scope → design and prototype → development → testing and handover"
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample client, budget and timeline."
+        }
+      ],
+      "cost": "$9,500",
+      "isDemo": true,
+      "demoCaption": "Sample video for this portfolio preview; replace with the project walkthrough."
+    },
+    {
+      "id": 2,
+      "title": "Slotwise",
+      "label": "Scheduling · Demo product",
+      "summary": "Let clients book time without the back-and-forth.",
+      "description": "A scheduling product concept for consultants, studios and service businesses. Availability, booking confirmation and reminders are brought into one simple workflow.\n\nThis illustrative product preview uses sample delivery details and placeholder video footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img10.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "isDemo": true,
+      "demoUrl": "img/video.mp4",
+      "demoCaption": "Sample video for this portfolio preview; replace with the product walkthrough.",
+      "liveUrl": "https://example.com",
+      "timeline": "9 weeks",
+      "cost": "$7,200",
+      "client": "OrbitWick Product Lab (demo)",
+      "year": "2026",
+      "role": "Product design and full-stack development",
+      "technologies": [
+        "Next.js",
+        "PostgreSQL",
+        "Google Calendar API"
+      ],
+      "details": [
+        {
+          "label": "Who it serves",
+          "value": "Independent professionals and service teams"
+        },
+        {
+          "label": "Product scope",
+          "value": "Booking pages, availability rules, reminders and team calendars."
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample budget and timeline."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Billnest",
+      "label": "Billing · Demo product",
+      "summary": "Keep invoices, payment status and client records together.",
+      "description": "A billing product concept for people running a small business. The experience follows an invoice from draft to payment, with a clear view of what is due.\n\nThis illustrative product preview uses sample delivery details and placeholder video footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img7.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "isDemo": true,
+      "demoUrl": "img/video.mp4",
+      "demoCaption": "Sample video for this portfolio preview; replace with the product walkthrough.",
+      "liveUrl": "https://example.com",
+      "timeline": "10 weeks",
+      "cost": "$8,400",
+      "client": "OrbitWick Product Lab (demo)",
+      "year": "2026",
+      "role": "Product design and full-stack development",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Stripe"
+      ],
+      "details": [
+        {
+          "label": "Who it serves",
+          "value": "Freelancers and small businesses"
+        },
+        {
+          "label": "Product scope",
+          "value": "Client records, invoice drafts, payment tracking and reporting."
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample budget and timeline."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Careboard",
+      "label": "Website operations · Demo product",
+      "summary": "One place to manage care across multiple websites.",
+      "description": "A website operations product concept for agencies looking after client sites. The workspace groups maintenance tasks, requests and service reports by website.\n\nThis illustrative product preview uses sample delivery details and placeholder video footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img11.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "isDemo": true,
+      "demoUrl": "img/video.mp4",
+      "demoCaption": "Sample video for this portfolio preview; replace with the product walkthrough.",
+      "liveUrl": "https://example.com",
+      "timeline": "11 weeks",
+      "cost": "$8,900",
+      "client": "OrbitWick Product Lab (demo)",
+      "year": "2026",
+      "role": "Product design and full-stack development",
+      "technologies": [
+        "Next.js",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "details": [
+        {
+          "label": "Who it serves",
+          "value": "Agencies and website owners"
+        },
+        {
+          "label": "Product scope",
+          "value": "Site directory, maintenance queue, support requests and client reports."
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample budget and timeline."
+        }
+      ]
+    }
+  ]
+}

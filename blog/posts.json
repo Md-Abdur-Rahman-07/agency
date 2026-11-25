@@ -1,0 +1,1956 @@
+{
+  "posts": [
+    {
+      "slug": "small-business-website-cost-scope",
+      "title": "Small Business Website Cost: What Your Quote Should Include",
+      "excerpt": "Compare website proposals by scope, content, integrations and ongoing care. Use this brief to get a useful estimate without hidden assumptions.",
+      "category": "Web Development",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/small-business-website-cost-scope.jpg",
+      "imageAlt": "A business discussion with a handshake over project documents",
+      "tags": [
+        "Web Development"
+      ],
+      "service": {
+        "name": "Web Development",
+        "href": "services.html#development"
+      },
+      "takeaway": "Compare the work behind each quote before comparing the total. A page count alone cannot tell you what a website will cost.",
+      "content": [
+        {
+          "type": "p",
+          "text": "Two agencies can quote very different amounts for a five-page website and both be pricing fairly. One may assume you supply finished copy and images. The other may include content planning, custom layouts, booking integration and launch support. Until those assumptions are visible, the totals tell you surprisingly little."
+        },
+        {
+          "type": "p",
+          "text": "A useful website budget starts with what the business needs the site to do. For a consultancy, that might mean explaining three services and collecting qualified enquiries. For a training provider, it could mean taking bookings, managing course dates and sending confirmation emails. Both need a website. They need different amounts of work."
+        },
+        {
+          "type": "h2",
+          "text": "Write the job before the page list"
+        },
+        {
+          "type": "p",
+          "text": "Describe the visitor, the action you want them to take and what happens afterwards. For example: a facilities manager finds a maintenance service, checks the service area, submits a request and receives a confirmation. Your team then receives the details in the right inbox. That final handoff belongs in the scope as much as the homepage design."
+        },
+        {
+          "type": "p",
+          "text": "Separate launch requirements from later improvements. A client portal may be useful eventually, but it should not quietly enter the price of a brochure site. Ask each supplier to quote the same launch requirements and list optional items separately. This makes comparison more useful than asking everyone for their cheapest package."
+        },
+        {
+          "type": "h2",
+          "text": "Ask for these items in writing"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Page templates and pages to be populated, including who supplies copy and photography.",
+            "Mobile layouts, keyboard navigation and the devices included in testing.",
+            "Forms, payment tools, booking services or CRM integrations, with responsibility for third-party accounts.",
+            "Content editing access, training and ownership of the domain, hosting and source files.",
+            "Launch tasks, feedback rounds, bug-fix arrangements and exclusions."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Forms deserve more attention than they usually receive. W3C recommends meaningful labels associated with their controls. A quote that includes a contact form should also explain how errors, required fields and successful submissions will be handled. These are practical usability requirements, not decorative extras. [1]"
+        },
+        {
+          "type": "h2",
+          "text": "Separate the build from running costs"
+        },
+        {
+          "type": "p",
+          "text": "Request two totals: the initial project and the recurring commitments. Hosting, domain renewal, paid software, maintenance and content changes can sit in different accounts. Ask which costs belong to you, which are passed through the agency and what happens if you move to another provider."
+        },
+        {
+          "type": "p",
+          "text": "Create columns for setup, monthly costs, annual renewals and optional support. Use the actual numbers from each proposal. Do not treat a generic online price range as a quote for your business: delivery costs, scope and existing systems can change the estimate substantially."
+        },
+        {
+          "type": "h2",
+          "text": "Define what finished means"
+        },
+        {
+          "type": "p",
+          "text": "Acceptance criteria make delivery easier to judge. Replace “the site must work well” with tasks: a visitor can submit the form on a phone, the correct person receives it, and the visitor gets a useful confirmation. Agree who supplies test content and who approves each milestone."
+        },
+        {
+          "type": "p",
+          "text": "A brief can fit on one page. Include the business goal, audience, must-have features, current URL, content readiness, preferred deadline and budget range. If the deadline depends on an event, say so early. An honest discussion about scope is more valuable than a promise that every idea will fit."
+        },
+        {
+          "type": "h2",
+          "text": "Do you need a custom build?"
+        },
+        {
+          "type": "p",
+          "text": "Not always. An established CMS or a carefully chosen template can suit a straightforward content site. Custom development becomes easier to justify when your workflow, data model or integration needs cannot be met cleanly with existing tools. Ask the supplier to explain that decision in terms of your operating needs, rather than a preferred framework."
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C: Labeling form controls",
+          "url": "https://www.w3.org/WAI/tutorials/forms/labels/"
+        }
+      ],
+      "cta": "Send us your page list and must-have workflow. We can help turn them into a clear development scope.",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      }
+    },
+    {
+      "slug": "website-redesign-seo-checklist",
+      "title": "Website Redesign SEO Checklist: Protect What Already Works",
+      "excerpt": "Plan URLs, redirects, content and launch checks before a redesign. A practical migration checklist for business owners and their development teams.",
+      "category": "Website Revamp",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/website-redesign-seo-checklist.jpg",
+      "imageAlt": "A designer working on a digital interface at a desk",
+      "tags": [
+        "Website Revamp"
+      ],
+      "service": {
+        "name": "Website Revamp",
+        "href": "services.html#revamp"
+      },
+      "takeaway": "Keep useful URLs where possible, map every necessary change and test the migration before launch. A new design does not require a new address for every page.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A redesign can look successful in a presentation and still make it harder for customers to find you. The risky moment is often the handover between the old site and the new one: a useful service page disappears, a contact form stops delivering, or a familiar URL points somewhere unrelated."
+        },
+        {
+          "type": "p",
+          "text": "Treat the project as a migration of a working business asset. Before discussing colours, write down what the current site already does well. That gives the design and development team something concrete to protect, and it makes post-launch conversations less dependent on impressions."
+        },
+        {
+          "type": "h2",
+          "text": "Start with an inventory"
+        },
+        {
+          "type": "p",
+          "text": "Collect current URLs, page titles, main headings and important downloads. Add the pages that receive enquiries or organic visits using your own analytics and Search Console data. If tracking is incomplete, say so; do not assume an unmeasured page has no value."
+        },
+        {
+          "type": "p",
+          "text": "For each page, choose keep, improve, merge or retire. Record the reason and proposed destination. A short service page may need better explanation, while a detailed resource may deserve to remain largely intact. This inventory also helps find duplicated or outdated material before someone starts rebuilding it."
+        },
+        {
+          "type": "h2",
+          "text": "Build a redirect map before development ends"
+        },
+        {
+          "type": "p",
+          "text": "Google recommends mapping old URLs to appropriate destinations during a move and avoiding mass redirects to an irrelevant homepage. Where a URL changes permanently, a direct permanent redirect is generally the right approach. Keep redirect chains short and update internal links to their final destinations. Google also notes that search visibility can fluctuate while a move is processed. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Give the map to whoever controls hosting. A spreadsheet is a planning document; the redirects still need to be implemented and tested. Check spelling, old campaign links and downloadable files. If no suitable replacement exists, discuss the correct retirement behaviour rather than inventing a misleading destination."
+        },
+        {
+          "type": "h2",
+          "text": "Preserve the reason people visited"
+        },
+        {
+          "type": "p",
+          "text": "A cleaner page can still answer the original question. Keep valuable service explanations, eligibility details and useful FAQs unless there is a reason to change them. If you merge pages, make sure the new page covers the topics that brought visitors to the old ones."
+        },
+        {
+          "type": "p",
+          "text": "For example, replacing separate repair and installation pages with a short “what we do” section may remove information customers relied on. The problem is not the visual layout. It is the loss of useful content. Review the new sitemap against customer tasks before approving it."
+        },
+        {
+          "type": "h2",
+          "text": "Run a launch rehearsal"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Open important old URLs and confirm each reaches the intended new page.",
+            "Check canonical URLs, page titles, indexability and the updated sitemap.",
+            "Submit enquiry forms and verify delivery, confirmation and spam handling.",
+            "Test mobile navigation, telephone links, downloads and any booking or payment flow.",
+            "Record a rollback plan and the person responsible for launch decisions."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Google specifically warns about accidental indexing blocks and incorrect redirects during migrations. Check the live configuration after launch; a staging checklist does not prove production is configured correctly. [1]"
+        },
+        {
+          "type": "h2",
+          "text": "Watch outcomes after launch"
+        },
+        {
+          "type": "p",
+          "text": "Keep a dated record of the release and major content changes. Compare enquiries, important landing pages and crawl errors over time. Allow for ordinary demand changes and measurement differences before blaming the redesign for every movement. Investigate a broken form immediately, even if traffic looks healthy."
+        },
+        {
+          "type": "h2",
+          "text": "Can you guarantee no ranking loss?"
+        },
+        {
+          "type": "p",
+          "text": "No responsible migration plan can promise that. The goal is to reduce avoidable problems and make issues easier to find. If an agency proposes changing your domain, CMS, content and URL structure together, ask why each change is necessary and how the team will isolate problems if something goes wrong."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Google Search Central: Site moves with URL changes",
+          "url": "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+        }
+      ],
+      "cta": "Share your current URL and redesign goals. We can help identify what to preserve before rebuilding.",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      }
+    },
+    {
+      "slug": "website-maintenance-checklist-small-business",
+      "title": "Website Maintenance Checklist for Small Businesses",
+      "excerpt": "Know what to check, who should own it and what a useful maintenance report contains—from backups and updates to contact forms and recovery.",
+      "category": "Website Care",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/website-maintenance-checklist-small-business.jpg",
+      "imageAlt": "Server racks in a data centre",
+      "tags": [
+        "Website Care"
+      ],
+      "service": {
+        "name": "Website Care",
+        "href": "services.html#maintenance"
+      },
+      "takeaway": "A maintenance plan should prove that important tasks still work and that recovery is possible. A list of completed updates is only part of the picture.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A website can be online and still be failing your business. The homepage loads, but the enquiry email lands nowhere. A plugin update completes, but the booking calendar no longer opens on a phone. These are the kinds of problems a useful maintenance routine should catch."
+        },
+        {
+          "type": "p",
+          "text": "The right schedule depends on what the site handles. A brochure site updated occasionally has different needs from a store taking orders throughout the day. Start with the actions you cannot afford to lose, then agree checks and response arrangements around them."
+        },
+        {
+          "type": "h2",
+          "text": "Make ownership obvious"
+        },
+        {
+          "type": "p",
+          "text": "Write down who owns the domain, hosting, email delivery, CMS updates and third-party integrations. Record renewal dates in a shared system. An agency may maintain the code without controlling your domain account, so “the developer handles everything” is not a reliable operating plan."
+        },
+        {
+          "type": "p",
+          "text": "Keep access limited to people who need it, and review it when staff or suppliers leave. Use named accounts where the system supports them. The aim is to make an urgent task possible without searching old messages for a password or asking a former contractor to intervene."
+        },
+        {
+          "type": "h2",
+          "text": "Back up with recovery in mind"
+        },
+        {
+          "type": "p",
+          "text": "WordPress documents two parts of a typical full backup: the database and the files. A copy of the uploads folder alone does not preserve the complete site. The backup should cover the parts needed to restore the actual installation. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Ask your provider to demonstrate a restore into a separate test environment. Record what was recovered, how long it took and whether forms and recent content still worked. Decide how much data loss is tolerable before choosing a backup interval. A busy store may need a tighter recovery target than a static brochure site; one universal schedule is not enough."
+        },
+        {
+          "type": "h2",
+          "text": "Use a repeatable working checklist"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Confirm the site is reachable and review availability or certificate alerts.",
+            "Test a customer journey, such as sending an enquiry or completing a test booking.",
+            "Review available updates and assess urgent security fixes promptly.",
+            "Check that backups completed and investigate failed jobs.",
+            "Review broken links, outdated contact information and renewal notices.",
+            "Recheck important flows after changes, with a way to roll back if needed."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Updates should be planned around risk. A staging site helps assess changes without surprising visitors, but it is not a reason to leave a serious security issue untouched indefinitely. Agree who evaluates urgency and who can approve emergency work."
+        },
+        {
+          "type": "h2",
+          "text": "Ask for a useful monthly report"
+        },
+        {
+          "type": "p",
+          "text": "A good report explains what changed and what needs a decision. “Eight plugins updated” tells you less than “the booking flow was retested after the calendar update; the payment extension needs a licence renewal before next month.” The report should name unresolved issues and their owners."
+        },
+        {
+          "type": "p",
+          "text": "Keep maintenance separate from new feature work in the agreement. Small content edits, emergency fixes, design requests and major integrations may be treated differently. Knowing the boundary before an incident prevents a support conversation from becoming a pricing dispute."
+        },
+        {
+          "type": "h2",
+          "text": "What should happen when something breaks?"
+        },
+        {
+          "type": "p",
+          "text": "Agree an escalation route, operating hours and an initial response target. Response and resolution are different: someone can acknowledge an issue quickly while a third-party outage takes longer to fix. Ask how progress will be communicated and what evidence is needed to close the issue."
+        },
+        {
+          "type": "p",
+          "text": "Maintenance is easiest to evaluate when it is connected to business tasks. If your site generates enquiries, the contact flow should appear in the checklist. If it sells products, order and payment checks belong there. Choose coverage around what your customers actually do."
+        }
+      ],
+      "sources": [
+        {
+          "title": "WordPress documentation: Backups",
+          "url": "https://developer.wordpress.org/advanced-administration/security/backup/"
+        }
+      ],
+      "cta": "Tell us which website tasks your business depends on. We can scope a care plan around them.",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      }
+    },
+    {
+      "slug": "ecommerce-checkout-audit-checklist",
+      "title": "E-commerce Checkout Audit: What to Fix Before Buying More Ads",
+      "excerpt": "Review checkout clarity, payment handling and order confirmation. A practical audit for stores losing customers between the cart and a completed order.",
+      "category": "E-commerce",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/ecommerce-checkout-audit-checklist.jpg",
+      "imageAlt": "A shopper using a payment card while browsing an online store",
+      "tags": [
+        "E-commerce"
+      ],
+      "service": {
+        "name": "E-commerce",
+        "href": "services.html#cms"
+      },
+      "takeaway": "Follow an order all the way from product selection to fulfilment. A payment screen that looks right is not proof that the whole checkout works.",
+      "content": [
+        {
+          "type": "p",
+          "text": "Before increasing your advertising budget, try buying from your own store on a phone. Choose a product, enter an address you genuinely ship to and work through the payment options. Note every point where you hesitate. A checkout audit starts with this ordinary customer task, not a redesign of the payment button."
+        },
+        {
+          "type": "p",
+          "text": "Abandoned carts have many causes, including visitors who never intended to buy. The useful question is narrower: which obstacles can your store remove, and how will you tell whether the change helped? Work from observed problems rather than a universal conversion promise."
+        },
+        {
+          "type": "h2",
+          "text": "Explain the commitment before payment"
+        },
+        {
+          "type": "p",
+          "text": "Customers should understand what they are buying, the relevant delivery options and the total shown at checkout. Check what happens when their address changes the shipping cost or makes a product unavailable. Do not make the shopper discover an important restriction after spending time completing the form."
+        },
+        {
+          "type": "p",
+          "text": "Review return and support information from the customer's perspective. Is it easy to find the answer without losing the cart? Avoid unsupported reassurance badges. Clear policies and working contact details are more useful than a row of symbols nobody can verify."
+        },
+        {
+          "type": "h2",
+          "text": "Remove avoidable form friction"
+        },
+        {
+          "type": "p",
+          "text": "W3C's form guidance recommends identifying required information, explaining expected formats and making instructions available to people using assistive technology. Put help near the field that needs it, and make error recovery clear. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Test with a long address, an apartment number, an international phone number and an incorrect postal code. Check whether the error tells the shopper how to recover. Also test keyboard navigation and whether entered details survive a recoverable payment error. These cases reveal issues that a perfect test account misses."
+        },
+        {
+          "type": "h2",
+          "text": "Separate payment from fulfilment"
+        },
+        {
+          "type": "p",
+          "text": "Stripe offers hosted and embedded payment interfaces, so a fully custom card-entry form is not automatically necessary. The appropriate integration depends on your store and payment requirements. [2]"
+        },
+        {
+          "type": "p",
+          "text": "A success page should not be the only trigger for order fulfilment: a customer can pay and lose connectivity before returning to the store. Stripe's fulfilment documentation describes using payment events through webhooks and handling repeated calls safely. Have your developer confirm that a paid order cannot be lost or fulfilled twice. [3]"
+        },
+        {
+          "type": "h2",
+          "text": "Test the uncomfortable paths"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A payment is declined, then the customer retries successfully.",
+            "The customer closes the browser after paying.",
+            "The same payment notification arrives more than once.",
+            "A chosen product becomes unavailable during checkout.",
+            "A refund or cancellation needs to be reflected in the order record.",
+            "The customer mistypes an email address and needs help finding the order."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Use the payment provider's testing environment and coordinate any production test with the store owner. Keep test purchases out of operational reporting where possible. The goal is to prove the workflow, not to generate transactions that confuse the team."
+        },
+        {
+          "type": "h2",
+          "text": "Measure changes against a clear baseline"
+        },
+        {
+          "type": "p",
+          "text": "Define the steps you can reliably observe: cart, checkout started, payment attempted and order completed. Look for differences by device and payment method. Make a small set of changes, record the release date and allow enough comparable activity before drawing conclusions."
+        },
+        {
+          "type": "p",
+          "text": "If the store has little traffic, usability observations and support messages can be more actionable than a noisy percentage. Ask recent customers what nearly stopped them. A specific delivery question can lead to a useful correction even when the analytics sample is small."
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C: Form instructions",
+          "url": "https://www.w3.org/WAI/tutorials/forms/instructions/"
+        },
+        {
+          "title": "Stripe: Checkout",
+          "url": "https://docs.stripe.com/payments/checkout"
+        },
+        {
+          "title": "Stripe: Fulfil orders",
+          "url": "https://docs.stripe.com/checkout/fulfillment.md?ui=full-page"
+        }
+      ],
+      "cta": "Send your store URL and the checkout problems customers report. We can review the journey and its technical handoffs.",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      }
+    },
+    {
+      "slug": "mobile-app-vs-pwa-business",
+      "title": "Mobile App or PWA? A Practical Choice for Your Business",
+      "excerpt": "Choose between a mobile app and a progressive web app using customer habits, device needs, offline work and the cost of maintaining the product.",
+      "category": "Mobile Apps",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/mobile-app-vs-pwa-business.jpg",
+      "imageAlt": "A mobile application displayed on a smartphone",
+      "tags": [
+        "Mobile Apps"
+      ],
+      "service": {
+        "name": "Mobile Apps",
+        "href": "services.html#mobile"
+      },
+      "takeaway": "Choose around the recurring task and the devices your customers use. Prototype the hardest device requirement before committing to a platform.",
+      "content": [
+        {
+          "type": "p",
+          "text": "“We need an app” often describes a goal before it describes a product. You may want repeat bookings, easier order tracking or a field team that can work away from a desk. Those tasks are a better starting point than deciding whether an icon should live in an app store."
+        },
+        {
+          "type": "p",
+          "text": "A mobile application and a progressive web app can both serve useful business workflows. The decision depends on how people discover the product, how often they return and which device capabilities the task genuinely needs."
+        },
+        {
+          "type": "h2",
+          "text": "Understand the practical distinction"
+        },
+        {
+          "type": "p",
+          "text": "MDN describes a PWA as an application built with web technologies that can offer app-like experiences. Depending on implementation and platform support, these can include installation, offline behaviour and notifications. A platform-specific app is built around an operating system and its capabilities. Support varies, so a feature name alone does not prove that it will work on every target device. [1]"
+        },
+        {
+          "type": "p",
+          "text": "For a customer who follows a booking link once every few months, opening a web experience may be an easier first step than installing an app. For a field worker completing tasks all day, a dedicated app may fit the routine better. These are planning examples, not rules that settle the choice on their own."
+        },
+        {
+          "type": "h2",
+          "text": "List the features that could decide the platform"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Does the task require camera, location, Bluetooth or another device integration?",
+            "What must remain usable without a connection, and what can wait?",
+            "How often will a typical person return after the first visit?",
+            "Is app-store distribution important to how customers will discover you?",
+            "Which phones, operating-system versions and browsers must be supported?",
+            "Who will maintain releases, respond to errors and manage user support?"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Take the most uncertain requirement and test it on representative devices. If the business depends on a hardware integration, prove that interaction before polishing every screen. A small technical prototype is often a more useful decision tool than a large feature comparison spreadsheet."
+        },
+        {
+          "type": "h2",
+          "text": "Treat offline work as a workflow"
+        },
+        {
+          "type": "p",
+          "text": "“Works offline” needs a definition. Reading a previously loaded schedule is different from creating an order, uploading photos and resolving a conflict when another person edits the same record. Write down what the user sees before, during and after losing a connection."
+        },
+        {
+          "type": "p",
+          "text": "For a hypothetical inspection tool, the first release might save a draft locally and make its upload status obvious. It might deliberately avoid editing an inspection from two devices at once. That boundary can reduce ambiguity, provided it matches the real working day. Make users part of the discussion rather than hiding the compromise inside the technical specification."
+        },
+        {
+          "type": "h2",
+          "text": "Budget for the whole service"
+        },
+        {
+          "type": "p",
+          "text": "A mobile interface is only part of the work. Accounts, backend services, notifications, analytics, support tools and data recovery can matter just as much. Ask which components can be shared and which need platform-specific attention. A shared codebase does not remove the need to test on different devices."
+        },
+        {
+          "type": "p",
+          "text": "Plan who owns distribution accounts and approves releases. Include ongoing compatibility work and a way to respond when users report problems. An attractive first release is easier to launch than a dependable service is to operate."
+        },
+        {
+          "type": "h2",
+          "text": "Can you start on the web and add an app later?"
+        },
+        {
+          "type": "p",
+          "text": "Sometimes. A well-defined backend and clear workflows can support that path, but the migration is not automatic. Authentication, offline behaviour, payments and distribution may need additional work. Discuss the likely second phase early without paying to build every possible future feature now."
+        },
+        {
+          "type": "p",
+          "text": "The best next step is a short decision brief: audience, recurring task, device requirements, offline expectations and the business result you want to observe. That gives a development team a practical basis for recommending an approach."
+        }
+      ],
+      "sources": [
+        {
+          "title": "MDN: What is a progressive web app?",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app"
+        }
+      ],
+      "cta": "Share your users’ main task and target devices. We can help assess the right mobile approach before development.",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      }
+    },
+    {
+      "slug": "website-security-audit-small-business",
+      "title": "Website Security Audit: What Small Businesses Should Ask For",
+      "excerpt": "Understand the scope, evidence and follow-up a useful website security audit should include, from account permissions to remediation and retesting.",
+      "category": "Cybersecurity",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/website-security-audit-small-business.jpg",
+      "imageAlt": "A development workstation with code on screen",
+      "tags": [
+        "Cybersecurity"
+      ],
+      "service": {
+        "name": "Cybersecurity",
+        "href": "services.html#security"
+      },
+      "takeaway": "Ask for a defined scope, reproducible findings, a prioritised repair plan and retesting. A scan score alone does not tell you whether your business workflow is protected.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A security report can be long and still leave a business owner unsure what to do. Lists of technical warnings need context: what could happen, which systems are affected and what should be repaired first? A useful audit turns evidence into decisions the team can act on."
+        },
+        {
+          "type": "p",
+          "text": "Start by agreeing what is being assessed. A public marketing site, an online store and a customer portal expose different workflows and information. The review should reflect those differences instead of applying one undifferentiated checklist to every website."
+        },
+        {
+          "type": "h2",
+          "text": "Put scope and permission in writing"
+        },
+        {
+          "type": "p",
+          "text": "Identify the domains, applications, accounts and environments included in the work. Agree which testing methods are permitted, when testing may occur and who should be contacted if an issue appears. A business may own its website while relying on services it cannot authorise someone else to test."
+        },
+        {
+          "type": "p",
+          "text": "Also decide how findings will be shared. Reports can contain sensitive information about the system. Limit access to people responsible for decisions and repairs, and use an agreed channel. These practical arrangements make the engagement easier to run and reduce confusion when a significant issue is found."
+        },
+        {
+          "type": "h2",
+          "text": "Look beyond the login screen"
+        },
+        {
+          "type": "p",
+          "text": "OWASP's 2025 Top 10 includes broken access control, security misconfiguration and software supply-chain failures among major web application risk categories. It is an awareness resource, not a certificate that an individual website is secure. [1]"
+        },
+        {
+          "type": "p",
+          "text": "A useful question for a customer portal is whether each user can access only the records they are entitled to see. The review should consider the server's permission checks, not just whether the interface hides a button. OWASP describes access-control failures as allowing actions beyond intended permissions. [2]"
+        },
+        {
+          "type": "p",
+          "text": "Ask the assessor how the chosen scope covers accounts, sensitive workflows, dependencies and configuration. A scanner may help find issues, but the report should explain the limitations of automated checks and any areas that were not assessed."
+        },
+        {
+          "type": "h2",
+          "text": "Require findings your developer can use"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "The affected component and conditions under which the problem occurs.",
+            "Evidence sufficient for an authorised developer to reproduce and understand it.",
+            "The likely business impact and the assessor's severity rationale.",
+            "A recommended repair or mitigation, with assumptions made explicit.",
+            "A named owner, target date and method for confirming the fix."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "For example, “review permissions” is difficult to turn into a completed task. A report identifying an affected workflow and a missing permission boundary is easier to assign and verify. You do not need to publish technical details publicly to ask for useful evidence in a private report."
+        },
+        {
+          "type": "h2",
+          "text": "Separate urgent action from longer-term improvement"
+        },
+        {
+          "type": "p",
+          "text": "Review findings with the people who operate the system. Some repairs may need immediate attention; others require a staged change to avoid breaking a critical process. Record the reasoning and any temporary mitigation. Do not let a low overall score hide a serious issue in a valuable workflow."
+        },
+        {
+          "type": "p",
+          "text": "After a fix, ask for retesting of the original finding and related behaviour where appropriate. Closing a ticket because code changed is weaker evidence than confirming the unwanted action is now prevented. Keep the outcome with the original finding so future maintainers can understand what happened."
+        },
+        {
+          "type": "h2",
+          "text": "What does an audit not promise?"
+        },
+        {
+          "type": "p",
+          "text": "It does not establish that a system will remain secure indefinitely. Its conclusions depend on the agreed scope, methods and point in time. New releases, configuration changes and newly discovered weaknesses can change the picture. Pair the audit with routine maintenance, sensible access management and a plan for reporting incidents."
+        },
+        {
+          "type": "p",
+          "text": "If you are commissioning your first review, bring a system list and a description of the data you handle. That is a better starting point than buying the largest bundle of automated tests."
+        }
+      ],
+      "sources": [
+        {
+          "title": "OWASP Top 10:2025",
+          "url": "https://top10.owasp.org/"
+        },
+        {
+          "title": "OWASP: Broken access control",
+          "url": "https://top10.owasp.org/2025/A01_2025-Broken_Access_Control/"
+        }
+      ],
+      "cta": "Describe your website and the workflows you want reviewed. We can discuss an authorised assessment scope.",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      }
+    },
+    {
+      "slug": "website-not-generating-leads",
+      "title": "Website Not Generating Leads? Check These Seven Things",
+      "excerpt": "Find where enquiries are getting lost: audience fit, service clarity, proof, mobile forms, page performance, tracking and follow-up.",
+      "category": "UI/UX Design",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/website-not-generating-leads.jpg",
+      "imageAlt": "A designer reviewing a website on a desktop monitor",
+      "tags": [
+        "UI/UX Design"
+      ],
+      "service": {
+        "name": "UI/UX Design",
+        "href": "services.html#design"
+      },
+      "takeaway": "Before redesigning everything, check whether the right visitors understand the offer, can complete the enquiry and receive a useful response.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A quiet inbox does not automatically mean your website needs a new visual identity. You may be attracting the wrong audience, describing the service too vaguely or losing enquiries after the form is submitted. Diagnose the journey before paying to rebuild every page."
+        },
+        {
+          "type": "p",
+          "text": "Start with a specific service and a specific visitor. Imagine someone who needs that service now, has found your page and is comparing you with another provider. What information would help them decide whether to contact you? Follow that question through these seven checks."
+        },
+        {
+          "type": "h2",
+          "text": "1. Is the traffic relevant?"
+        },
+        {
+          "type": "p",
+          "text": "Review the queries and landing pages you can see in your own search and analytics tools. A popular informational article may attract readers who have no need for your service. That traffic can still be useful, but it should not be confused with people requesting proposals."
+        },
+        {
+          "type": "p",
+          "text": "Group enquiries by service and source where your measurement allows it. A small number of relevant visitors can matter more than a larger audience with a different intention. Avoid deciding success from visits alone, particularly when the business has a long buying cycle."
+        },
+        {
+          "type": "h2",
+          "text": "2. Can a visitor explain your offer?"
+        },
+        {
+          "type": "p",
+          "text": "Read the opening paragraph without the company name. Does it identify the problem you solve, who you help and the next step? Replace phrases such as “complete digital solutions” with the specific work a customer is trying to buy. A clear description makes the rest of the page easier to evaluate."
+        },
+        {
+          "type": "h2",
+          "text": "3. Is the evidence relevant and honest?"
+        },
+        {
+          "type": "p",
+          "text": "A project example should explain the brief, your role and the work delivered. Use results only when you can substantiate them. If an example is a concept, label it. A potential client can still learn from a concept, but passing it off as client work undermines trust."
+        },
+        {
+          "type": "p",
+          "text": "Choose evidence that matches the service page. Someone looking for a booking system needs to understand the workflow more than they need a gallery of unrelated logos. Where confidentiality limits detail, explain the work at an appropriate level without inventing numbers."
+        },
+        {
+          "type": "h2",
+          "text": "4. Can someone enquire on a phone?"
+        },
+        {
+          "type": "p",
+          "text": "Try the form with an ordinary mobile connection. Check that labels remain visible, errors are understandable and submission has an obvious outcome. W3C recommends associating descriptive labels with form controls so their purpose is available to users, including people using assistive technology. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Ask only for information needed to start the conversation. A detailed procurement questionnaire may be appropriate later, but it can be a heavy first step for someone still exploring a project. Explain what happens after they send the form."
+        },
+        {
+          "type": "h2",
+          "text": "5. Does the page feel responsive?"
+        },
+        {
+          "type": "p",
+          "text": "Google's Web Vitals guidance defines good thresholds of LCP within 2.5 seconds, INP at 200 milliseconds or less and CLS at 0.1 or less, evaluated at the 75th percentile of visits. These measure loading, interaction and visual stability. [2]"
+        },
+        {
+          "type": "p",
+          "text": "Use those signals to investigate friction, not as a substitute for customer understanding. A fast page with an unclear offer can still disappoint. Review oversized media, unnecessary scripts and shifting layouts alongside the content and enquiry flow."
+        },
+        {
+          "type": "h2",
+          "text": "6. Are you measuring completed enquiries?"
+        },
+        {
+          "type": "p",
+          "text": "A button click is not necessarily a delivered message. Check the full path from submission to the business inbox or CRM. Where possible, distinguish form starts, successful submissions and qualified conversations. Keep measurement appropriate to your privacy requirements and avoid collecting unnecessary personal data."
+        },
+        {
+          "type": "h2",
+          "text": "7. What happens after contact?"
+        },
+        {
+          "type": "p",
+          "text": "Give someone ownership of new enquiries and agree a follow-up process. Check spam folders and delivery failures. If visitors receive no reply, a new homepage will not solve the underlying problem. Record where leads stop progressing, then choose the smallest change that addresses the observed issue."
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C: Labeling controls",
+          "url": "https://www.w3.org/WAI/tutorials/forms/labels/"
+        },
+        {
+          "title": "web.dev: Web Vitals",
+          "url": "https://web.dev/articles/vitals"
+        }
+      ],
+      "cta": "Send your service page and the enquiry journey you want to improve. We can review the experience from first visit to submission.",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      }
+    },
+    {
+      "slug": "saas-mvp-development-scope",
+      "title": "SaaS MVP Development: Define a First Release People Can Use",
+      "excerpt": "Scope your first SaaS release around one complete workflow, including roles, tenant boundaries, support and evidence for the next decision.",
+      "category": "SaaS & Products",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/saas-mvp-development-scope.jpg",
+      "imageAlt": "A team discussing a product plan in a meeting",
+      "tags": [
+        "SaaS & Products"
+      ],
+      "service": {
+        "name": "SaaS & Products",
+        "href": "services.html#development"
+      },
+      "takeaway": "A useful MVP completes one valuable workflow for a defined audience. Reduce feature breadth while keeping essential permissions, recovery and support in scope.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A SaaS idea can grow from a simple problem into a long feature list surprisingly quickly. Add a dashboard, billing, chat, reports, integrations and an AI assistant, and the first release starts to resemble a mature product before anyone has used it."
+        },
+        {
+          "type": "p",
+          "text": "A better starting point is the smallest complete workflow that helps a particular person. For an appointment business, that might be publishing availability and receiving a confirmed booking. For a team tool, it could be creating a project, assigning work and seeing what needs attention. Choose one and follow it all the way through."
+        },
+        {
+          "type": "h2",
+          "text": "Describe the first useful session"
+        },
+        {
+          "type": "p",
+          "text": "Write the experience as a short sequence: who arrives, what they bring, what they do and what outcome they leave with. Include the empty state. A dashboard full of sample data does not prove that a new customer can reach a useful result from a blank account."
+        },
+        {
+          "type": "p",
+          "text": "For a hypothetical team workspace, the first session could be creating an organisation, inviting one colleague and completing a shared task. This gives the team a concrete flow to design and test. It also makes it easier to explain why an advanced reporting suite can wait."
+        },
+        {
+          "type": "h2",
+          "text": "Separate learning goals from infrastructure"
+        },
+        {
+          "type": "p",
+          "text": "Decide what the first release should help you learn. Will people finish onboarding? Do they return to the core task? Can they use the product without constant help? Choose a small set of observable behaviours and make the measurement plan part of the scope."
+        },
+        {
+          "type": "p",
+          "text": "Some infrastructure may not be the feature customers buy, but it still protects the service. Account recovery, appropriate permissions, error handling and operational visibility need attention. “Minimum” should describe the breadth of the offering, not an absence of essential safeguards."
+        },
+        {
+          "type": "h2",
+          "text": "Make account boundaries explicit"
+        },
+        {
+          "type": "p",
+          "text": "In a multi-tenant product, different customers share some infrastructure while their information must remain appropriately separated. OWASP recommends deriving tenant context from verified identity and checking authorisation at relevant boundaries rather than trusting a tenant identifier supplied by the client. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Translate that into acceptance questions for your team. Can a member of one organisation access another organisation's records? What happens when an invitation is revoked? Which roles may export data or change account settings? Agree the intended behaviour before the database and interface make conflicting assumptions."
+        },
+        {
+          "type": "h2",
+          "text": "Write a release agreement"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Audience: the first customer group and the problem the release addresses.",
+            "Core workflow: the complete path from setup to a useful result.",
+            "Roles: who can view, change, export and administer each type of information.",
+            "Boundaries: features deliberately excluded from this release.",
+            "Operations: support ownership, backup expectations and incident visibility.",
+            "Acceptance: tasks a pilot user must be able to complete before launch."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Keep this document short enough to review when a new request appears. A feature may be valuable and still belong in a later release. Record it with the problem it solves so the next planning discussion has context, rather than a growing list of disconnected ideas."
+        },
+        {
+          "type": "h2",
+          "text": "Test with a small, relevant pilot"
+        },
+        {
+          "type": "p",
+          "text": "Recruit people who actually have the target problem. Watch them attempt the core task using realistic information. Ask where they needed help and what they would do if the product were unavailable. Compliments about the interface do not establish that the workflow fits daily work."
+        },
+        {
+          "type": "p",
+          "text": "Expect the pilot to expose missing explanations and awkward handoffs. Fix those before expanding the feature list. Keep a record of support requests and repeated failures so the next release responds to evidence instead of the loudest suggestion in a meeting."
+        },
+        {
+          "type": "h2",
+          "text": "What should you bring to a development partner?"
+        },
+        {
+          "type": "p",
+          "text": "Bring the audience, the current workaround, the core workflow and any data or integration constraints. If there is a deadline, explain its business reason. A partner can help shape the implementation, but the product decision becomes stronger when the problem is specific enough to test."
+        }
+      ],
+      "sources": [
+        {
+          "title": "OWASP: Multi-tenant application security",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html"
+        }
+      ],
+      "cta": "Share the workflow your SaaS should improve. We can help define a practical first release and its technical boundaries.",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      }
+    },
+    {
+      "slug": "improve-core-web-vitals-business-website",
+      "title": "How to Improve Core Web Vitals on a Business Website",
+      "excerpt": "Find the real causes of slow pages before changing hosting. A practical plan for image loading, third-party scripts and performance acceptance checks.",
+      "category": "Web Development",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/core-web-vitals.jpg",
+      "imageAlt": "Laptop displaying source code on a desk",
+      "imageCredit": {
+        "name": "Dawit / Unsplash",
+        "url": "https://unsplash.com/photos/laptop-displaying-code-on-a-desk-dTmj5aXbKp4"
+      },
+      "tags": [
+        "Web Development"
+      ],
+      "service": {
+        "name": "Web Development",
+        "href": "services.html#development"
+      },
+      "takeaway": "Start with a slow page that matters to the business, identify what delays its main content, then measure the same journey after each change.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A performance report can produce a long list of warnings. That does not mean every warning deserves the same budget. If the service page people visit from search is slow, improving that journey may be more useful than chasing a perfect score on a page almost nobody opens."
+        },
+        {
+          "type": "p",
+          "text": "Begin with one representative page and a clear problem. Does useful content arrive late? Does the menu react slowly? Does the page jump while someone tries to tap a button? These are different experiences and may have different causes. A plan that simply says “optimise everything” makes it difficult to decide whether the work helped."
+        },
+        {
+          "type": "h2",
+          "text": "Establish a baseline you can repeat"
+        },
+        {
+          "type": "p",
+          "text": "Record the URL, device conditions, test method and date. Test several times and keep the results instead of choosing the best run. Where real-user data is available, compare it with controlled tests. A developer's fast laptop is not the same environment as a customer's phone on a variable connection."
+        },
+        {
+          "type": "p",
+          "text": "Choose a small group of important templates: homepage, service page, article, product page or booking screen. A shared component can affect many pages, but one good result does not establish that every template performs well. Record the specific business task beside each page so performance work stays connected to use."
+        },
+        {
+          "type": "h2",
+          "text": "Find what delays the main content"
+        },
+        {
+          "type": "p",
+          "text": "Google's LCP optimisation guidance breaks the loading experience into parts, including server response, resource discovery and loading, and the delay before rendering. It recommends making an important image discoverable early and avoiding lazy loading for the LCP image. That helps identify the bottleneck rather than treating every slow page as a hosting problem. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Ask your developer to show the request sequence for the page. If the main image starts downloading late, reducing its file size may help but will not explain why the browser discovered it late. If content is waiting for a script, buying a larger image server is unlikely to address the whole issue."
+        },
+        {
+          "type": "h2",
+          "text": "Give media a delivery budget"
+        },
+        {
+          "type": "p",
+          "text": "For each image, decide how large it appears and whether it needs to load immediately. Use suitable file sizes and dimensions, reserve layout space and review what gets sent to smaller screens. A full-resolution photograph from a camera is usually more than a card thumbnail needs."
+        },
+        {
+          "type": "p",
+          "text": "Apply the same thinking to video. A background clip should earn its download cost. Consider a poster image and deliberate playback, especially when the clip is decorative. Keep the information a visitor needs available even when media fails or takes time to arrive."
+        },
+        {
+          "type": "h2",
+          "text": "Review every extra script"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "List analytics, chat, advertising, scheduling and embedded media tools.",
+            "Name the business owner and purpose of each tool.",
+            "Check whether the tool is needed on every page or only in one workflow.",
+            "Test customer tasks after removing or changing a script.",
+            "Keep a record of the trade-off rather than reinstalling everything later."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Do not remove measurement or support tools blindly. Agree which capabilities are essential and which could load later. The useful discussion is about timing and value, not a competition to produce the smallest possible script count."
+        },
+        {
+          "type": "h2",
+          "text": "Make performance part of acceptance"
+        },
+        {
+          "type": "p",
+          "text": "Repeat the original tests after the change and check forms, navigation and purchases as well. A faster page that loses the enquiry is not an improvement. Include representative content in the test: empty templates can hide the cost of real images and integrations."
+        },
+        {
+          "type": "p",
+          "text": "Keep the baseline with the project handover. When a new campaign widget or video arrives, the team can compare its impact. Performance becomes easier to maintain when it is a continuing constraint rather than a one-off score delivered at launch."
+        }
+      ],
+      "sources": [
+        {
+          "title": "web.dev: Optimise Largest Contentful Paint",
+          "url": "https://web.dev/articles/optimize-lcp"
+        }
+      ],
+      "cta": "Share a slow page and the customer task it supports. We can identify a focused performance scope."
+    },
+    {
+      "slug": "website-accessibility-review-checklist",
+      "title": "Website Accessibility Review: A Practical Starting Checklist",
+      "excerpt": "Review keyboard use, headings, contrast, forms and zoom. Learn what an initial accessibility check can reveal and when a deeper audit is needed.",
+      "category": "UI/UX Design",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/accessibility.jpg",
+      "imageAlt": "White computer keyboard",
+      "imageCredit": {
+        "name": "Sergi Kabrera / Unsplash",
+        "url": "https://unsplash.com/photos/white-computer-keyboard-2xU7rYxsTiM"
+      },
+      "tags": [
+        "UI/UX Design"
+      ],
+      "service": {
+        "name": "UI/UX Design",
+        "href": "services.html#design"
+      },
+      "takeaway": "Start by testing complete customer tasks with different ways of interacting. Automated checks help, but they do not establish that a website is fully accessible.",
+      "content": [
+        {
+          "type": "p",
+          "text": "Try using your website without a mouse. Can you open the menu, move through a service page and send an enquiry? Now enlarge the text and repeat the task. A layout that looked tidy in a design file may become difficult to use once someone interacts differently."
+        },
+        {
+          "type": "p",
+          "text": "An accessibility review is most useful when it follows those real tasks. The aim is to identify barriers that stop people understanding information or completing an action. It is not simply to add an accessibility badge or collect a passing score from one tool."
+        },
+        {
+          "type": "h2",
+          "text": "Choose a representative sample"
+        },
+        {
+          "type": "p",
+          "text": "Include the homepage, a service or product page, navigation, a form and any important modal or account workflow. If several templates exist, include more than one. Write down which areas were reviewed so the result is not mistaken for a complete assessment of an entire system."
+        },
+        {
+          "type": "p",
+          "text": "W3C's Easy Checks resource covers initial checks such as page titles, headings, contrast, keyboard focus, image alternatives and form labels. It also explains that these checks are a first review rather than a comprehensive evaluation. Use them to find useful starting points while recognising the limits of the exercise. [1]"
+        },
+        {
+          "type": "h2",
+          "text": "Follow the keyboard journey"
+        },
+        {
+          "type": "p",
+          "text": "Move through the page in order. Check whether the current focus is visible, whether the order makes sense and whether interactive controls work without a pointer. Open and close the navigation and any popup. Someone should be able to return to the task without getting trapped in an unexpected part of the interface."
+        },
+        {
+          "type": "p",
+          "text": "Record barriers as specific observations. “The site needs accessibility” is hard to assign. “The enquiry dialog opens, but keyboard focus remains behind it” identifies a workflow, an expected behaviour and a place to investigate. Include the browser and steps used so another person can repeat the check."
+        },
+        {
+          "type": "h2",
+          "text": "Review meaning as well as appearance"
+        },
+        {
+          "type": "p",
+          "text": "Headings should describe the page structure, not merely provide a larger font. Links should make sense in context. Images that convey information need an appropriate text alternative, while purely decorative images should not create unnecessary narration. A useful alternative describes the information the image contributes, rather than listing every object in a photograph."
+        },
+        {
+          "type": "p",
+          "text": "Check what happens when an image is missing or text is enlarged. Instructions such as “press the green button on the right” may become ambiguous. Prefer labels that identify the action clearly and remain useful when presentation changes."
+        },
+        {
+          "type": "h2",
+          "text": "Make forms recoverable"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Give each input a meaningful label that remains available while typing.",
+            "Explain required information and unusual formats before the user makes a mistake.",
+            "Identify the field with an error and explain how to correct it.",
+            "Preserve valid information when a recoverable error occurs.",
+            "Make successful submission clear, including what happens next."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Test more than an empty-form submission. Use a long name, a pasted phone number and a mistake in one field after the others are complete. Ask whether the experience helps someone recover, rather than simply refusing the input."
+        },
+        {
+          "type": "h2",
+          "text": "Turn findings into a manageable plan"
+        },
+        {
+          "type": "p",
+          "text": "Group problems by shared component. Fixing a navigation control or a form pattern can help multiple pages, whereas editing each instance separately may leave inconsistent behaviour. Agree who implements the change and how it will be retested."
+        },
+        {
+          "type": "p",
+          "text": "For a broader assessment, involve people with appropriate accessibility expertise and, where possible, users with disabilities. An initial checklist can reveal obvious obstacles, but it cannot certify conformance or replace a review suited to your audience, technology and obligations."
+        }
+      ],
+      "sources": [
+        {
+          "title": "W3C: Easy Checks — A First Review of Web Accessibility",
+          "url": "https://www.w3.org/WAI/test-evaluate/preliminary/"
+        }
+      ],
+      "cta": "Send the key pages and tasks your customers use. We can discuss an accessibility-focused design review."
+    },
+    {
+      "slug": "ecommerce-product-page-seo-checklist",
+      "title": "Product Page SEO Checklist for an E-commerce Store",
+      "excerpt": "Improve product information, variant handling, internal links and structured data without filling your store with repetitive keyword copy.",
+      "category": "E-commerce",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/product-page-seo.jpg",
+      "imageAlt": "Person browsing an online shop on a phone",
+      "imageCredit": {
+        "name": "V H / Unsplash",
+        "url": "https://unsplash.com/photos/person-scrolling-through-online-shopping-on-phone-Iywgu-a_eCs"
+      },
+      "tags": [
+        "E-commerce"
+      ],
+      "service": {
+        "name": "E-commerce",
+        "href": "services.html#cms"
+      },
+      "takeaway": "A useful product page helps shoppers choose the right item and gives search engines consistent information about that exact product and its variants.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A product page should answer the questions a shopper would ask before placing an order. What is included? Will it fit? Which version is available? When the page leaves those questions unanswered, adding more keywords will not make the buying decision easier."
+        },
+        {
+          "type": "p",
+          "text": "Start with a small set of products that matter to the business. Choose items with different characteristics, such as sizes, colours or compatibility requirements. Improving one representative template carefully is a better foundation than changing thousands of descriptions without a plan for accuracy."
+        },
+        {
+          "type": "h2",
+          "text": "Make the product identifiable"
+        },
+        {
+          "type": "p",
+          "text": "Use a clear product name and explain its distinguishing features. Keep specifications, included accessories and compatibility information close to the buying decision. If a visitor must contact support to learn a basic dimension, the page may be missing information that belongs in the description."
+        },
+        {
+          "type": "p",
+          "text": "Separate factual specifications from sales language. “Designed for small desks” is easier to assess when the page also gives dimensions. Use manufacturer information responsibly, verify that it matches the item being sold and add genuinely useful store-specific context such as what comes in the package."
+        },
+        {
+          "type": "h2",
+          "text": "Treat variants as part of the product model"
+        },
+        {
+          "type": "p",
+          "text": "Decide how size, colour and other choices affect the URL, image, price and availability. Share a link to a selected variant and test whether the same selection appears when it opens on another device. A visitor should not land on a different version without understanding what happened."
+        },
+        {
+          "type": "p",
+          "text": "Google documents ProductGroup structured data for grouping product variants, with properties describing how products vary and which variants belong together. Its guidance distinguishes approaches where variants share a page from those using separate pages. Your implementation should follow the approach the store actually uses. [1]"
+        },
+        {
+          "type": "h2",
+          "text": "Keep structured data consistent"
+        },
+        {
+          "type": "p",
+          "text": "Ask your developer where the product markup gets its price, currency, stock status and identifiers. Ideally, the same product data should drive both visible information and markup. A manually entered price in a template can become stale when the catalogue changes."
+        },
+        {
+          "type": "p",
+          "text": "Validate representative pages after updates and check different product states. Structured data supports eligibility for particular search appearances; it does not guarantee that Google will display a rich result. Do not add invented reviews or claims merely to make the markup look complete."
+        },
+        {
+          "type": "h2",
+          "text": "Use images to answer questions"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Show the product clearly, including details that affect selection.",
+            "Use distinct images for materially different variants where appropriate.",
+            "Explain scale or dimensions when a photograph alone is ambiguous.",
+            "Give informative images useful alternative text without repeating keywords mechanically.",
+            "Keep images reasonably sized so shoppers can reach the buying controls promptly."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Check the mobile layout with a real product description rather than placeholder text. Long option names, unavailable combinations and sale pricing can expose weaknesses hidden by a simple demonstration product. Make the unavailable state as understandable as the in-stock state."
+        },
+        {
+          "type": "h2",
+          "text": "Connect the page to the rest of the store"
+        },
+        {
+          "type": "p",
+          "text": "Visitors may arrive directly from search. Give them a useful route to the relevant category, compatible accessories and support information. Related products should help the decision, not distract from it with an arbitrary collection of items."
+        },
+        {
+          "type": "p",
+          "text": "Create a review worksheet with product identity, content gaps, variant behaviour, image needs, markup checks and an owner for corrections. After the work, inspect the rendered page and the purchase journey. Measure relevant landing-page activity and purchases over time, allowing for stock changes, promotions and seasonality before attributing every movement to SEO."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Google Search Central: Product variant structured data",
+          "url": "https://developers.google.com/search/docs/appearance/structured-data/product-variants/"
+        }
+      ],
+      "cta": "Share a few representative product pages. We can review the content model, shopping experience and technical SEO together."
+    },
+    {
+      "slug": "wordpress-vs-headless-cms-business",
+      "title": "WordPress or a Headless CMS? Choose Around Your Editors",
+      "excerpt": "Compare content workflows, previews, integrations and maintenance before choosing a conventional WordPress site or a separate frontend.",
+      "category": "Web Development",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/cms-choice.jpg",
+      "imageAlt": "Laptop on a table",
+      "imageCredit": {
+        "name": "Bernd Dittrich / Unsplash",
+        "url": "https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-table-E1eKa8PJHTU"
+      },
+      "tags": [
+        "Web Development"
+      ],
+      "service": {
+        "name": "Web Development",
+        "href": "services.html#development"
+      },
+      "takeaway": "Choose the publishing workflow first. A separate frontend is useful when it solves a real delivery requirement, but it adds systems that someone must maintain.",
+      "content": [
+        {
+          "type": "p",
+          "text": "The person updating your website every week should have a voice in how it is built. A platform can look excellent in a technology comparison and still make a routine content change unnecessarily difficult. Start by asking an editor to show how a page moves from draft to publication today."
+        },
+        {
+          "type": "p",
+          "text": "WordPress and a headless CMS are not perfectly opposing categories. WordPress can manage content in a conventional site or provide content to a separate frontend. The decision is about the architecture and working process, not just the name of the software."
+        },
+        {
+          "type": "h2",
+          "text": "Describe the content workflow"
+        },
+        {
+          "type": "p",
+          "text": "List the people who create, review and publish content. Include previews, scheduled publishing, media selection and corrections after launch. If a nontechnical team needs to see a draft exactly as customers will see it, make that an acceptance requirement rather than assuming every setup provides it automatically."
+        },
+        {
+          "type": "p",
+          "text": "Try a representative task during evaluation: create a service page, add a photograph, link it from navigation and preview it on a phone. Record where a developer is required. That exercise often reveals more than comparing the number of features on a vendor's marketing page."
+        },
+        {
+          "type": "h2",
+          "text": "Understand what separation changes"
+        },
+        {
+          "type": "p",
+          "text": "The WordPress REST API exposes content through structured endpoints so other applications can interact with it. This makes it possible to use WordPress as a content source for a separate interface. The API is a capability, not a guarantee that every existing plugin will work unchanged in a different frontend. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Ask how previews, forms, search, redirects and metadata will be delivered. With a conventional setup, some responsibilities may be handled within one installation. With separate systems, those responsibilities need explicit owners and connections. Neither approach removes the need for thoughtful implementation."
+        },
+        {
+          "type": "h2",
+          "text": "Compare a normal publishing day"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Can an editor preview unpublished content without exposing it publicly?",
+            "Which changes can be made safely without a developer?",
+            "How do reusable blocks or content types prevent inconsistent pages?",
+            "What happens when a published item is renamed, removed or scheduled?",
+            "How quickly does a content change appear on the public site?",
+            "Who diagnoses a problem when the editor and public site show different versions?"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Use real content in the comparison. A flexible editor can be helpful, but unlimited layout choices may also make consistency harder. Decide which parts of a page should be controlled by the design system and which need editorial freedom."
+        },
+        {
+          "type": "h2",
+          "text": "Look at total operating responsibility"
+        },
+        {
+          "type": "p",
+          "text": "Budget for hosting, updates, integration maintenance, training and support. A separate frontend may be appropriate for multiple channels or a highly customised application, but the team still needs to maintain the content system and its delivery path. Ask what happens if a build fails or an API becomes unavailable."
+        },
+        {
+          "type": "p",
+          "text": "Do not assume that one architecture automatically ranks better. Clear content, crawlable pages, metadata, performance and reliable publishing all depend on implementation. Request evidence about the proposed site rather than treating a framework name as an SEO outcome."
+        },
+        {
+          "type": "h2",
+          "text": "Choose with a short proof of concept"
+        },
+        {
+          "type": "p",
+          "text": "Build one representative content type and complete its publishing workflow. Include a correction and a rollback, not just the first successful publish. Let the people who will use the system try it and describe what felt difficult."
+        },
+        {
+          "type": "p",
+          "text": "The best choice is the one your team can operate while meeting the product's actual requirements. If those requirements are straightforward, avoid adding architectural separation without a clear benefit. If they are complex, document the reason for each extra component so the next maintainer understands the design."
+        }
+      ],
+      "sources": [
+        {
+          "title": "WordPress Developer Resources: REST API Handbook",
+          "url": "https://developer.wordpress.org/rest-api/"
+        }
+      ],
+      "cta": "Tell us who updates your site and what they need to publish. We can compare CMS options around that workflow."
+    },
+    {
+      "slug": "website-crm-api-integration-plan",
+      "title": "Website-to-CRM Integration: Plan the Handoff Before You Build",
+      "excerpt": "Scope a reliable website integration with field mapping, duplicate handling, retries, permissions and a clear owner for failed submissions.",
+      "category": "Web Development",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/api-integration.jpg",
+      "imageAlt": "Code displayed on a laptop",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      },
+      "tags": [
+        "Web Development"
+      ],
+      "service": {
+        "name": "Web Development",
+        "href": "services.html#development"
+      },
+      "takeaway": "Define what happens to a real record from submission to completion, including failures and retries. Connecting two APIs is only part of the integration.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A contact form can submit successfully while the sales team never sees the enquiry. The website may have accepted the message, but a CRM request failed, a field was rejected or a notification went to the wrong place. That gap is an integration problem even though both systems appear to be online."
+        },
+        {
+          "type": "p",
+          "text": "Before choosing a connector, map the business handoff. Who submits the information, which system owns the record and what action should happen next? A reliable integration needs an answer for the ordinary case and for the moments when one system cannot respond."
+        },
+        {
+          "type": "h2",
+          "text": "Choose the source of truth"
+        },
+        {
+          "type": "p",
+          "text": "Decide where each important piece of information is authoritative. The CRM may own a sales contact's status, while the website owns the original enquiry text. If both systems can change the same field, define how conflicts are resolved. Otherwise, an automated update can overwrite a useful human correction."
+        },
+        {
+          "type": "p",
+          "text": "Create a field map that includes names, formats, required values and permitted empty values. Test actual examples: a person without a company name, a long message, an international telephone number and an existing contact using a different email address. Avoid assuming that matching field names imply matching behaviour."
+        },
+        {
+          "type": "h2",
+          "text": "Define success in business terms"
+        },
+        {
+          "type": "p",
+          "text": "An HTTP success response is useful technical evidence, but the final outcome may be a correctly assigned lead with enough context for a reply. Write down the acceptance task from the team's perspective. Can the right person find the enquiry and understand which service the visitor requested?"
+        },
+        {
+          "type": "p",
+          "text": "Agree whether the website should wait for the CRM before confirming receipt or whether it will safely queue the handoff. If processing happens later, make sure someone can see failures and retry them. Do not promise a completed business action merely because a request entered a queue."
+        },
+        {
+          "type": "h2",
+          "text": "Plan for repeated and delayed events"
+        },
+        {
+          "type": "p",
+          "text": "Stripe's webhook documentation provides a useful example of event-driven integration concerns: verifying signatures, handling duplicate events and not relying on event delivery order. These are concrete behaviours to discuss when a provider uses webhooks; check the equivalent documentation for your own systems. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Ask what prevents a retry from creating a second lead or order. Also ask how the system distinguishes an old event from a newer change. The answer should be visible in the integration design and tests, rather than left to a support team to correct manually every week."
+        },
+        {
+          "type": "h2",
+          "text": "Agree the operational checklist"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Map fields and validate representative records before sending production data.",
+            "Limit integration credentials to the permissions the workflow requires.",
+            "Keep credentials out of public browser code and ordinary support logs.",
+            "Define retry rules, failure notifications and an owner for exceptions.",
+            "Test duplicate submissions, timeouts and unavailable downstream systems.",
+            "Document how to pause the integration without losing pending work."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Start with a small, traceable workflow. Sending every historical record in both directions at once makes a new integration harder to understand. If a migration is needed, treat it as a separate activity with reconciliation and a way to detect missing or duplicated records."
+        },
+        {
+          "type": "h2",
+          "text": "Make handover part of delivery"
+        },
+        {
+          "type": "p",
+          "text": "Request a diagram of the data flow, a list of connected accounts and instructions for checking recent failures. Have the team demonstrate a safe retry in a test environment. The person operating the system should not need to reconstruct the design from scattered messages."
+        },
+        {
+          "type": "p",
+          "text": "A successful integration reduces uncertainty as well as repetitive work. When an enquiry stops moving, your team should be able to locate it, explain its state and decide the next action without guessing which platform lost it."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Stripe: Webhook endpoint guidance",
+          "url": "https://docs.stripe.com/webhooks"
+        }
+      ],
+      "cta": "Share the systems you want to connect and a sample workflow. We can scope the data handoff and its failure handling."
+    },
+    {
+      "slug": "online-booking-system-requirements",
+      "title": "Online Booking System Requirements: What to Decide Before Development",
+      "excerpt": "Plan availability, payments, cancellations and staff workflows before building a booking system that customers and your team can rely on.",
+      "category": "Web Development",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/booking-system.jpg",
+      "imageAlt": "Computer keyboard and mouse on a desk",
+      "imageCredit": {
+        "name": "Adrian Regeci / Unsplash",
+        "url": "https://unsplash.com/photos/a-computer-keyboard-and-a-mouse-on-a-desk-SLvOPQDNqfM"
+      },
+      "tags": [
+        "Web Development"
+      ],
+      "service": {
+        "name": "Web Development",
+        "href": "services.html#development"
+      },
+      "takeaway": "Define the rules behind an available appointment first. Then design the customer booking journey and the staff tools around those rules.",
+      "content": [
+        {
+          "type": "p",
+          "text": "An appointment form is easy to imagine: choose a date, enter a name and press confirm. The difficult work happens behind that form. Two people may want the same slot. A member of staff may be away. A customer may pay, close the browser and wonder whether the appointment exists."
+        },
+        {
+          "type": "p",
+          "text": "Before commissioning an online booking system, write down how a real appointment works today. Include the exceptions your team handles by phone. Those exceptions often determine the scope more accurately than a list of screens or a reference website that looks attractive."
+        },
+        {
+          "type": "h2",
+          "text": "Define what can actually be booked"
+        },
+        {
+          "type": "p",
+          "text": "List the resources an appointment needs. A consultation may require one adviser; a workshop might need a room, equipment and an instructor. Explain whether customers choose a person or simply request the next available slot. Include appointment length, preparation time and cleanup time where relevant."
+        },
+        {
+          "type": "p",
+          "text": "Specify opening hours, holidays, notice periods and how far ahead someone can book. A slot should not be offered just because a calendar looks empty. Write down the business rule that makes it available, then use examples to check that staff and developers interpret it the same way."
+        },
+        {
+          "type": "h2",
+          "text": "Treat calendar integration as a separate decision"
+        },
+        {
+          "type": "p",
+          "text": "Decide which system owns availability and how quickly changes need to appear elsewhere. A calendar subscription, a one-way export and a two-way integration solve different problems. Ask what happens if the external calendar cannot be reached when someone tries to confirm an appointment."
+        },
+        {
+          "type": "p",
+          "text": "Google Calendar distinguishes recurring events, individual instances and exceptions. A changed occurrence needs to be handled in that context rather than treated as an unrelated appointment. If recurring bookings matter to your business, include examples involving changed dates and cancelled instances in the integration scope. [1]"
+        },
+        {
+          "type": "h2",
+          "text": "Write the booking and payment states"
+        },
+        {
+          "type": "p",
+          "text": "A useful starting list might include requested, temporarily held, confirmed, cancelled and completed. These are proposed business states, not a universal model. Decide who can move a booking between them and what the customer sees at each point. If approval is manual, avoid sending a message that implies immediate confirmation."
+        },
+        {
+          "type": "p",
+          "text": "Where payment is required, agree how deposits, failed payments and refunds affect availability. Test a customer returning after a payment attempt without assuming the browser tells the whole story. Customer support should be able to find the booking using a reference and explain what happened without asking for sensitive payment details."
+        },
+        {
+          "type": "h2",
+          "text": "Include the staff workflow in the brief"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Show staff how to create a booking received by phone.",
+            "Define who can override availability or change an appointment.",
+            "Record cancellation rules and the messages customers receive.",
+            "Decide how reminders work and how contact preferences are respected.",
+            "Provide a daily view that works on the devices staff actually use.",
+            "Agree what to do when notifications fail or a customer enters the wrong address."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Test the journey from both sides. Ask a customer to book and reschedule, then ask a staff member to locate the appointment and explain the change history. A smooth customer form cannot compensate for an administration screen that makes routine work confusing."
+        },
+        {
+          "type": "h2",
+          "text": "Launch with a manageable service range"
+        },
+        {
+          "type": "p",
+          "text": "Begin with a representative set of services and clear operating hours. Pilot the system with staff before making it the only booking route. Keep a documented fallback for temporary outages and decide who reconciles appointments taken through another channel."
+        },
+        {
+          "type": "p",
+          "text": "Your development brief should finish with concrete acceptance scenarios: simultaneous attempts at one slot, a cancellation near the deadline, a staff absence and a failed notification. These examples give the team something observable to deliver and help prevent booking rules from becoming expensive surprises late in the project."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Google Calendar: Recurring events",
+          "url": "https://developers.google.com/workspace/calendar/api/guides/recurringevents"
+        }
+      ],
+      "cta": "Tell us how customers book today and which exceptions take the most staff time. We can turn those rules into a practical booking-system scope."
+    },
+    {
+      "slug": "service-page-seo-turn-visitors-into-enquiries",
+      "title": "Service Page SEO: Help the Right Visitors Become Enquiries",
+      "excerpt": "Build useful service pages with clear scope, credible evidence, natural search language and a next step that helps potential clients act.",
+      "category": "Website Revamp",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/service-page-seo.jpg",
+      "imageAlt": "Modern office buildings",
+      "imageCredit": {
+        "name": "",
+        "url": ""
+      },
+      "tags": [
+        "Website Revamp"
+      ],
+      "service": {
+        "name": "Website Revamp",
+        "href": "services.html#revamp"
+      },
+      "takeaway": "Build each service page around a distinct customer need. Explain the work, show credible evidence and make the next step specific.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A service page has two jobs. It needs to help a potential client recognise that they have found the right kind of help, and it needs to explain enough for them to take the next step. Repeating a search phrase throughout vague sales copy does neither job particularly well."
+        },
+        {
+          "type": "p",
+          "text": "Start with a real buying question. Someone searching for website maintenance may need reliable updates and recovery support. Someone comparing redesign agencies may be worried about disruption to an established site. These visitors need different information even if the same team provides both services."
+        },
+        {
+          "type": "h2",
+          "text": "Give each page a distinct purpose"
+        },
+        {
+          "type": "p",
+          "text": "Write a one-sentence brief describing who the page helps, the problem it addresses and the action it supports. If two planned pages have effectively the same brief, consider whether they should be combined. Separate pages make sense when the service, audience or useful guidance is meaningfully different."
+        },
+        {
+          "type": "p",
+          "text": "Avoid producing a set of near-identical location pages by swapping place names. If you serve a particular area, explain relevant delivery arrangements and genuine experience there. A business operating remotely can state that clearly without implying it has offices or local clients that do not exist."
+        },
+        {
+          "type": "h2",
+          "text": "Use the language buyers recognise"
+        },
+        {
+          "type": "p",
+          "text": "Google's SEO Starter Guide recommends useful, well-organised content, descriptive titles and links that help users understand destinations. These practices support discovery and comprehension; they do not promise a particular ranking. Use them to make the service easier to understand rather than as a formula for repeating keywords. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Collect language from genuine enquiries, sales conversations and support questions. Explain technical terms when they affect a buying decision. A visitor may describe a slow checkout rather than request performance engineering, so make the practical problem visible before introducing the technical approach."
+        },
+        {
+          "type": "h2",
+          "text": "Make the scope concrete"
+        },
+        {
+          "type": "p",
+          "text": "Explain what a typical engagement includes and what requires separate discussion. For a redesign, that might cover discovery, content migration, interface design, development and launch support. Avoid presenting every possible activity as automatically included if the actual proposal depends on an assessment."
+        },
+        {
+          "type": "p",
+          "text": "Give readers a useful view of the process. Describe the inputs you need, the decisions they will make and what they receive at the end. If you cannot publish a fixed price or timeline, explain the factors that change them. That is more helpful than an unsupported promise of a fast, affordable result."
+        },
+        {
+          "type": "h2",
+          "text": "Put evidence beside the relevant claim"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Link to a related project with an explanation of the problem it addressed.",
+            "Use approved client quotations with accurate attribution.",
+            "Describe your review and delivery process in observable terms.",
+            "Label demonstrations and concept projects honestly.",
+            "Answer common concerns about ownership, support and handover."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Evidence does not have to mean dramatic growth figures. A clear example of a workflow, a deliverable or an acceptance check can help someone assess the work. If you share results, include enough context to avoid implying that every client will get the same outcome."
+        },
+        {
+          "type": "h2",
+          "text": "Offer a next step that matches the decision"
+        },
+        {
+          "type": "p",
+          "text": "Replace a generic instruction to get in touch with a useful invitation. Ask someone considering a redesign to share their current website and the main problem. Tell a maintenance prospect which platform and support needs to include. Keep the form proportionate to that first conversation."
+        },
+        {
+          "type": "p",
+          "text": "After publication, review whether the page attracts relevant visits and useful enquiries. Search visibility alone does not establish that the page is serving the business. Read the questions people still ask, inspect where the information is unclear and improve the page with those observations. Service-page SEO works best as ongoing editorial care tied to an actual customer journey."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Google Search: SEO Starter Guide",
+          "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+        }
+      ],
+      "cta": "Share a service page that gets visits but few useful enquiries. We can review its structure, evidence and contact journey."
+    },
+    {
+      "slug": "mobile-app-onboarding-checklist",
+      "title": "Mobile App Onboarding: A Checklist for the First Useful Session",
+      "excerpt": "Design a first session that explains your app, requests permissions in context and helps people recover from interrupted setup.",
+      "category": "Mobile Apps",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/mobile-onboarding.jpg",
+      "imageAlt": "Person using a smartphone",
+      "imageCredit": {
+        "name": "Thought Catalog / Unsplash",
+        "url": "https://unsplash.com/photos/person-using-phone-YSZS_nDU8js"
+      },
+      "tags": [
+        "Mobile Apps"
+      ],
+      "service": {
+        "name": "Mobile Apps",
+        "href": "services.html#mobile"
+      },
+      "takeaway": "Plan onboarding around the first useful result. Ask for information and device permissions when users understand why they are needed.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A new user has already done some work before opening your app. They found it, decided it looked useful and installed it. The first session should help them reach the outcome that motivated that effort. A long tour followed by an unexplained registration form can spend that goodwill before the product has delivered anything."
+        },
+        {
+          "type": "p",
+          "text": "Start by defining the first useful result in plain language. It might be saving an appointment, recording an expense or seeing an assigned task. Avoid defining success as simply finishing onboarding. A person can complete every setup screen and still have no idea what to do next."
+        },
+        {
+          "type": "h2",
+          "text": "Separate essential setup from later preferences"
+        },
+        {
+          "type": "p",
+          "text": "List every field and decision in the first session. For each one, ask whether the app can deliver its initial value without it. Profile photos, interests and optional notification choices may be useful later, but their place in onboarding should be justified by the product's actual workflow."
+        },
+        {
+          "type": "p",
+          "text": "Some apps need an account or organisation invitation before showing useful data. Explain that requirement clearly and describe what happens next. Test expired invitations and existing accounts as carefully as new registrations. Returning users should not be forced through a flow designed only for first-time visitors."
+        },
+        {
+          "type": "h2",
+          "text": "Request permissions in context"
+        },
+        {
+          "type": "p",
+          "text": "Android's permission guidance recommends requesting access when users engage with the feature that needs it and handling denial gracefully. For example, a location request is easier to understand when someone chooses a nearby-search feature than when the app first opens without explanation. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Write the explanation around the immediate benefit and the requested access. Then design the denied state. Can a user enter an address manually, choose a file another way or continue with a reduced feature? Where access is essential, explain that dependency without trapping people in an endless request loop."
+        },
+        {
+          "type": "h2",
+          "text": "Design the empty and interrupted states"
+        },
+        {
+          "type": "p",
+          "text": "An empty dashboard is often the first screen a new customer sees. Use it to explain what belongs there and provide a clear starting action. If you show demonstration content, label it so people do not mistake sample records for their own information or assume an account contains someone else's data."
+        },
+        {
+          "type": "p",
+          "text": "People switch apps, lose connectivity and stop halfway through setup. Decide which progress is saved and what happens when they return. Test an interrupted upload, an expired verification link and an unexpected sign-out. Clear recovery instructions are part of onboarding, not optional polish after the happy path works."
+        },
+        {
+          "type": "h2",
+          "text": "Check the flow with realistic tasks"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Ask a first-time user to reach the initial useful result without coaching.",
+            "Observe whether labels explain actions before people tap them.",
+            "Try larger text and assistive navigation on the supported devices.",
+            "Test incorrect input without clearing everything the person already entered.",
+            "Review whether optional choices look optional.",
+            "Confirm help is available when an invitation or verification step fails."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Record where people hesitate and what they expected instead. A small qualitative session can reveal confusing language and missing context, but it should not be presented as proof of a population-wide conversion rate. Use observations to form changes you can evaluate more broadly after release."
+        },
+        {
+          "type": "h2",
+          "text": "Measure progress without rewarding the wrong behaviour"
+        },
+        {
+          "type": "p",
+          "text": "Choose a few events that describe the journey: starting setup, reaching a required step and completing the first meaningful action. Avoid collecting unnecessary personal information in event names or diagnostic logs. Define the purpose of each measure before adding it to the implementation brief."
+        },
+        {
+          "type": "p",
+          "text": "Review completion alongside support questions and successful product use. Faster setup is not automatically better if people misunderstand important choices. The aim is a clear first session that prepares users for the product, gives them control and makes it straightforward to recover when everyday interruptions happen."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Android Developers: Request runtime permissions",
+          "url": "https://developer.android.com/training/permissions/requesting"
+        }
+      ],
+      "cta": "Tell us the first useful action your app should deliver. We can review onboarding, permission requests and recovery states around that journey."
+    },
+    {
+      "slug": "saas-subscription-billing-launch-checklist",
+      "title": "SaaS Subscription Billing: What to Test Before Launch",
+      "excerpt": "Check trials, plan changes, payment failures and account access before launching a paid SaaS product. A practical billing acceptance checklist.",
+      "category": "Web Development",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/subscription-billing.jpg",
+      "imageAlt": "Person holding a payment card beside a payment terminal",
+      "imageCredit": {
+        "name": "Thriday / Unsplash",
+        "url": "https://unsplash.com/photos/a-person-holding-a-credit-card-next-to-a-calculator-75hT3SBCe-o"
+      },
+      "tags": [
+        "Web Development"
+      ],
+      "service": {
+        "name": "Web Development",
+        "href": "services.html#development"
+      },
+      "takeaway": "Test subscription billing as a lifecycle: purchase, renewal, change, payment failure and cancellation. Define how each state affects product access.",
+      "content": [
+        {
+          "type": "p",
+          "text": "A checkout that accepts the first payment is only one part of a subscription product. Customers renew, change plans, replace cards and cancel. Payments can fail while someone is actively using the service. If these situations are not planned, your team ends up making account-access decisions manually while customers wait for answers."
+        },
+        {
+          "type": "p",
+          "text": "Before launching a paid SaaS product, map the subscription lifecycle alongside the product's access rules. The billing provider records financial events, while your application must explain what those events mean for the customer. Treat that connection as a core product workflow with its own acceptance criteria."
+        },
+        {
+          "type": "h2",
+          "text": "Define the plans in product terms"
+        },
+        {
+          "type": "p",
+          "text": "Write down what each plan permits: features, seats, usage or a combination. Decide whether limits are enforced immediately, checked at a scheduled point or handled through a review. A pricing table should describe the same rules that the application actually applies."
+        },
+        {
+          "type": "p",
+          "text": "If you offer a trial, define when it starts, when it ends and what happens next. Make clear whether payment information is required and whether the account loses access, changes tier or waits for an explicit purchase. Avoid relying on a single boolean field to represent every possible subscription situation."
+        },
+        {
+          "type": "h2",
+          "text": "Work through changes before building the screen"
+        },
+        {
+          "type": "p",
+          "text": "Discuss upgrades, downgrades and cancellations with concrete dates and examples. Does a change take effect immediately or at renewal? What happens to data or seats above the new limit? The product should explain the outcome before asking a customer to confirm a change."
+        },
+        {
+          "type": "p",
+          "text": "Document who can manage billing for an organisation. An invited team member should not automatically receive the same billing powers as the account owner. Include ownership transfer and a departing administrator in the scenarios, especially if the product is intended for teams rather than individual accounts."
+        },
+        {
+          "type": "h2",
+          "text": "Use a safe testing environment"
+        },
+        {
+          "type": "p",
+          "text": "Stripe provides billing testing tools, including test clocks for supported subscription scenarios, so teams can examine time-dependent behaviour without waiting through a real billing period. Check the documented limitations and use test-mode resources when preparing these cases. A simulated result should still be checked against the application's access and messaging behaviour. [1]"
+        },
+        {
+          "type": "p",
+          "text": "Keep test credentials and sample customers separate from live accounts. Give every test a starting state, an action and an expected outcome in both the billing system and the application. Saving those expectations makes it easier to review a later pricing change without relying on the memory of the original developer."
+        },
+        {
+          "type": "h2",
+          "text": "Cover the uncomfortable scenarios"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A payment fails at renewal while the customer is signed in.",
+            "A customer updates payment information after a failure.",
+            "A subscription change is submitted twice.",
+            "A cancellation is requested close to the renewal boundary.",
+            "The application receives a delayed billing update.",
+            "An account owner needs an invoice or explanation of a charge."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Define the grace period, messages and support action for each relevant case. Do not remove access based solely on what a return page in the customer's browser says. The application needs a reliable way to reconcile its state with the provider and expose unresolved issues to the team operating it."
+        },
+        {
+          "type": "h2",
+          "text": "Prepare support before accepting live customers"
+        },
+        {
+          "type": "p",
+          "text": "Give support staff a safe way to see plan status, recent changes and relevant billing references. Avoid requiring direct database edits for routine enquiries. Document which actions are reversible, which require a provider operation and who is authorised to perform them."
+        },
+        {
+          "type": "p",
+          "text": "Finish with a controlled launch checklist covering live configuration, notifications and monitoring. Review the first real subscription journeys carefully using the access your team is permitted to use. Billing confidence comes from understandable rules and tested transitions, not just a successful checkout screenshot."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Stripe Billing: Test your integration",
+          "url": "https://docs.stripe.com/billing/testing"
+        }
+      ],
+      "cta": "Share your plans, trial rules and account model. We can scope the subscription lifecycle and the checks needed before launch."
+    },
+    {
+      "slug": "website-handover-checklist-business-owners",
+      "title": "Website Handover Checklist for Business Owners",
+      "excerpt": "Know what to request at website handover: account ownership, backups, editing guidance, integration records and a clear support agreement.",
+      "category": "Website Care",
+      "date": "2026-11-15",
+      "updated": "2026-11-15",
+      "author": "OrbitWick Editorial",
+      "image": "blog/images/website-handover.jpg",
+      "imageAlt": "Colleagues meeting around laptops",
+      "imageCredit": {
+        "name": "Bluestonex / Unsplash",
+        "url": "https://unsplash.com/photos/three-men-in-a-meeting-with-laptops-AQuUdQH-9N0"
+      },
+      "tags": [
+        "Website Care"
+      ],
+      "service": {
+        "name": "Website Care",
+        "href": "services.html#maintenance"
+      },
+      "takeaway": "A complete website handover gives your business control of its accounts, a usable operating guide and a tested route to support and recovery.",
+      "content": [
+        {
+          "type": "p",
+          "text": "Your new website is live, the final invoice has arrived and everyone is ready to move on. Before closing the project, make sure your business can actually operate what it has bought. Knowing a website address is different from controlling the domain, hosting, content and connected services behind it."
+        },
+        {
+          "type": "p",
+          "text": "Handover is easiest when it is included in the original scope. If you are approaching launch without a checklist, use the remaining review time to agree what will be transferred, demonstrated and documented. A short walkthrough with the right records is usually more useful than a folder full of unexplained files."
+        },
+        {
+          "type": "h2",
+          "text": "Confirm ownership and access"
+        },
+        {
+          "type": "p",
+          "text": "List the domain registrar, hosting account, content management system, analytics and any other essential platforms. Record who owns each account and how your business can recover access. Where an agency manages infrastructure on your behalf, the agreement should explain the arrangement and the process for leaving it."
+        },
+        {
+          "type": "p",
+          "text": "Avoid passing passwords around in an ordinary document. Arrange access through the platform's supported account and invitation features where available. WordPress's hardening guidance discusses account security and restricting permissions. Apply the same practical question during handover: does each person have the access needed for their role, and who removes it when that role ends? [1]"
+        },
+        {
+          "type": "h2",
+          "text": "Ask for an inventory with renewal dates"
+        },
+        {
+          "type": "p",
+          "text": "A website may depend on paid themes, plugins, font licences, email services and external APIs. Request a list of those dependencies, the account responsible for each and the renewal arrangement. Clarify what remains usable if a subscription ends or an agency's shared licence no longer covers your site."
+        },
+        {
+          "type": "p",
+          "text": "Include custom code and deployment instructions in the agreement where they are part of the deliverable. Ask where the source is stored, who can access it and what is needed to publish a change. If the site uses a hosted builder, document its export and migration limits rather than assuming it behaves like a portable code repository."
+        },
+        {
+          "type": "h2",
+          "text": "Demonstrate editing and recovery"
+        },
+        {
+          "type": "p",
+          "text": "Choose routine tasks your staff will perform: changing a service description, adding a team member or publishing an article. Have someone from your business complete those tasks during the walkthrough. Record the specific steps and any image dimensions or formatting conventions they need to follow."
+        },
+        {
+          "type": "p",
+          "text": "Discuss backups separately from editing. Ask what is backed up, where copies are stored, how long they are retained and who can restore them. Request evidence of a restore test appropriate to the setup. The presence of a backup feature in a control panel does not explain how your team will recover from a real mistake."
+        },
+        {
+          "type": "h2",
+          "text": "Check the journeys that cross systems"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Submit a contact enquiry and confirm the intended team receives it.",
+            "Check booking or checkout flows using the agreed testing process.",
+            "Confirm analytics ownership and the events included in the project.",
+            "Identify who monitors integration failures and service expiry notices.",
+            "Review launch redirects and any agreed content migration records.",
+            "Make sure public contact details and notification addresses are current."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Capture the result and owner for each check. If an issue remains open, record its impact and resolution plan instead of hiding it inside a general approval email. A shared list helps distinguish unfinished delivery work from a later request for additional functionality."
+        },
+        {
+          "type": "h2",
+          "text": "Agree what support means after launch"
+        },
+        {
+          "type": "p",
+          "text": "Clarify the duration and scope of any launch support, how to report a problem and the response expectations. Separate fixes covered by the project agreement from ongoing maintenance and new features. The aim is to prevent uncertainty when a future change needs attention."
+        },
+        {
+          "type": "p",
+          "text": "End with a concise operating guide and a named contact for outstanding items. A professional handover should leave your business able to make routine changes, understand its dependencies and seek help with useful information. That practical independence is part of a finished website, even when you choose to keep working with the same team."
+        }
+      ],
+      "sources": [
+        {
+          "title": "WordPress: Hardening WordPress",
+          "url": "https://developer.wordpress.org/advanced-administration/security/hardening/"
+        }
+      ],
+      "cta": "Bring your current handover documents or account list. We can identify operational gaps and help plan ongoing website care."
+    }
+  ]
+}

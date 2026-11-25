@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="portfolio-page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Development Portfolio | OrbitWick</title>
+  <meta name="description"
+    content="Website development portfolio: business websites and redesigns by OrbitWick.">
+  <link rel="canonical" href="https://www.orbitwick.com/portfolio/website-development.html">
+  <link rel="icon" type="image/png" href="../img/fav.png">
+  <meta name="theme-color" content="#0f0f10">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-page">
+  <header class="site-nav">
+    <nav class="wrap nav-inner" aria-label="Main">
+      <a class="nav-brand" href="../index.html"><img src="../img/logo-white.png" alt="OrbitWick" width="178" height="34"></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+        aria-controls="nav-menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+          stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="7" x2="20" y2="7" />
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="17" x2="20" y2="17" />
+        </svg>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../services.html">Services</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li class="nav-has-menu">
+          <a class="active" aria-current="true" href="../portfolio.html">Portfolio</a>
+          <button class="nav-sub-toggle" type="button" aria-label="Show portfolio categories" aria-expanded="false" aria-controls="nav-portfolio">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+          </button>
+          <ul class="nav-sub" id="nav-portfolio">
+            <li><a href="saas-products.html">SaaS Products</a></li>
+            <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+            <li><a aria-current="page" href="website-development.html">Website Development</a></li>
+            <li><a href="mobile-app-development.html">Mobile App Development</a></li>
+            <li><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="website-maintenance.html">Website Maintenance</a></li>
+            <li><a href="cms-ecommerce.html">CMS &amp; E-commerce</a></li>
+          </ul>
+        </li>
+        <li><a class="btn btn-accent btn-sm" href="../index.html#contact">Get in touch</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="category-work" aria-labelledby="category-title">
+      <div class="container">
+        <header class="category-head">
+          <nav class="category-crumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="../portfolio.html">Portfolio</a><span aria-hidden="true">/</span><span>Website Development</span></nav>
+          <h1 id="category-title">Websites that earn their place.</h1>
+          <p class="category-note"><i class="bi bi-patch-check" aria-hidden="true"></i>Real client projects and their demos are shared here with permission from our clients.</p>
+        </header>
+        <div class="saas-grid category-grid" id="project-grid" data-source="website-development" aria-busy="true"></div>
+        <p id="project-status" role="status">Loading projects...</p>
+        <noscript><p>Please enable JavaScript to explore these projects.</p></noscript>
+      </div>
+    </section>
+
+    <section class="revamp-section" id="revamp" aria-labelledby="revamp-title">
+      <div class="container">
+        <div class="revamp-head">
+          <div>
+            <div class="eyebrow">Website revamp</div>
+            <h2 id="revamp-title">Old websites, made new.</h2>
+          </div>
+          <a class="btn btn-burgundy" href="../index.html#contact">Revamp my website</a>
+        </div>
+        <div class="saas-grid category-grid" data-project-source="website-revamp" data-prefix="revamp" aria-busy="true"></div>
+      </div>
+    </section>
+
+    <section class="template-section" id="templates" aria-labelledby="templates-title" hidden>
+      <div class="container">
+        <div class="template-head">
+          <div class="eyebrow">Website templates</div>
+          <h2 id="templates-title">Start with a layout that fits.</h2>
+          <p>Pick a starting point and we'll shape the design, content and features around your business.</p>
+        </div>
+        <div class="template-grid" id="template-grid" data-source="website-templates"></div>
+      </div>
+    </section>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+      <div class="project-dialog-toolbar">
+        <span>Project details</span>
+        <button class="project-dialog-close" type="button" aria-label="Close project details" autofocus>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+        </button>
+      </div>
+      <div id="project-dialog-content"></div>
+    </dialog>
+  </main>
+
+  <footer class="footer">
+    <img class="footer-bg" src="../img/foot-tex.png" alt="" aria-hidden="true" loading="lazy">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html"><img src="../img/logo-white.png" alt="OrbitWick" width="209" height="40"></a>
+          <p>Design, development and security for businesses that want a dependable web presence.</p>
+        </div>
+        <div>
+          <h2 class="footer-heading">Explore</h2>
+          <ul class="footer-links">
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../about.html">About us</a></li>
+            <li><a href="../rd.html">R&amp;D</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Services</h2>
+          <ul class="footer-links">
+            <li><a href="../services.html#design">UI/UX &amp; Graphic Design</a></li>
+            <li><a href="../services.html#development">Full-Stack Development</a></li>
+            <li><a href="../services.html#mobile">Mobile App Development</a></li>
+            <li><a href="../services.html#security">Cybersecurity</a></li>
+            <li><a href="../services.html#maintenance">Management &amp; Maintenance</a></li>
+            <li><a href="../services.html#revamp">Website Revamp &amp; Rebranding</a></li>
+            <li><a href="../services.html#cms">CMS &amp; E-commerce</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-heading">Find us</h2>
+          <div class="footer-locations">
+            <address class="footer-location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+              <span><strong>Bangladesh</strong>Agrabad Commercial Area, Chattogram</span>
+            </address>
+            <address class="footer-location">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+              <span><strong>United States</strong>Austin, TX 78701, USA</span>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 OrbitWick. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="../script.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Table Thirteen",
+      "label": "Restaurant ordering",
+      "summary": "A restaurant menu and table ordering experience, redesigned around the guest.",
+      "description": "A menu made for ordering at the table. Guests can search by name or ingredient, filter for vegan or spicy dishes, sort by price and build an order as they browse.\n\nThe order stays in view at the bottom of the screen, with service call and order history within reach.",
+      "background": {
+        "type": "image",
+        "display": "screenshot",
+        "url": "portfolio/images/table-thirteen.jpg",
+        "alt": "Table Thirteen restaurant menu with categories, filters and an order bar"
+      },
+      "liveUrl": "https://md-abdur-rahman-07.github.io/Table13/",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "details": [
+        {
+          "label": "Menu",
+          "value": "Categories, search, dietary filters and sorting"
+        },
+        {
+          "label": "Ordering",
+          "value": "Live order total, order history and call service"
+        },
+        {
+          "label": "Display",
+          "value": "Light and dark theme"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Aspect Floral Studio",
+      "label": "Online flower shop",
+      "summary": "A floral shop with a softer visual identity and a clearer path to the right bouquet.",
+      "description": "A flower shop website built around warm photography and simple choices. Visitors can shop bouquets, save favourites and read the story behind the studio.\n\nThe checkout runs as a demo, so no payments are taken on the preview site.",
+      "background": {
+        "type": "image",
+        "display": "screenshot",
+        "url": "portfolio/images/aspect-floral-studio.jpg",
+        "alt": "Aspect Floral Studio home page with a bouquet of pink roses"
+      },
+      "liveUrl": "https://md-abdur-rahman-07.github.io/Aspect/",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "details": [
+        {
+          "label": "Shopping",
+          "value": "Collections, favourites, bag and demo checkout"
+        },
+        {
+          "label": "Pages",
+          "value": "Shop, our story and gallery"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Acres",
+      "label": "Ceramics studio",
+      "summary": "A small-batch ceramics store with a bold look and an easy way to browse each piece.",
+      "description": "A website for an independent ceramics studio. Product pages sit alongside the studio story, product reviews and a short Q&A.\n\nVisitors add pieces to a shopping bag and send the studio an inquiry about the ones they chose.",
+      "background": {
+        "type": "image",
+        "display": "screenshot",
+        "url": "portfolio/images/acres-ceramics.jpg",
+        "alt": "Acres ceramics studio home page with speckled blue and white bowls"
+      },
+      "liveUrl": "https://md-abdur-rahman-07.github.io/acres/",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "details": [
+        {
+          "label": "Shopping",
+          "value": "Product pages, colour choices and an inquiry bag"
+        },
+        {
+          "label": "Pages",
+          "value": "Shop, our studio and contact"
+        }
+      ]
+    }
+  ]
+}

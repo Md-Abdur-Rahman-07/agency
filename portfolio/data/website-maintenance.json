@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "A healthier web presence.",
+      "label": "Maintenance portal concept",
+      "summary": "A website care portal concept for keeping updates and maintenance visible.",
+      "description": "A maintenance timeline, update queue and backup overview explore a straightforward way to communicate ongoing website care.\n\nGive a business owner a clear view of routine website care. The proposed scope includes update history, backup overview, maintenance requests and monthly summaries.\n\nThis sample case study demonstrates how a completed project can be presented. The figures and client are illustrative, and the video is placeholder footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img8.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "demoUrl": "img/video.mp4",
+      "liveUrl": "https://example.com",
+      "timeline": "4 weeks",
+      "client": "Willow Services (demo)",
+      "year": "2026",
+      "role": "Portal design and website maintenance",
+      "technologies": [
+        "WordPress",
+        "PHP",
+        "JavaScript"
+      ],
+      "details": [
+        {
+          "label": "Challenge",
+          "value": "Give a business owner a clear view of routine website care."
+        },
+        {
+          "label": "Scope & deliverables",
+          "value": "Update history, backup overview, maintenance requests and monthly summaries."
+        },
+        {
+          "label": "Project stages",
+          "value": "Discovery and scope → design and prototype → development → testing and handover"
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample client, budget and timeline."
+        }
+      ],
+      "cost": "$1,800",
+      "isDemo": true,
+      "demoCaption": "Sample video for this portfolio preview; replace with the project walkthrough."
+    }
+  ]
+}

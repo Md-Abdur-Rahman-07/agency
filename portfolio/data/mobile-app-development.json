@@ -1,0 +1,49 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Small screen. Clear purpose.",
+      "label": "Mobile app concept",
+      "summary": "A mobile experience concept with simple navigation and a focused daily overview.",
+      "description": "An onboarding flow and daily overview explore readable typography, clear touch targets and a compact navigation system.\n\nHelp people organise daily priorities with fewer screens and distractions. The proposed scope includes onboarding, daily overview, saved items and notification preferences.\n\nThis sample case study demonstrates how a completed project can be presented. The figures and client are illustrative, and the video is placeholder footage.",
+      "background": {
+        "type": "image",
+        "url": "portfolio/images/img9.jpg",
+        "poster": "",
+        "alt": ""
+      },
+      "demoUrl": "img/video.mp4",
+      "liveUrl": "https://example.com",
+      "timeline": "10 weeks",
+      "client": "Daylight Studio (demo)",
+      "year": "2026",
+      "role": "Mobile product design and development",
+      "technologies": [
+        "Figma",
+        "Flutter",
+        "Firebase"
+      ],
+      "details": [
+        {
+          "label": "Challenge",
+          "value": "Help people organise daily priorities with fewer screens and distractions."
+        },
+        {
+          "label": "Scope & deliverables",
+          "value": "Onboarding, daily overview, saved items and notification preferences."
+        },
+        {
+          "label": "Project stages",
+          "value": "Discovery and scope → design and prototype → development → testing and handover"
+        },
+        {
+          "label": "Status",
+          "value": "Illustrative demo · sample client, budget and timeline."
+        }
+      ],
+      "cost": "$6,500",
+      "isDemo": true,
+      "demoCaption": "Sample video for this portfolio preview; replace with the project walkthrough."
+    }
+  ]
+}

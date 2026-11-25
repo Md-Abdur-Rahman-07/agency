@@ -5,5 +5,9 @@
   },
   "dependencies": {
     "nodemailer": "^10.2.1"
+  },
+  "scripts": {
+    "build:blog": "node blog/build-blog.cjs",
+    "build": "npm run build:blog"
   }
 }

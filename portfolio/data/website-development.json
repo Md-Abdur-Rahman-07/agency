@@ -1,0 +1,71 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Luxury",
+      "label": "Private chauffeur & travel",
+      "summary": "A chauffeur and curated travel website for Austin and the Texas Hill Country.",
+      "description": "A calm, editorial website for a private chauffeur service. It introduces the service, then leads visitors through airport transfers, corporate travel, weddings and curated days out.\n\nEach type of experience has its own page, so visitors can explore before they plan a journey.",
+      "background": {
+        "type": "image",
+        "display": "screenshot",
+        "url": "portfolio/images/luxury-chauffeur.jpg",
+        "alt": "Luxury chauffeur website home page with a dark SUV on a snowy road"
+      },
+      "liveUrl": "https://md-abdur-rahman-07.github.io/luxury/",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "details": [
+        {
+          "label": "Services shown",
+          "value": "Airport transfers, corporate travel, weddings and occasions, curated escapes"
+        },
+        {
+          "label": "Experience pages",
+          "value": "Winery, brewery, food and nightlife"
+        },
+        {
+          "label": "Main action",
+          "value": "Plan your journey"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "DriveOn",
+      "label": "Premium car rental",
+      "summary": "A car rental website with a full fleet, rental search form and light or dark theme.",
+      "description": "A dark, image-led website for a premium and luxury car rental company. Visitors can browse the fleet with daily prices and key specifications, then fill in a rental form with car type, locations and dates.\n\nSupporting pages cover services, pricing, team, gallery, testimonials, FAQ and blog.",
+      "background": {
+        "type": "image",
+        "display": "screenshot",
+        "url": "portfolio/images/driveon-car-rental.jpg",
+        "alt": "DriveOn car rental website home page"
+      },
+      "liveUrl": "https://md-abdur-rahman-07.github.io/DriveOn/",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "jQuery"
+      ],
+      "details": [
+        {
+          "label": "Fleet",
+          "value": "Car listing, car types and car detail pages"
+        },
+        {
+          "label": "Booking form",
+          "value": "Car type, pick-up and drop-off locations, and dates"
+        },
+        {
+          "label": "Display",
+          "value": "Light and dark theme switch"
+        }
+      ]
+    }
+  ]
+}

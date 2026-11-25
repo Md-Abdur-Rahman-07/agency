@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blog | OrbitWick</title>
-  <meta name="description" content="Practical articles from OrbitWick on web design, development, mobile apps, cybersecurity, website revamps and maintenance.">
-  <link rel="canonical" href="https://www.orbitwick.com/blog">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Blog | OrbitWick">
-  <meta property="og:description" content="Practical articles on web design, development, mobile apps, cybersecurity and website care.">
-  <link rel="icon" type="image/png" href="img/fav.png">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <meta name="theme-color" content="#0f0f10">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website &amp; Product Guides for Business | OrbitWick</title>
+<meta name="description" content="Practical guides to website costs, redesigns, maintenance, e-commerce, mobile apps, security and SaaS planning from OrbitWick.">
+<link rel="canonical" href="https://www.orbitwick.com/blog.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Website &amp; Product Guides for Business">
+<meta property="og:description" content="Practical guides to website costs, redesigns, maintenance, e-commerce, mobile apps, security and SaaS planning from OrbitWick.">
+<meta property="og:url" content="https://www.orbitwick.com/blog.html">
+<meta property="og:image" content="https://www.orbitwick.com/blog/images/small-business-website-cost-scope.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/fav.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
 </head>
-<body>
-
-<!-- NAVBAR -->
+<body class="journal-page">
+<a class="journal-skip" href="#main">Skip to content</a>
 <header class="site-nav">
     <nav class="wrap nav-inner" aria-label="Main">
       <a class="nav-brand" href="index.html"><img src="img/logo-white.png" alt="OrbitWick" width="178" height="34"></a>
@@ -37,83 +35,33 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li class="nav-has-menu">
+          <a href="portfolio.html">Portfolio</a>
+          <button class="nav-sub-toggle" type="button" aria-label="Show portfolio categories" aria-expanded="false" aria-controls="nav-portfolio">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+          </button>
+          <ul class="nav-sub" id="nav-portfolio">
+            <li><a href="portfolio/saas-products.html">SaaS Products</a></li>
+            <li><a href="portfolio/ui-ux-design.html">UI/UX Design</a></li>
+            <li><a href="portfolio/website-development.html">Website Development</a></li>
+            <li><a href="portfolio/mobile-app-development.html">Mobile App Development</a></li>
+            <li><a href="portfolio/cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="portfolio/website-maintenance.html">Website Maintenance</a></li>
+            <li><a href="portfolio/cms-ecommerce.html">CMS &amp; E-commerce</a></li>
+          </ul>
+        </li>
         <li><a class="btn btn-accent btn-sm" href="index.html#contact">Get in touch</a></li>
       </ul>
     </nav>
   </header>
-
-<!-- PAGE HERO -->
-<header class="page-hero hero-cursor-area">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6">
-        <div class="eyebrow mb-3" data-aos="fade-up">Insights</div>
-        <h1 class="display-4 fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">The OrbitWick Blog</h1>
-        <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200">Practical guides on design, development, mobile
-          apps, security and keeping your website healthy.</p>
-      </div>
-      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-        <img class="page-hero-image" src="img/site/img.jpg"
-          alt="A developer writing code at a laptop" width="6000" height="4000" fetchpriority="high">
-      </div>
-    </div>
-  </div>
-</header>
-<nav class="svc-nav" aria-label="Our services">
-  <div class="svc-nav-lane">
-    <div class="svc-nav-track">
-      <div class="svc-nav-group">
-        <a href="services.html#design"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
-        <a href="services.html#development"><i class="bi bi-code-slash" aria-hidden="true"></i>Web Development</a>
-        <a href="services.html#mobile"><i class="bi bi-phone" aria-hidden="true"></i>Mobile Apps</a>
-        <a href="services.html#security"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity</a>
-        <a href="services.html#maintenance"><i class="bi bi-gear" aria-hidden="true"></i>Website Care</a>
-        <a href="services.html#revamp"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
-        <a href="services.html#cms"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
-      </div>
-      <div class="svc-nav-group" aria-hidden="true" inert>
-        <a href="services.html#design" tabindex="-1"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
-        <a href="services.html#development" tabindex="-1"><i class="bi bi-code-slash" aria-hidden="true"></i>Web Development</a>
-        <a href="services.html#mobile" tabindex="-1"><i class="bi bi-phone" aria-hidden="true"></i>Mobile Apps</a>
-        <a href="services.html#security" tabindex="-1"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity</a>
-        <a href="services.html#maintenance" tabindex="-1"><i class="bi bi-gear" aria-hidden="true"></i>Website Care</a>
-        <a href="services.html#revamp" tabindex="-1"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
-        <a href="services.html#cms" tabindex="-1"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- POSTS -->
-<section>
-  <div class="container">
-    <div class="blog-toolbar mb-5">
-      <div class="blog-filters" id="filters" role="tablist" aria-label="Filter articles by category"></div>
-      <input type="search" id="q" class="form-control blog-search" placeholder="Search articles" aria-label="Search articles">
-    </div>
-    <div class="row g-4" id="postGrid" aria-live="polite">
-      <div class="col-12 text-grey">Loading articles&hellip;</div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<div class="cta">
-  <div class="container">
-    <div class="row align-items-center g-3">
-      <div class="col-lg-8">
-        <h3 class="mb-1">Have a project in mind?</h3>
-        <p class="mb-0">Tell us about it and we will reply with next steps.</p>
-      </div>
-      <div class="col-lg-4 text-lg-end">
-        <a href="index.html#contact" class="btn btn-outline-light-ow">Contact us</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- FOOTER -->
+<main id="main" data-journal="listing" aria-busy="true"><section class="journal-library" id="guides" aria-labelledby="guides-title"><div class="container"><div class="journal-library-head"><div><h1 id="guides-title">The OrbitWick Blog</h1><p>Practical guides for better websites and digital products.</p></div><label class="journal-search" hidden>Search articles<input id="journal-search" type="search" placeholder="Search by topic or keyword"></label></div>
+<div class="journal-filters" role="group" aria-label="Filter articles by topic" hidden></div>
+<p id="journal-count" class="journal-count" role="status" tabindex="-1">Loading articles…</p>
+<noscript><p>Please enable JavaScript to browse the articles.</p></noscript>
+<div class="journal-grid" id="journal-grid"></div>
+<nav class="journal-pagination" id="journal-pagination" aria-label="Blog pagination" hidden></nav>
+<p class="journal-empty" id="journal-empty" hidden>No guides match that search. Try another topic or <button type="button" id="journal-reset">clear the filters</button>.</p></div></section>
+<section class="journal-cta"><div class="container"><div><div class="eyebrow">Put the ideas into practice</div><h2>Have a specific challenge?</h2><p>Tell us what your website or product needs to do. We’ll help you find a practical starting point.</p></div><a class="btn btn-burgundy" href="index.html#contact">Talk about your project ↗</a></div></section></main>
 <footer class="footer">
     <img class="footer-bg" src="img/foot-tex.png" alt="" aria-hidden="true" loading="lazy">
     <div class="wrap">
@@ -125,11 +73,11 @@
         <div>
           <h2 class="footer-heading">Explore</h2>
           <ul class="footer-links">
-            <li><a href="about.html">About us</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="rd.html">R&amp;D</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </div>
         <div>
@@ -163,9 +111,7 @@
       </div>
     </div>
   </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
+<script src="blog/blog.js"></script>
 </body>
 </html>

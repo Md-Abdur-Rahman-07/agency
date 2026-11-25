@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="portfolio-page">
 
 <head>
   <meta charset="UTF-8">
@@ -16,7 +16,7 @@
   <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="portfolio-page">
   <header class="site-nav">
     <nav class="wrap nav-inner" aria-label="Main">
       <a class="nav-brand" href="index.html"><img src="img/logo-white.png" alt="OrbitWick" width="178" height="34"></a>
@@ -33,164 +33,114 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a class="active" aria-current="page" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-has-menu">
+          <a class="active" aria-current="page" href="portfolio.html">Portfolio</a>
+          <button class="nav-sub-toggle" type="button" aria-label="Show portfolio categories" aria-expanded="false" aria-controls="nav-portfolio">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+          </button>
+          <ul class="nav-sub" id="nav-portfolio">
+            <li><a href="portfolio/saas-products.html">SaaS Products</a></li>
+            <li><a href="portfolio/ui-ux-design.html">UI/UX Design</a></li>
+            <li><a href="portfolio/website-development.html">Website Development</a></li>
+            <li><a href="portfolio/mobile-app-development.html">Mobile App Development</a></li>
+            <li><a href="portfolio/cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="portfolio/website-maintenance.html">Website Maintenance</a></li>
+            <li><a href="portfolio/cms-ecommerce.html">CMS &amp; E-commerce</a></li>
+          </ul>
+        </li>
         <li><a class="btn btn-accent btn-sm" href="index.html#contact">Get in touch</a></li>
       </ul>
     </nav>
   </header>
 
-  <header class="page-hero hero-cursor-area">
+  <header class="hub-hero">
     <div class="container">
-      <div class="row align-items-center g-5">
-        <div class="col-lg-6">
-          <div class="eyebrow mb-3" data-aos="fade-up">Our portfolio</div>
-          <h1 class="display-4 fw-bold mb-3" data-aos="fade-up" data-aos-delay="100">Ideas, shaped into digital
-            experiences.</h1>
-          <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200">A glimpse into the design, development and
-            technology that inspire our work.</p>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-          <img class="page-hero-image" src="img/site/img9.jpg"
-            alt="A mobile application experience displayed on a smartphone" width="6240" height="4160"
-            fetchpriority="high">
-        </div>
-      </div>
+      <a class="hub-saas" href="portfolio/saas-products.html">
+        <span class="hub-saas-copy">
+          <span class="hub-label">Our SaaS concepts</span>
+          <strong>SaaS Products</strong>
+          <span class="hub-tagline">Products that take the busywork out of running teams, bookings, billing and websites.</span>
+          <span class="hub-products"><span>Flowdesk</span><span>Slotwise</span><span>Billnest</span><span>Careboard</span></span>
+          <span class="hub-go">Explore SaaS products <i class="bi bi-arrow-right" aria-hidden="true"></i></span>
+        </span>
+        <img src="portfolio/images/img8.jpg" alt="" fetchpriority="high">
+      </a>
     </div>
   </header>
 
-  <nav class="svc-nav" aria-label="Our services">
-    <div class="svc-nav-lane">
-      <div class="svc-nav-track">
-        <div class="svc-nav-group">
-          <a href="services.html#design"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp; Graphic Design</a>
-          <a href="services.html#development"><i class="bi bi-code-slash" aria-hidden="true"></i>Web Development</a>
-          <a href="services.html#mobile"><i class="bi bi-phone" aria-hidden="true"></i>Mobile Apps</a>
-          <a href="services.html#security"><i class="bi bi-shield-lock" aria-hidden="true"></i>Cybersecurity</a>
-          <a href="services.html#maintenance"><i class="bi bi-gear" aria-hidden="true"></i>Website Care</a>
-          <a href="services.html#revamp"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website Revamp</a>
-          <a href="services.html#cms"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp; E-commerce</a>
-        </div>
-        <div class="svc-nav-group" aria-hidden="true" inert>
-          <a href="services.html#design" tabindex="-1"><i class="bi bi-palette" aria-hidden="true"></i>UI/UX &amp;
-            Graphic Design</a>
-          <a href="services.html#development" tabindex="-1"><i class="bi bi-code-slash" aria-hidden="true"></i>Web
-            Development</a>
-          <a href="services.html#mobile" tabindex="-1"><i class="bi bi-phone" aria-hidden="true"></i>Mobile Apps</a>
-          <a href="services.html#security" tabindex="-1"><i class="bi bi-shield-lock"
-              aria-hidden="true"></i>Cybersecurity</a>
-          <a href="services.html#maintenance" tabindex="-1"><i class="bi bi-gear" aria-hidden="true"></i>Website
-            Care</a>
-          <a href="services.html#revamp" tabindex="-1"><i class="bi bi-arrow-repeat" aria-hidden="true"></i>Website
-            Revamp</a>
-          <a href="services.html#cms" tabindex="-1"><i class="bi bi-bag" aria-hidden="true"></i>CMS &amp;
-            E-commerce</a>
+  <main>
+    <section class="tech" aria-label="Technologies we use">
+      <div class="wrap tech-inner">
+        <div class="tech-label">Technologies we use</div>
+        <div class="tools-slider">
+          <div class="tools-window">
+            <div class="tools-track">
+              <div class="tools-group">
+                <div class="tool-icon"><img src="img/SVG/nodejs.svg" alt="Node.js logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/wordpress.svg" alt="WordPress logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/wix.svg" alt="Wix logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/javascript.svg" alt="JavaScript logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/flutter.svg" alt="Flutter logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/react-native.svg" alt="React Native logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/figma.svg" alt="Figma logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/illustrator.svg" alt="Adobe Illustrator logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/csharp.svg" alt="C# logo" width="48" height="34"></div>
+                <div class="tool-icon"><img src="img/SVG/aspnet.svg" alt=".NET logo representing ASP.NET development" width="48" height="34"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </section>
 
-  <main>
-    <section class="portfolio-work">
+    <section class="project-collection" aria-labelledby="collection-title">
       <div class="container">
-        <div class="row align-items-end g-4 mb-5">
-          <div class="col-lg-8" data-aos="fade-up">
-            <div class="eyebrow">Design to delivery</div>
-            <h2 class="section-title mt-2">A closer look at what we do</h2>
-            <div class="section-bar"></div>
-            <p class="text-grey mb-0">Explore the kinds of challenges we love to solve through design, engineering and
-              considered technology.</p>
-          </div>
-          <div class="col-lg-4 text-lg-end" data-aos="fade-up">
-            <a href="index.html#contact" class="portfolio-work-link">Have a project in mind? <i
-                class="bi bi-arrow-up-right"></i></a>
-          </div>
+        <div class="collection-intro">
+          <div><div class="eyebrow">Our work</div><h1 id="collection-title">Find the work closest to yours.</h1></div>
         </div>
+        <div class="hub-grid">
+          <a class="hub-card" href="portfolio/ui-ux-design.html">
+            <img src="portfolio/images/img7.jpg" alt="" loading="lazy">
+            <span class="hub-card-copy"><i class="bi bi-palette" aria-hidden="true"></i><strong>UI/UX Design</strong><span>Interfaces and visual systems that make the next step clear.</span></span>
+          </a>
+          <a class="hub-card" href="portfolio/website-development.html">
+            <img src="portfolio/images/img.jpg" alt="" loading="lazy">
+            <span class="hub-card-copy"><i class="bi bi-code-slash" aria-hidden="true"></i><strong>Website Development</strong><span>Fast, clear and built to grow along with the business behind them.</span></span>
+          </a>
+          <a class="hub-card" href="portfolio/mobile-app-development.html">
+            <img src="portfolio/images/img9.jpg" alt="" loading="lazy">
+            <span class="hub-card-copy"><i class="bi bi-phone" aria-hidden="true"></i><strong>Mobile App Development</strong><span>Apps shaped around the few things people reach for every day.</span></span>
+          </a>
+          <a class="hub-card" href="portfolio/cybersecurity.html">
+            <img src="portfolio/images/img11.jpg" alt="" loading="lazy">
+            <span class="hub-card-copy"><i class="bi bi-shield-lock" aria-hidden="true"></i><strong>Cybersecurity</strong><span>Risks found, explained in plain language and put in order.</span></span>
+          </a>
+          <a class="hub-card" href="portfolio/website-maintenance.html">
+            <img src="img/home/portfolio-img1.jpg" alt="" loading="lazy">
+            <span class="hub-card-copy"><i class="bi bi-gear" aria-hidden="true"></i><strong>Website Maintenance</strong><span>Updates, backups and fixes that keep a website healthy.</span></span>
+          </a>
+          <a class="hub-card" href="portfolio/cms-ecommerce.html">
+            <img src="img/home/video-poster.jpg" alt="" loading="lazy">
+            <span class="hub-card-copy"><i class="bi bi-bag" aria-hidden="true"></i><strong>CMS &amp; E-commerce</strong><span>Online stores and content sites your own team can manage.</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <article class="portfolio-card" id="digital-experiences">
-              <div class="portfolio-card-image">
-                <img src="img/site/img9.jpg" alt="Mobile app interface shown on a smartphone" width="6240"
-                  height="4160" loading="lazy">
-                <span class="portfolio-card-number">01</span>
-              </div>
-              <div class="portfolio-card-body">
-                <span class="portfolio-category">Mobile experiences</span>
-                <h3>Useful by design</h3>
-                <p>Clear, thoughtful app experiences designed around the people who use them.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="75">
-            <article class="portfolio-card" id="design">
-              <div class="portfolio-card-image">
-                <img src="img/site/img7.jpg" alt="Digital interface design being reviewed on screen" width="5472"
-                  height="3648" loading="lazy">
-                <span class="portfolio-card-number">02</span>
-              </div>
-              <div class="portfolio-card-body">
-                <span class="portfolio-category">Product design</span>
-                <h3>Make every detail count</h3>
-                <p>Consistent visual systems and intuitive interfaces from first sketch to final handoff.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
-            <article class="portfolio-card" id="engineering">
-              <div class="portfolio-card-image">
-                <img src="img/site/img.jpg" alt="Developer working on a laptop" width="6000" height="4000"
-                  loading="lazy">
-                <span class="portfolio-card-number">03</span>
-              </div>
-              <div class="portfolio-card-body">
-                <span class="portfolio-category">Web development</span>
-                <h3>Built for what comes next</h3>
-                <p>Reliable web experiences with a strong technical foundation and room to grow.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <article class="portfolio-card">
-              <div class="portfolio-card-image">
-                <img src="img/site/img8.jpg" alt="Developer building a digital product at a workstation" width="6016"
-                  height="4016" loading="lazy">
-                <span class="portfolio-card-number">04</span>
-              </div>
-              <div class="portfolio-card-body">
-                <span class="portfolio-category">Digital products</span>
-                <h3>From concept to launch</h3>
-                <p>Connecting product thinking, implementation and testing into one cohesive process.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="75">
-            <article class="portfolio-card">
-              <div class="portfolio-card-image">
-                <img src="img/site/img10.jpg" alt="Modern collaborative office environment" width="5192"
-                  height="3466" loading="lazy">
-                <span class="portfolio-card-number">05</span>
-              </div>
-              <div class="portfolio-card-body">
-                <span class="portfolio-category">Digital strategy</span>
-                <h3>Better together</h3>
-                <p>Bringing teams, goals and practical technology into a shared direction.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
-            <article class="portfolio-card">
-              <div class="portfolio-card-image">
-                <img src="img/site/img11.jpg" alt="Technical systems and equipment in a development environment"
-                  width="6616" height="4411" loading="lazy">
-                <span class="portfolio-card-number">06</span>
-              </div>
-              <div class="portfolio-card-body">
-                <span class="portfolio-category">Secure engineering</span>
-                <h3>Confidence from the ground up</h3>
-                <p>Building with reliability, security and long-term maintenance in mind.</p>
-              </div>
-            </article>
-          </div>
+    <section class="portfolio-faq" aria-labelledby="portfolio-faq-title">
+      <div class="container portfolio-faq-layout">
+        <div class="portfolio-faq-intro">
+          <div class="eyebrow">Questions &amp; answers</div>
+          <h2 id="portfolio-faq-title">A little clarity.<br>Before we begin.</h2>
+          <p>What to know about the work, the process and your next project.</p>
+        </div>
+        <div class="portfolio-faq-list">
+          <details><summary>Are these live client projects?</summary><p>The current collection contains illustrative projects and SaaS concepts. Client names, budgets and timelines are sample information. Video clips and sample live links demonstrate the portfolio experience.</p></details>
+          <details><summary>Can you build something similar for my business?</summary><p>Yes. Share the project that caught your eye, who will use your product and the problem you want to solve. We can discuss a scope around your workflows, content and priorities.</p></details>
+          <details><summary>How are project cost and timeline decided?</summary><p>Scope, integrations, content readiness and technical complexity all affect the estimate. The figures on these demo cards are illustrative. Your proposal will define the deliverables, milestones and budget for your project.</p></details>
+          <details><summary>How is a SaaS product different from a website?</summary><p>A SaaS product usually supports ongoing tasks across accounts, roles and shared data. Planning includes onboarding, permissions, billing where needed, and the operation of the product after launch.</p></details>
+          <details><summary>Can you improve an existing website or application?</summary><p>Yes. We can review the current experience and discuss design changes, development, security or maintenance. Sharing your existing URL and the main issues helps us identify a useful starting point.</p></details>
+          <details><summary>What should I send to get started?</summary><p>Send a short description of your idea, your audience, the features you need and any target launch date. An existing website, reference projects and a budget range are useful if you have them.</p></details>
         </div>
       </div>
     </section>
@@ -223,11 +173,11 @@
         <div>
           <h2 class="footer-heading">Explore</h2>
           <ul class="footer-links">
-            <li><a href="about.html">About us</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="rd.html">R&amp;D</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </div>
         <div>

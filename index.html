@@ -61,7 +61,21 @@
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+        <li class="nav-has-menu">
+          <a href="portfolio.html">Portfolio</a>
+          <button class="nav-sub-toggle" type="button" aria-label="Show portfolio categories" aria-expanded="false" aria-controls="nav-portfolio">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+          </button>
+          <ul class="nav-sub" id="nav-portfolio">
+            <li><a href="portfolio/saas-products.html">SaaS Products</a></li>
+            <li><a href="portfolio/ui-ux-design.html">UI/UX Design</a></li>
+            <li><a href="portfolio/website-development.html">Website Development</a></li>
+            <li><a href="portfolio/mobile-app-development.html">Mobile App Development</a></li>
+            <li><a href="portfolio/cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="portfolio/website-maintenance.html">Website Maintenance</a></li>
+            <li><a href="portfolio/cms-ecommerce.html">CMS &amp; E-commerce</a></li>
+          </ul>
+        </li>
         <li><a class="btn btn-accent btn-sm" href="index.html#contact">Get in touch</a></li>
       </ul>
     </nav>
@@ -302,7 +316,7 @@
         </div>
 
         <div class="work-grid" data-aos="fade-up">
-          <a class="work-card card" href="portfolio.html#digital-experiences">
+          <a class="work-card card" href="portfolio/mobile-app-development.html">
             <div class="work-card-image">
               <img src="img/home/portfolio-img9.jpg" alt="Mobile app interface shown on a smartphone" width="1600"
                 height="1067" loading="lazy">
@@ -317,7 +331,7 @@
             </svg>
           </a>
 
-          <a class="work-card card" href="portfolio.html#design">
+          <a class="work-card card" href="portfolio/ui-ux-design.html">
             <div class="work-card-image">
               <img src="img/home/portfolio-img7.jpg" alt="Digital interface design being reviewed on screen"
                 width="1600" height="1067" loading="lazy">
@@ -332,14 +346,14 @@
             </svg>
           </a>
 
-          <a class="work-card card work-card-featured" href="portfolio.html">
+          <a class="work-card card work-card-featured" href="portfolio/website-development.html">
             <div class="work-card-image">
               <img src="img/home/video-poster.jpg" alt="Online store with product collections and sale pricing"
                 width="1600" height="900" loading="lazy">
             </div>
             <div class="work-card-body">
               <span class="work-meta">CMS &amp; E-commerce</span>
-              <h3>Online stores, start to finish</h3>
+              <h3>Web development, start to finish</h3>
               <p>WordPress · Shopify · WooCommerce</p>
             </div>
             <svg class="work-arrow" width="16" height="16" aria-hidden="true">
@@ -639,11 +653,11 @@
         <div>
           <h2 class="footer-heading">Explore</h2>
           <ul class="footer-links">
-            <li><a href="about.html">About us</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="rd.html">R&amp;D</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </div>
         <div>
